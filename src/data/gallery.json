@@ -1,0 +1,136 @@
+{
+  "photos": [
+    {
+      "id": "prep-001",
+      "url": "/images/gallery/preparation-001.jpg",
+      "thumbnail": "/images/gallery/thumbs/preparation-001.jpg",
+      "caption": "Rapat persiapan panitia RT 11 untuk HUT RI Ke-80",
+      "category": "preparation",
+      "date": "2025-06-15",
+      "author": "Panitia RT 11",
+      "rt": "RT 11",
+      "tags": ["rapat", "persiapan", "panitia", "hut-ri"],
+      "likes": 12,
+      "comments": 3
+    },
+    {
+      "id": "prep-002", 
+      "url": "/images/gallery/preparation-002.jpg",
+      "thumbnail": "/images/gallery/thumbs/preparation-002.jpg",
+      "caption": "Koordinasi dengan pengurus RW IX untuk dukungan acara",
+      "category": "preparation",
+      "date": "2025-06-18",
+      "author": "Sekretaris RT 11",
+      "rt": "RW IX",
+      "tags": ["koordinasi", "rw-ix", "dukungan"],
+      "likes": 8,
+      "comments": 1
+    },
+    {
+      "id": "hias-001",
+      "url": "/images/gallery/hias-kampung-001.jpg", 
+      "thumbnail": "/images/gallery/thumbs/hias-kampung-001.jpg",
+      "caption": "RT 05 mulai persiapan penghijauan untuk lomba hias kampung",
+      "category": "competition",
+      "date": "2025-07-05",
+      "competition": "hias-kampung",
+      "author": "Warga RT 05",
+      "rt": "RT 05",
+      "tags": ["penghijauan", "hias-kampung", "persiapan", "lingkungan"],
+      "likes": 25,
+      "comments": 7
+    },
+    {
+      "id": "hias-002",
+      "url": "/images/gallery/hias-kampung-002.jpg",
+      "thumbnail": "/images/gallery/thumbs/hias-kampung-002.jpg", 
+      "caption": "Gotong royong RT 03 dalam menata taman kampung",
+      "category": "competition",
+      "date": "2025-07-10",
+      "competition": "hias-kampung",
+      "author": "Warga RT 03",
+      "rt": "RT 03",
+      "tags": ["gotong-royong", "taman", "kerjasama"],
+      "likes": 18,
+      "comments": 4
+    },
+    {
+      "id": "committee-001",
+      "url": "/images/gallery/committee-001.jpg",
+      "thumbnail": "/images/gallery/thumbs/committee-001.jpg",
+      "caption": "Foto bersama panitia inti RT 11 dan koordinator lomba",
+      "category": "committee", 
+      "date": "2025-06-20",
+      "author": "Panitia RT 11",
+      "rt": "RT 11",
+      "tags": ["panitia", "foto-bersama", "koordinator"],
+      "likes": 30,
+      "comments": 12
+    },
+    {
+      "id": "angklung-001",
+      "url": "/images/gallery/angklung-practice-001.jpg",
+      "thumbnail": "/images/gallery/thumbs/angklung-practice-001.jpg",
+      "caption": "Latihan angklung Ibu PKK RW IX untuk malam puncak",
+      "category": "entertainment",
+      "date": "2025-07-15",
+      "author": "PKK RW IX",
+      "rt": "RW IX",
+      "tags": ["angklung", "latihan", "pkk", "hiburan"],
+      "likes": 22,
+      "comments": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "Semua Foto",
+      "description": "Tampilkan semua foto kegiatan",
+      "icon": "📸",
+      "color": "default"
+    },
+    {
+      "id": "preparation",
+      "name": "Persiapan",
+      "description": "Foto-foto persiapan dan rapat panitia",
+      "icon": "🔨",
+      "color": "primary"
+    },
+    {
+      "id": "competition",
+      "name": "Lomba",
+      "description": "Dokumentasi kegiatan lomba dan persiapannya",
+      "icon": "🏆",
+      "color": "accent"
+    },
+    {
+      "id": "entertainment",
+      "name": "Hiburan",
+      "description": "Kegiatan hiburan dan pentas seni",
+      "icon": "🎭",
+      "color": "secondary"
+    },
+    {
+      "id": "committee",
+      "name": "Panitia",
+      "description": "Kegiatan dan dokumentasi panitia",
+      "icon": "👥",
+      "color": "success"
+    },
+    {
+      "id": "general",
+      "name": "Umum",
+      "description": "Foto-foto umum kegiatan RW IX",
+      "icon": "📷",
+      "color": "default"
+    }
+  ],
+  "uploadGuidelines": {
+    "maxFileSize": "5MB",
+    "allowedFormats": ["jpg", "jpeg", "png", "webp"],
+    "recommendedSize": "1920x1080",
+    "captionMaxLength": 200,
+    "tagsMaxCount": 5,
+    "moderationRequired": true
+  }
+}

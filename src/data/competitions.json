@@ -1,0 +1,117 @@
+{
+  "competitions": [
+    {
+      "id": "hias-kampung",
+      "name": "Lomba Hias Kampung/RT",
+      "description": "Lomba menghias kampung dengan tema Lingkungan Hidup dan Penghijauan. Penilaian meliputi aspek penghijauan, kebersihan, dan kreativitas hiasan kampung atau RT.",
+      "coordinator": {
+        "name": "H. Suleman",
+        "contact": "+62xxx",
+        "photo": "/images/coordinators/suleman.jpg"
+      },
+      "criteria": [
+        "Penghijauan kampung/RT",
+        "Kebersihan kampung/RT",
+        "Menghias kampung/RT"
+      ],
+      "timeline": {
+        "start": "2025-07-01",
+        "end": "2025-08-24",
+        "registration": "2025-06-30"
+      },
+      "category": "decoration",
+      "status": "upcoming",
+      "theme": "Lingkungan Hidup",
+      "judges": "Juri dari luar RW IX",
+      "participants": 12,
+      "image": "/images/competitions/hias-kampung.jpg",
+      "icon": "🏡",
+      "color": "primary"
+    },
+    {
+      "id": "bulu-tangkis-keluarga",
+      "name": "Lomba Bulu Tangkis Keluarga",
+      "description": "Lomba bulu tangkis dengan konsep keluarga (campuran laki-laki dan perempuan). Penilaian berdasarkan skor pertandingan, kostum unik, dan sportivitas suporter.",
+      "coordinator": {
+        "name": "Bpk. Yusri",
+        "contact": "+62xxx",
+        "photo": "/images/coordinators/yusri.jpg"
+      },
+      "criteria": [
+        "Skor pertandingan",
+        "Kostum yang unik",
+        "Sporter yang positif"
+      ],
+      "timeline": {
+        "start": "2025-08-30",
+        "end": "2025-08-31",
+        "registration": "2025-08-25"
+      },
+      "category": "sports",
+      "status": "upcoming",
+      "schedule": "Malam Sabtu dan Minggu",
+      "participants": 16,
+      "rules": "Peserta campuran laki-laki dan perempuan dalam satu keluarga",
+      "image": "/images/competitions/bulu-tangkis.jpg",
+      "icon": "🏸",
+      "color": "accent"
+    },
+    {
+      "id": "jalan-sehat",
+      "name": "Lomba Jalan Sehat",
+      "description": "Lomba jalan sehat dengan tema kostum Lingkungan Hidup. Penilaian meliputi kekompakan, keserasian, kostum bertema lingkungan, dan spanduk/yel-yel.",
+      "coordinator": {
+        "name": "dr. Edi Subagyo",
+        "contact": "+62xxx",
+        "photo": "/images/coordinators/edi.jpg"
+      },
+      "criteria": [
+        "Kekompakan",
+        "Keserasian",
+        "Kostum Lingkungan Hidup",
+        "Spanduk"
+      ],
+      "timeline": {
+        "start": "2025-08-30",
+        "end": "2025-08-30",
+        "registration": "2025-08-25"
+      },
+      "category": "health",
+      "status": "upcoming",
+      "categories": ["Anak-anak", "Remaja", "Dewasa"],
+      "dressCode": "50% pakaian lingkungan hidup, 50% kostum kaos",
+      "participants": 150,
+      "image": "/images/competitions/jalan-sehat.jpg",
+      "icon": "🚶‍♂️",
+      "color": "success"
+    },
+    {
+      "id": "bazar",
+      "name": "Lomba Bazar",
+      "description": "Lomba bazar kreatif dengan tema edukasi lingkungan hidup dan kelestarian alam. Penilaian berdasarkan aspek edukasi, kreativitas, dan kostum penjaga bazar.",
+      "coordinator": {
+        "name": "Ibu Titik W.P",
+        "contact": "+62xxx",
+        "photo": "/images/coordinators/titik.jpg"
+      },
+      "criteria": [
+        "Edukasi lingkungan hidup dan kelestarian alam",
+        "Kreativitas dan kreasi masing-masing RT",
+        "Kostum penjaga bazar"
+      ],
+      "timeline": {
+        "start": "2025-08-30",
+        "end": "2025-08-31",
+        "registration": "2025-08-25"
+      },
+      "category": "bazaar",
+      "status": "upcoming",
+      "duration": "2 hari",
+      "participants": 12,
+      "focus": "Edukasi lingkungan hidup",
+      "image": "/images/competitions/bazar.jpg",
+      "icon": "🛍️",
+      "color": "secondary"
+    }
+  ]
+}

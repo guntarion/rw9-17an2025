@@ -1,0 +1,191 @@
+{
+  "committee": {
+    "main": [
+      {
+        "id": "ketua-panitia",
+        "name": "Ketua Panitia RT 11",
+        "role": "Ketua Panitia Pelaksana",
+        "rt": "RT 11",
+        "contact": {
+          "phone": "+62xxx",
+          "whatsapp": "+62xxx",
+          "email": "panitia.rt11@example.com"
+        },
+        "photo": "/images/committee/ketua-panitia.jpg",
+        "responsibilities": [
+          "Koordinasi keseluruhan acara",
+          "Liaison dengan RW 09",
+          "Supervisi semua lomba",
+          "Koordinasi dengan pengurus RW IX"
+        ],
+        "bio": "Memimpin panitia pelaksana HUT RI Ke-80 dengan dedikasi tinggi untuk kesuksesan acara."
+      },
+      {
+        "id": "sekretaris",
+        "name": "Sekretaris RT 11",
+        "role": "Sekretaris Panitia",
+        "rt": "RT 11",
+        "contact": {
+          "phone": "+62xxx",
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/committee/sekretaris.jpg",
+        "responsibilities": [
+          "Administrasi dan dokumentasi",
+          "Korespondensi dengan peserta",
+          "Pencatatan kegiatan",
+          "Koordinasi rapat panitia"
+        ]
+      },
+      {
+        "id": "bendahara",
+        "name": "Bendahara RT 11", 
+        "role": "Bendahara Panitia",
+        "rt": "RT 11",
+        "contact": {
+          "phone": "+62xxx",
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/committee/bendahara.jpg",
+        "responsibilities": [
+          "Pengelolaan keuangan acara",
+          "Pencatatan budget per RT",
+          "Koordinasi sponsor dan doorprize",
+          "Laporan keuangan"
+        ]
+      }
+    ],
+    "coordinators": [
+      {
+        "id": "suleman",
+        "name": "H. Suleman",
+        "role": "Koordinator Lomba Hias Kampung",
+        "rt": "RT 11",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/coordinators/suleman.jpg",
+        "responsibilities": [
+          "Koordinasi lomba hias kampung",
+          "Pencarian juri eksternal",
+          "Penilaian dan dokumentasi",
+          "Koordinasi dengan peserta RT"
+        ],
+        "competition": "hias-kampung"
+      },
+      {
+        "id": "yusri",
+        "name": "Bpk. Yusri",
+        "role": "Koordinator Lomba Bulu Tangkis Keluarga",
+        "rt": "RT 11",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/coordinators/yusri.jpg",
+        "responsibilities": [
+          "Koordinasi lomba bulu tangkis",
+          "Penyiapan lapangan dan peralatan",
+          "Pengaturan jadwal pertandingan",
+          "Koordinasi dengan peserta keluarga"
+        ],
+        "competition": "bulu-tangkis-keluarga"
+      },
+      {
+        "id": "edi-subagyo",
+        "name": "dr. Edi Subagyo",
+        "role": "Koordinator Lomba Jalan Sehat",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/coordinators/edi.jpg",
+        "responsibilities": [
+          "Koordinasi lomba jalan sehat",
+          "Penentuan rute dan keamanan",
+          "Penilaian kostum dan kekompakan",
+          "Koordinasi dengan peserta per kategori"
+        ],
+        "competition": "jalan-sehat"
+      },
+      {
+        "id": "titik-wp",
+        "name": "Ibu Titik W.P",
+        "role": "Koordinator Lomba Bazar",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/coordinators/titik.jpg",
+        "responsibilities": [
+          "Koordinasi lomba bazar",
+          "Pengaturan stand dan lokasi",
+          "Penilaian kreativitas dan edukasi",
+          "Koordinasi dengan peserta RT"
+        ],
+        "competition": "bazar"
+      }
+    ],
+    "support": [
+      {
+        "id": "ketua-rw",
+        "name": "Made Ascayas Madianto",
+        "role": "Ketua RW IX",
+        "contact": {
+          "phone": "+62xxx",
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/committee/ketua-rw.jpg",
+        "responsibilities": [
+          "Dukungan administratif",
+          "Koordinasi antar RT",
+          "Pengawasan budget",
+          "Liaison dengan pemerintah desa"
+        ],
+        "bio": "Ketua RW IX yang memberikan dukungan penuh untuk kesuksesan acara HUT RI Ke-80."
+      },
+      {
+        "id": "wakil-ketua-rw",
+        "name": "Wakil Ketua RW IX",
+        "role": "Wakil Ketua RW IX",
+        "contact": {
+          "phone": "+62xxx"
+        },
+        "photo": "/images/committee/wakil-ketua-rw.jpg",
+        "responsibilities": [
+          "Dukungan operasional",
+          "Koordinasi fasilitas",
+          "Backup koordinasi kegiatan"
+        ]
+      },
+      {
+        "id": "sekretaris-rw",
+        "name": "Sekretaris RW IX",
+        "role": "Sekretaris RW IX",
+        "contact": {
+          "phone": "+62xxx"
+        },
+        "photo": "/images/committee/sekretaris-rw.jpg",
+        "responsibilities": [
+          "Dukungan administrasi",
+          "Dokumentasi resmi",
+          "Koordinasi surat menyurat"
+        ]
+      }
+    ],
+    "entertainment": [
+      {
+        "id": "pkk-angklung",
+        "name": "Ibu PKK RW IX",
+        "role": "Koordinator Angklung",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/committee/pkk-angklung.jpg",
+        "responsibilities": [
+          "Koordinasi penampilan angklung",
+          "Latihan grup angklung",
+          "Koordinasi dengan panggung hiburan"
+        ],
+        "performance": "Angklung Performance"
+      }
+    ]
+  }
+}

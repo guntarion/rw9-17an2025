@@ -1,0 +1,284 @@
+{
+  "categories": [
+    {
+      "id": "wearpack",
+      "name": "Wearpack Safety",
+      "slug": "wearpack",
+      "description": "Premium wearpack untuk industri konstruksi, pertambangan, dan migas dengan standar SNI",
+      "image": "/images/categories/wearpack.jpg",
+      "featured": true
+    },
+    {
+      "id": "baju-safety",
+      "name": "Baju Safety",
+      "slug": "baju-safety", 
+      "description": "Baju safety berkualitas tinggi untuk berbagai industri dengan perlindungan maksimal",
+      "image": "/images/categories/baju-safety.jpg",
+      "featured": true
+    },
+    {
+      "id": "celana-kerja",
+      "name": "Celana Kerja Safety",
+      "slug": "celana-kerja",
+      "description": "Celana kerja safety dengan bahan berkualitas dan desain ergonomis",
+      "image": "/images/categories/celana-kerja.jpg",
+      "featured": false
+    },
+    {
+      "id": "seragam-industri",
+      "name": "Seragam Industri",
+      "slug": "seragam-industri",
+      "description": "Seragam industri custom dengan logo perusahaan dan standar keselamatan",
+      "image": "/images/categories/seragam-industri.jpg",
+      "featured": true
+    }
+  ],
+  "products": [
+    {
+      "id": "wp001",
+      "name": "Wearpack Safety Anti Api Drill",
+      "slug": "wearpack-safety-anti-api-drill",
+      "category": "wearpack",
+      "featured": true,
+      "popular": true,
+      "price": {
+        "b2c": 350000,
+        "b2b_display": "Hubungi untuk harga grosir",
+        "b2b_tiers": {
+          "1-49": 320000,
+          "50-99": 300000,
+          "100+": 280000
+        }
+      },
+      "description": "Wearpack safety premium dengan bahan drill 100% cotton anti api. Dilengkapi dengan standar SNI 7619:2011 dan sertifikat ISO untuk perlindungan maksimal di lingkungan kerja berbahaya.",
+      "shortDescription": "Wearpack anti api premium dengan bahan drill cotton SNI certified",
+      "features": [
+        "Bahan drill 100% cotton berkualitas tinggi",
+        "Anti api dan anti static untuk keamanan maksimal",
+        "Sertifikat SNI 7619:2011 dan ISO 11612",
+        "Tersedia custom logo dan branding perusahaan",
+        "Desain ergonomis untuk kenyamanan bekerja",
+        "Jahitan reinforced untuk durabilitas tinggi"
+      ],
+      "specifications": {
+        "material": "Drill Cotton 100%",
+        "weight": "300 GSM",
+        "standards": ["SNI 7619:2011", "ISO 11612", "ISO 11611"],
+        "colors": ["Orange Safety", "Navy Blue", "Grey", "Hijau Army"],
+        "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+        "thickness": "Medium Heavy Duty",
+        "washing": "Machine wash cold, tumble dry low"
+      },
+      "images": [
+        "/images/products/wp001-1.jpg",
+        "/images/products/wp001-2.jpg",
+        "/images/products/wp001-3.jpg",
+        "/images/products/wp001-4.jpg"
+      ],
+      "industries": ["konstruksi", "pertambangan", "migas", "manufaktur", "welding"],
+      "whatsapp_message": "Halo, saya tertarik dengan Wearpack Safety Anti Api Drill. Bisa info detail dan harga terbaik?",
+      "seo": {
+        "title": "Wearpack Safety Anti Api Drill - Premium Quality SNI Certified Indonesia",
+        "description": "Jual wearpack safety anti api terbaik dengan bahan drill cotton. SNI certified, anti static, tersedia custom logo. Harga grosir untuk pembelian bulk.",
+        "keywords": ["wearpack safety", "baju safety", "wearpack anti api", "seragam kerja safety", "wearpack drill"]
+      },
+      "relatedProducts": ["wp002", "bs001", "ck001"]
+    },
+    {
+      "id": "wp002", 
+      "name": "Wearpack Safety Tambang Heavy Duty",
+      "slug": "wearpack-safety-tambang-heavy-duty",
+      "category": "wearpack",
+      "featured": true,
+      "popular": false,
+      "price": {
+        "b2c": 420000,
+        "b2b_display": "Hubungi untuk harga grosir",
+        "b2b_tiers": {
+          "1-49": 380000,
+          "50-99": 360000,
+          "100+": 340000
+        }
+      },
+      "description": "Wearpack khusus untuk industri pertambangan dengan perlindungan ekstra. Tahan terhadap abrasi, api, dan bahan kimia. Dilengkapi reflective tape untuk visibilitas tinggi.",
+      "shortDescription": "Wearpack heavy duty khusus pertambangan dengan reflective tape",
+      "features": [
+        "Bahan extra heavy duty tahan abrasi",
+        "Reflective tape 3M untuk visibilitas tinggi",
+        "Tahan terhadap percikan bahan kimia",
+        "Reinforced knee dan elbow protection",
+        "Multiple pockets untuk tools",
+        "Zipper YKK heavy duty"
+      ],
+      "specifications": {
+        "material": "Canvas Heavy Duty + Reflective Tape",
+        "weight": "400 GSM",
+        "standards": ["SNI 7619:2011", "ANSI/ISEA 107", "EN ISO 20471"],
+        "colors": ["Orange Hi-Vis", "Yellow Hi-Vis", "Navy Reflective"],
+        "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+        "thickness": "Heavy Duty",
+        "visibility": "Class 2 High Visibility"
+      },
+      "images": [
+        "/images/products/wp002-1.jpg",
+        "/images/products/wp002-2.jpg",
+        "/images/products/wp002-3.jpg"
+      ],
+      "industries": ["pertambangan", "migas", "konstruksi berat", "offshore"],
+      "whatsapp_message": "Halo, saya butuh Wearpack Safety Tambang Heavy Duty untuk proyek pertambangan. Bisa kasih penawaran terbaik?",
+      "seo": {
+        "title": "Wearpack Safety Tambang Heavy Duty - High Visibility Reflective Indonesia",
+        "description": "Wearpack khusus pertambangan heavy duty dengan reflective tape. Tahan abrasi, anti api, multiple pockets. SNI certified untuk keamanan maksimal.",
+        "keywords": ["wearpack tambang", "wearpack heavy duty", "wearpack reflective", "seragam tambang", "baju safety mining"]
+      },
+      "relatedProducts": ["wp001", "bs002", "ck002"]
+    },
+    {
+      "id": "bs001",
+      "name": "Baju Safety Lengan Panjang Drill",
+      "slug": "baju-safety-lengan-panjang-drill",
+      "category": "baju-safety",
+      "featured": true,
+      "popular": true,
+      "price": {
+        "b2c": 180000,
+        "b2b_display": "Hubungi untuk harga grosir",
+        "b2b_tiers": {
+          "1-49": 160000,
+          "50-99": 150000,
+          "100+": 140000
+        }
+      },
+      "description": "Baju safety lengan panjang dengan bahan drill berkualitas. Ideal untuk pekerjaan yang memerlukan perlindungan lengan dari percikan dan abrasi ringan.",
+      "shortDescription": "Baju safety drill lengan panjang untuk perlindungan optimal",
+      "features": [
+        "Bahan drill cotton premium",
+        "Lengan panjang untuk perlindungan maksimal",
+        "Kerah stand up untuk perlindungan leher",
+        "Kantong dada dengan velcro",
+        "Jahitan double stitch",
+        "Warna tidak mudah pudar"
+      ],
+      "specifications": {
+        "material": "Drill Cotton",
+        "weight": "280 GSM",
+        "standards": ["SNI 7619:2011"],
+        "colors": ["Orange", "Navy", "Hijau", "Abu-abu"],
+        "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+        "sleeve": "Long Sleeve",
+        "collar": "Stand Up Collar"
+      },
+      "images": [
+        "/images/products/bs001-1.jpg",
+        "/images/products/bs001-2.jpg",
+        "/images/products/bs001-3.jpg"
+      ],
+      "industries": ["konstruksi", "manufaktur", "otomotif", "general industry"],
+      "whatsapp_message": "Halo, saya tertarik dengan Baju Safety Lengan Panjang Drill. Mohon info harga dan ketersediaan stock.",
+      "seo": {
+        "title": "Baju Safety Lengan Panjang Drill - Berkualitas Tinggi Indonesia",
+        "description": "Jual baju safety lengan panjang drill cotton premium. SNI certified, tahan lama, nyaman dipakai. Tersedia berbagai ukuran dan warna.",
+        "keywords": ["baju safety", "baju kerja", "seragam safety", "baju safety lengan panjang", "drill cotton"]
+      },
+      "relatedProducts": ["bs002", "wp001", "ck001"]
+    },
+    {
+      "id": "ck001",
+      "name": "Celana Kerja Safety Drill",
+      "slug": "celana-kerja-safety-drill",
+      "category": "celana-kerja",
+      "featured": false,
+      "popular": true,
+      "price": {
+        "b2c": 160000,
+        "b2b_display": "Hubungi untuk harga grosir",
+        "b2b_tiers": {
+          "1-49": 145000,
+          "50-99": 135000,
+          "100+": 125000
+        }
+      },
+      "description": "Celana kerja safety dengan bahan drill yang kuat dan nyaman. Dilengkapi dengan multiple pockets dan reinforced knee untuk durabilitas tinggi.",
+      "shortDescription": "Celana kerja drill dengan multiple pockets dan reinforced knee",
+      "features": [
+        "Bahan drill cotton tebal dan kuat",
+        "Multiple cargo pockets untuk tools",
+        "Reinforced knee area",
+        "Belt loops yang kuat",
+        "YKK zipper berkualitas",
+        "Comfortable fit design"
+      ],
+      "specifications": {
+        "material": "Drill Cotton",
+        "weight": "300 GSM",
+        "standards": ["SNI"],
+        "colors": ["Navy", "Abu-abu", "Hijau Army", "Khaki"],
+        "sizes": ["28", "30", "32", "34", "36", "38", "40"],
+        "pockets": "6 Cargo Pockets",
+        "reinforcement": "Knee & Seat Reinforced"
+      },
+      "images": [
+        "/images/products/ck001-1.jpg",
+        "/images/products/ck001-2.jpg",
+        "/images/products/ck001-3.jpg"
+      ],
+      "industries": ["konstruksi", "manufaktur", "maintenance", "general work"],
+      "whatsapp_message": "Halo, saya ingin pesan Celana Kerja Safety Drill. Bisa info ukuran yang tersedia dan harga grosir?",
+      "seo": {
+        "title": "Celana Kerja Safety Drill - Multiple Pockets Berkualitas Indonesia",
+        "description": "Celana kerja safety drill cotton dengan multiple pockets dan reinforced knee. Tahan lama, nyaman, tersedia berbagai ukuran.",
+        "keywords": ["celana kerja", "celana safety", "celana kerja drill", "celana cargo", "workwear pants"]
+      },
+      "relatedProducts": ["bs001", "wp001", "si001"]
+    },
+    {
+      "id": "si001",
+      "name": "Seragam Industri Custom Logo",
+      "slug": "seragam-industri-custom-logo",
+      "category": "seragam-industri",
+      "featured": true,
+      "popular": false,
+      "price": {
+        "b2c": 250000,
+        "b2b_display": "Hubungi untuk harga custom",
+        "b2b_tiers": {
+          "minimum_order": 50,
+          "note": "Harga disesuaikan dengan kompleksitas design dan jumlah order"
+        }
+      },
+      "description": "Seragam industri custom dengan logo perusahaan. Dapat disesuaikan dengan kebutuhan spesifik perusahaan dalam hal warna, design, dan branding.",
+      "shortDescription": "Seragam industri custom design dengan logo perusahaan",
+      "features": [
+        "Custom design sesuai kebutuhan perusahaan",
+        "Bordir atau sablon logo berkualitas tinggi",
+        "Pilihan warna sesuai corporate identity",
+        "Bahan berkualitas tahan lama",
+        "Minimum order 50 pcs",
+        "Konsultasi design gratis"
+      ],
+      "specifications": {
+        "material": "Drill Cotton / Canvas (pilihan)",
+        "weight": "280-320 GSM",
+        "standards": ["Custom sesuai kebutuhan"],
+        "colors": ["Custom sesuai corporate color"],
+        "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+        "customization": "Logo, Name Tag, Color",
+        "minimum_order": "50 pieces"
+      },
+      "images": [
+        "/images/products/si001-1.jpg",
+        "/images/products/si001-2.jpg",
+        "/images/products/si001-3.jpg",
+        "/images/products/si001-4.jpg"
+      ],
+      "industries": ["semua industri", "corporate", "pabrik", "workshop"],
+      "whatsapp_message": "Halo, saya tertarik untuk custom seragam industri dengan logo perusahaan. Bisa konsultasi design dan harga?",
+      "seo": {
+        "title": "Seragam Industri Custom Logo - Design Sesuai Kebutuhan Perusahaan",
+        "description": "Jasa pembuatan seragam industri custom dengan logo perusahaan. Kualitas premium, design konsultasi gratis, minimum order 50 pcs.",
+        "keywords": ["seragam custom", "seragam industri", "seragam logo", "uniform custom", "corporate uniform"]
+      },
+      "relatedProducts": ["wp001", "bs001", "ck001"]
+    }
+  ]
+}

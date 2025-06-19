@@ -1,0 +1,208 @@
+{
+  "company": {
+    "name": "PT Safety Garment Indonesia",
+    "tagline": "Your Trusted Partner for Premium Safety Apparel",
+    "description": "Perusahaan terdepan dalam penyediaan seragam safety berkualitas tinggi untuk industri Indonesia. Kami menyediakan wearpack, baju safety, dan seragam industri dengan standar SNI dan sertifikasi internasional.",
+    "founded": "2015",
+    "employees": "50-100",
+    "location": "Jakarta, Indonesia",
+    "logo": "/images/company/logo.png",
+    "hero_image": "/images/company/hero-banner.jpg"
+  },
+  "contact": {
+    "whatsapp": "6281234567890",
+    "email": "info@safetygarment.co.id",
+    "phone": "+62 21 1234 5678",
+    "address": {
+      "street": "Jl. Industri Raya No. 123",
+      "city": "Jakarta Timur",
+      "postal_code": "13450",
+      "country": "Indonesia"
+    },
+    "business_hours": {
+      "monday_friday": "08:00 - 17:00",
+      "saturday": "08:00 - 12:00",
+      "sunday": "Closed"
+    }
+  },
+  "services": [
+    {
+      "title": "Custom Design & Manufacturing",
+      "description": "Layanan pembuatan seragam safety custom sesuai kebutuhan perusahaan dengan logo dan branding",
+      "icon": "design"
+    },
+    {
+      "title": "Bulk Order & Wholesale",
+      "description": "Penyediaan seragam safety dalam jumlah besar dengan harga grosir terbaik",
+      "icon": "bulk"
+    },
+    {
+      "title": "Quality Assurance",
+      "description": "Kontrol kualitas ketat dengan sertifikasi SNI dan standar internasional",
+      "icon": "quality"
+    },
+    {
+      "title": "Fast Delivery",
+      "description": "Pengiriman cepat ke seluruh Indonesia dengan packaging aman",
+      "icon": "delivery"
+    },
+    {
+      "title": "After Sales Support",
+      "description": "Dukungan purna jual dan konsultasi untuk maintenance produk",
+      "icon": "support"
+    },
+    {
+      "title": "Consultation Service",
+      "description": "Konsultasi gratis untuk pemilihan produk sesuai kebutuhan industri",
+      "icon": "consultation"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "SNI 7619:2011",
+      "description": "Sertifikat Standar Nasional Indonesia untuk Pakaian Pelindung",
+      "image": "/images/company/cert-sni.jpg"
+    },
+    {
+      "name": "ISO 9001:2015",
+      "description": "Sistem Manajemen Mutu Internasional",
+      "image": "/images/company/cert-iso9001.jpg"
+    },
+    {
+      "name": "ISO 11612",
+      "description": "Pakaian Pelindung terhadap Panas dan Api",
+      "image": "/images/company/cert-iso11612.jpg"
+    },
+    {
+      "name": "ANSI/ISEA 107",
+      "description": "High-Visibility Safety Apparel Standard",
+      "image": "/images/company/cert-ansi.jpg"
+    }
+  ],
+  "industries_served": [
+    {
+      "name": "Konstruksi & Building",
+      "description": "Seragam safety untuk proyek konstruksi dan pembangunan",
+      "icon": "construction",
+      "products": ["wearpack", "baju-safety", "celana-kerja"]
+    },
+    {
+      "name": "Pertambangan",
+      "description": "Perlengkapan safety khusus untuk industri pertambangan",
+      "icon": "mining",
+      "products": ["wearpack", "high-visibility"]
+    },
+    {
+      "name": "Migas & Petrokimia",
+      "description": "Seragam anti api untuk industri minyak dan gas",
+      "icon": "oil-gas",
+      "products": ["wearpack", "flame-resistant"]
+    },
+    {
+      "name": "Manufaktur",
+      "description": "Seragam kerja untuk pabrik dan industri manufaktur",
+      "icon": "manufacturing",
+      "products": ["baju-safety", "celana-kerja", "seragam-industri"]
+    },
+    {
+      "name": "Transportasi",
+      "description": "High-visibility apparel untuk industri transportasi",
+      "icon": "transportation",
+      "products": ["high-visibility", "reflective"]
+    },
+    {
+      "name": "General Industry",
+      "description": "Seragam kerja untuk berbagai industri umum",
+      "icon": "general",
+      "products": ["seragam-industri", "workwear"]
+    }
+  ],
+  "why_choose_us": [
+    {
+      "title": "Kualitas Terjamin",
+      "description": "Produk bersertifikat SNI dan standar internasional dengan quality control ketat",
+      "icon": "quality-check"
+    },
+    {
+      "title": "Harga Kompetitif",
+      "description": "Harga grosir terbaik untuk pembelian bulk dengan berbagai paket hemat",
+      "icon": "price-tag"
+    },
+    {
+      "title": "Custom Design",
+      "description": "Layanan custom design dengan logo perusahaan dan branding sesuai kebutuhan",
+      "icon": "custom-design"
+    },
+    {
+      "title": "Pengiriman Cepat",
+      "description": "Jaringan distribusi luas dengan pengiriman cepat ke seluruh Indonesia",
+      "icon": "fast-shipping"
+    },
+    {
+      "title": "Support Lengkap",
+      "description": "Tim customer service berpengalaman siap membantu 24/7 via WhatsApp",
+      "icon": "customer-support"
+    },
+    {
+      "title": "Trusted Partner",
+      "description": "Dipercaya oleh 500+ perusahaan di Indonesia sebagai supplier safety apparel",
+      "icon": "trusted-partner"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test001",
+      "name": "Budi Santoso",
+      "position": "HSE Manager",
+      "company": "PT Konstruksi Nusantara",
+      "content": "Kualitas wearpack dari PT Safety Garment sangat baik. Karyawan kami merasa nyaman dan aman saat bekerja. Sudah 2 tahun jadi partner dan tidak pernah kecewa.",
+      "rating": 5,
+      "image": "/images/testimonials/budi.jpg"
+    },
+    {
+      "id": "test002", 
+      "name": "Siti Aminah",
+      "position": "Procurement Manager",
+      "company": "PT Tambang Sejahtera",
+      "content": "Pelayanan sangat profesional, harga kompetitif, dan kualitas sesuai standar pertambangan. Recommended untuk perusahaan yang butuh supplier safety apparel terpercaya.",
+      "rating": 5,
+      "image": "/images/testimonials/siti.jpg"
+    },
+    {
+      "id": "test003",
+      "name": "Ahmad Rizki",
+      "position": "Plant Manager", 
+      "company": "PT Pabrik Modern",
+      "content": "Custom design seragam dengan logo perusahaan hasilnya sangat memuaskan. Tim design membantu dari konsep sampai produksi dengan hasil yang exceed expectation.",
+      "rating": 5,
+      "image": "/images/testimonials/ahmad.jpg"
+    }
+  ],
+  "social_media": {
+    "instagram": "https://instagram.com/safetygarment_id",
+    "facebook": "https://facebook.com/safetygarmentindonesia",
+    "linkedin": "https://linkedin.com/company/safety-garment-indonesia",
+    "youtube": "https://youtube.com/@safetygarmentindonesia"
+  },
+  "business_info": {
+    "established": "2015",
+    "legal_name": "PT Safety Garment Indonesia",
+    "tax_id": "01.234.567.8-901.000",
+    "business_license": "NIB 1234567890123",
+    "bank_account": {
+      "bank": "Bank Mandiri",
+      "account_name": "PT Safety Garment Indonesia",
+      "account_number": "123-456-7890123"
+    }
+  },
+  "shipping_info": {
+    "coverage": "Seluruh Indonesia",
+    "methods": ["JNE", "J&T", "SiCepat", "AnterAja", "Kurir Internal"],
+    "free_shipping": {
+      "minimum_order": 1000000,
+      "areas": ["Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi"]
+    },
+    "processing_time": "1-3 hari kerja",
+    "packaging": "Dus kardus dengan bubble wrap untuk perlindungan maksimal"
+  }
+}

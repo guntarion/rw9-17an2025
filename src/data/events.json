@@ -1,0 +1,229 @@
+{
+  "eventInfo": {
+    "title": "HUT RI Ke-80 RW IX Desa Wedoro, Sidoarjo",
+    "theme": "Lingkungan Hidup dan Penghijauan",
+    "organizer": "RT 11 dengan dukungan Pengurus RW IX",
+    "location": "RW IX Desa Wedoro, Sidoarjo",
+    "budgetPerRT": "Rp 1.000.000",
+    "targetDate": "2025-08-30T08:00:00+07:00",
+    "description": "Peringatan HUT RI Ke-80 dengan tema Lingkungan Hidup dan Penghijauan, menggabungkan lomba, hiburan, dan kebersamaan warga RW IX."
+  },
+  "schedule": {
+    "2025-08-30": [
+      {
+        "id": "opening-ceremony",
+        "title": "Upacara Pembukaan",
+        "description": "Upacara pembukaan HUT RI Ke-80 dengan pengibaran bendera dan mars Indonesia Raya",
+        "time": {
+          "start": "08:00",
+          "end": "09:00"
+        },
+        "location": "Balai RW IX",
+        "type": "ceremony",
+        "participants": "Seluruh warga RW IX",
+        "dress": "Pakaian formal/nasional"
+      },
+      {
+        "id": "jalan-sehat-start",
+        "title": "Lomba Jalan Sehat",
+        "description": "Start lomba jalan sehat dengan tema kostum Lingkungan Hidup",
+        "time": {
+          "start": "06:00",
+          "end": "08:00"
+        },
+        "location": "Start: Balai RW IX",
+        "type": "competition",
+        "coordinator": "dr. Edi Subagyo",
+        "participants": "Semua kategori (Anak-anak, Remaja, Dewasa)",
+        "dress": "Kostum lingkungan hidup + kaos RT"
+      },
+      {
+        "id": "bazar-day1",
+        "title": "Lomba Bazar - Hari 1",
+        "description": "Pembukaan lomba bazar dengan tema edukasi lingkungan hidup",
+        "time": {
+          "start": "09:00",
+          "end": "17:00"
+        },
+        "location": "Area Fasum RW IX",
+        "type": "competition",
+        "coordinator": "Ibu Titik W.P",
+        "participants": "Perwakilan setiap RT"
+      },
+      {
+        "id": "hias-kampung-judging",
+        "title": "Penjurian Lomba Hias Kampung",
+        "description": "Penjurian final lomba hias kampung oleh juri eksternal",
+        "time": {
+          "start": "10:00",
+          "end": "16:00"
+        },
+        "location": "Keliling area RT se-RW IX",
+        "type": "competition",
+        "coordinator": "H. Suleman",
+        "participants": "Juri eksternal"
+      },
+      {
+        "id": "badminton-day1",
+        "title": "Lomba Bulu Tangkis Keluarga - Hari 1",
+        "description": "Pertandingan babak penyisihan bulu tangkis keluarga",
+        "time": {
+          "start": "19:00",
+          "end": "22:00"
+        },
+        "location": "Lapangan Bulu Tangkis RW IX",
+        "type": "competition",
+        "coordinator": "Bpk. Yusri",
+        "participants": "Pasangan keluarga peserta"
+      }
+    ],
+    "2025-08-31": [
+      {
+        "id": "bazar-day2",
+        "title": "Lomba Bazar - Hari 2",
+        "description": "Hari kedua lomba bazar dengan penjurian final",
+        "time": {
+          "start": "09:00",
+          "end": "17:00"
+        },
+        "location": "Area Fasum RW IX",
+        "type": "competition",
+        "coordinator": "Ibu Titik W.P",
+        "participants": "Perwakilan setiap RT"
+      },
+      {
+        "id": "badminton-final",
+        "title": "Lomba Bulu Tangkis Keluarga - Final",
+        "description": "Pertandingan final dan penentuan juara bulu tangkis keluarga",
+        "time": {
+          "start": "15:00",
+          "end": "18:00"
+        },
+        "location": "Lapangan Bulu Tangkis RW IX",
+        "type": "competition",
+        "coordinator": "Bpk. Yusri",
+        "participants": "Finalis bulu tangkis"
+      },
+      {
+        "id": "entertainment-show",
+        "title": "Panggung Hiburan & Malam Puncak",
+        "description": "Malam puncak dengan penampilan angklung PKK, pentas seni RT, dan doorprize utama",
+        "time": {
+          "start": "19:00",
+          "end": "22:00"
+        },
+        "location": "Panggung Utama RW IX",
+        "type": "entertainment",
+        "coordinator": "Panitia Hiburan",
+        "highlights": [
+          "Penampilan Angklung PKK RW IX",
+          "Pentas Seni dari setiap RT",
+          "Doorprize utama",
+          "Pengumuman pemenang lomba"
+        ]
+      },
+      {
+        "id": "closing-ceremony",
+        "title": "Penutupan & Pengumuman Pemenang",
+        "description": "Penutupan acara dengan pengumuman pemenang semua lomba",
+        "time": {
+          "start": "21:30",
+          "end": "22:00"
+        },
+        "location": "Panggung Utama RW IX",
+        "type": "ceremony",
+        "participants": "Seluruh peserta dan warga"
+      }
+    ]
+  },
+  "rtPerformances": [
+    {
+      "rt": "RT 01",
+      "performance": "Tari Tradisional",
+      "description": "Tari tradisional dengan tema lingkungan hidup"
+    },
+    {
+      "rt": "RT 02", 
+      "performance": "Vokal Group",
+      "description": "Paduan suara dengan lagu bertema kemerdekaan"
+    },
+    {
+      "rt": "RT 03",
+      "performance": "Drama Pendek",
+      "description": "Drama pendek bertema pelestarian lingkungan"
+    },
+    {
+      "rt": "RT 04",
+      "performance": "Puisi Kemerdekaan",
+      "description": "Pembacaan puisi bertema kemerdekaan dan lingkungan"
+    },
+    {
+      "rt": "RT 05",
+      "performance": "Tari Kreasi",
+      "description": "Tari kreasi modern dengan tema penghijauan"
+    },
+    {
+      "rt": "RT 06",
+      "performance": "Musik Tradisional",
+      "description": "Ensemble musik tradisional"
+    },
+    {
+      "rt": "RT 07",
+      "performance": "Pantomim",
+      "description": "Pertunjukan pantomim bertema lingkungan"
+    },
+    {
+      "rt": "RT 08",
+      "performance": "Paduan Suara",
+      "description": "Paduan suara dengan lagu nasional"
+    },
+    {
+      "rt": "RT 09",
+      "performance": "Tari Kontemporer",
+      "description": "Tari kontemporer bertema alam"
+    },
+    {
+      "rt": "RT 10",
+      "performance": "Stand Up Comedy",
+      "description": "Komedi bertema kehidupan bertetangga"
+    },
+    {
+      "rt": "RT 11",
+      "performance": "Fashion Show",
+      "description": "Fashion show kostum daur ulang"
+    },
+    {
+      "rt": "RT 12",
+      "performance": "Band Performance",
+      "description": "Penampilan band dengan lagu kemerdekaan"
+    }
+  ],
+  "doorprizes": [
+    {
+      "category": "Utama",
+      "items": [
+        "Kulkas 2 pintu",
+        "Mesin cuci",
+        "Sepeda motor (doorprize utama)"
+      ]
+    },
+    {
+      "category": "Kedua", 
+      "items": [
+        "Rice cooker",
+        "Blender",
+        "Magic com",
+        "Kipas angin"
+      ]
+    },
+    {
+      "category": "Hiburan",
+      "items": [
+        "Voucher belanja",
+        "Hampers lebaran",
+        "Sembako paket",
+        "Uang tunai"
+      ]
+    }
+  ]
+}
