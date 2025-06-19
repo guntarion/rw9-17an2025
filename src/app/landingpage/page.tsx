@@ -8,7 +8,7 @@ import { FeaturesSection } from '@/components/website/FeaturesSection';
 import { BenefitsSection } from '@/components/website/BenefitsSection';
 import { HowItWorksSection } from '@/components/website/HowItWorksSection';
 import { Navbar } from '@/components/website/Navbar';
-import { Footer } from '@/components/website/Footer';
+import Footer from '@/components/website/Footer';
 
 /**
  * Simple landing page template

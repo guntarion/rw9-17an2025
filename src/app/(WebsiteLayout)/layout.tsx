@@ -1,7 +1,7 @@
 // src/app/(WebsiteLayout)/layout.tsx
 'use client';
 
-import { Footer } from '@/components/website/Footer';
+import Footer from '@/components/website/Footer';
 import { Navbar } from '@/components/website/Navbar';
 import { Suspense } from 'react';
 

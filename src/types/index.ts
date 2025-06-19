@@ -106,7 +106,7 @@ export interface GalleryPhoto {
   url: string;
   thumbnail?: string;
   caption: string;
-  category: GalleryCategory;
+  category: string;
   date: string;
   author?: string;
   competition?: string;
