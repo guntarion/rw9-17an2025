@@ -53,6 +53,7 @@ export interface Committee {
   coordinators: CommitteeMember[];
   support: CommitteeMember[];
   entertainment?: CommitteeMember[];
+  specialSections?: CommitteeMember[];
 }
 
 // Event Types

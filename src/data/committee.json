@@ -2,102 +2,106 @@
   "committee": {
     "main": [
       {
-        "id": "ketua-panitia",
-        "name": "Ketua Panitia RT 11",
+        "id": "arif-rachman-hakim",
+        "name": "Arif Rachman Hakim",
         "role": "Ketua Panitia Pelaksana",
-        "rt": "RT 11",
+        "rt": "RWIX Rewwin",
         "contact": {
           "phone": "+62xxx",
           "whatsapp": "+62xxx",
-          "email": "panitia.rt11@example.com"
+          "email": "panitia.hutri80@example.com"
         },
         "photo": "/images/committee/ketua-panitia.jpg",
         "responsibilities": [
-          "Koordinasi keseluruhan acara",
-          "Liaison dengan RW 09",
-          "Supervisi semua lomba",
-          "Koordinasi dengan pengurus RW IX"
+          "Koordinasi keseluruhan acara HUT RI Ke-80",
+          "Melaksanakan kegiatan peringatan HUT RI ke 80 dengan baik dan sukses",
+          "Supervisi semua lomba dan kegiatan",
+          "Koordinasi dengan pengurus RW IX",
+          "Memimpin rapat panitia dan evaluasi"
         ],
-        "bio": "Memimpin panitia pelaksana HUT RI Ke-80 dengan dedikasi tinggi untuk kesuksesan acara."
+        "bio": "Ketua Panitia HUT RI ke 80 RWIX Rewwin yang berkomitmen untuk melaksanakan kegiatan peringatan dengan sukses sesuai dengan tujuan guyub rukun RWIX."
       },
       {
-        "id": "sekretaris",
-        "name": "Sekretaris RT 11",
+        "id": "awang-kumala",
+        "name": "Awang Kumala Wardhana",
         "role": "Sekretaris Panitia",
-        "rt": "RT 11",
+        "rt": "RWIX Rewwin",
         "contact": {
           "phone": "+62xxx",
           "whatsapp": "+62xxx"
         },
         "photo": "/images/committee/sekretaris.jpg",
         "responsibilities": [
-          "Administrasi dan dokumentasi",
-          "Korespondensi dengan peserta",
-          "Pencatatan kegiatan",
-          "Koordinasi rapat panitia"
+          "Administrasi dan dokumentasi panitia",
+          "Korespondensi dengan peserta dan instansi",
+          "Pencatatan seluruh kegiatan panitia",
+          "Koordinasi rapat dan jadwal kegiatan",
+          "Pengelolaan surat-menyurat"
         ]
       },
       {
-        "id": "bendahara",
-        "name": "Bendahara RT 11", 
+        "id": "wachid-nanang",
+        "name": "Wachid S.A Nanang",
         "role": "Bendahara Panitia",
-        "rt": "RT 11",
+        "rt": "RWIX Rewwin",
         "contact": {
           "phone": "+62xxx",
           "whatsapp": "+62xxx"
         },
         "photo": "/images/committee/bendahara.jpg",
         "responsibilities": [
-          "Pengelolaan keuangan acara",
-          "Pencatatan budget per RT",
+          "Pengelolaan keuangan acara HUT RI Ke-80",
+          "Pencatatan budget dan pengeluaran",
           "Koordinasi sponsor dan doorprize",
-          "Laporan keuangan"
+          "Laporan keuangan kepada panitia",
+          "Administrasi keuangan dengan pengurus RW IX"
         ]
       }
     ],
     "coordinators": [
       {
-        "id": "suleman",
-        "name": "H. Suleman",
-        "role": "Koordinator Lomba Hias Kampung",
-        "rt": "RT 11",
+        "id": "ir-yusarwedi",
+        "name": "Ir. Yusarwedi",
+        "role": "Sie Dana/Kupon",
+        "rt": "RWIX Rewwin",
         "contact": {
           "whatsapp": "+62xxx"
         },
-        "photo": "/images/coordinators/suleman.jpg",
+        "photo": "/images/coordinators/yusarwedi.jpg",
         "responsibilities": [
-          "Koordinasi lomba hias kampung",
-          "Pencarian juri eksternal",
-          "Penilaian dan dokumentasi",
-          "Koordinasi dengan peserta RT"
+          "Koordinasi dana dan kupon kegiatan",
+          "Pengelolaan sistem kupon undian",
+          "Koordinasi dengan peserta",
+          "Pencatatan distribusi kupon"
         ],
-        "competition": "hias-kampung"
+        "competition": "dana-kupon"
       },
       {
-        "id": "yusri",
-        "name": "Bpk. Yusri",
-        "role": "Koordinator Lomba Bulu Tangkis Keluarga",
-        "rt": "RT 11",
+        "id": "bambang-tri-jantoro",
+        "name": "Bambang Tri Jantoro",
+        "role": "Sie Kegiatan dan Acara",
+        "rt": "RWIX Rewwin",
         "contact": {
           "whatsapp": "+62xxx"
         },
-        "photo": "/images/coordinators/yusri.jpg",
+        "photo": "/images/coordinators/bambang.jpg",
         "responsibilities": [
-          "Koordinasi lomba bulu tangkis",
-          "Penyiapan lapangan dan peralatan",
-          "Pengaturan jadwal pertandingan",
-          "Koordinasi dengan peserta keluarga"
+          "Koordinasi seluruh kegiatan dan acara",
+          "Penjadwalan kegiatan harian",
+          "Koordinasi dengan berbagai sie",
+          "Supervisi pelaksanaan acara"
         ],
-        "competition": "bulu-tangkis-keluarga"
+        "competition": "kegiatan-acara"
       },
       {
-        "id": "edi-subagyo",
-        "name": "dr. Edi Subagyo",
-        "role": "Koordinator Lomba Jalan Sehat",
+        "id": "yosie-wahyu",
+        "name": "Yosie Wahyu",
+        "role": "Sie Jalan Sehat",
+        "rt": "RWIX Rewwin",
         "contact": {
           "whatsapp": "+62xxx"
         },
-        "photo": "/images/coordinators/edi.jpg",
+        "photo": "/images/coordinators/yosie.jpg",
         "responsibilities": [
           "Koordinasi lomba jalan sehat",
           "Penentuan rute dan keamanan",
@@ -107,84 +111,443 @@
         "competition": "jalan-sehat"
       },
       {
-        "id": "titik-wp",
-        "name": "Ibu Titik W.P",
-        "role": "Koordinator Lomba Bazar",
+        "id": "edi-subagio",
+        "name": "Dr. Edi Subagio",
+        "role": "Sie Jalan Sehat",
+        "rt": "RWIX Rewwin",
         "contact": {
           "whatsapp": "+62xxx"
         },
-        "photo": "/images/coordinators/titik.jpg",
+        "photo": "/images/coordinators/edi.jpg",
+        "responsibilities": [
+          "Dukungan medis lomba jalan sehat",
+          "Koordinasi kesehatan peserta",
+          "Penilaian dan evaluasi",
+          "Koordinasi dengan tim medis"
+        ],
+        "competition": "jalan-sehat"
+      }
+    ],
+    "specialSections": [
+      {
+        "id": "supraytno",
+        "name": "Supraytno",
+        "role": "Sie Panggung",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/supraytno.jpg",
+        "responsibilities": [
+          "Koordinasi panggung dan sound system",
+          "Pengaturan pentas seni",
+          "Koordinasi dengan performer",
+          "Teknis panggung dan pencahayaan"
+        ]
+      },
+      {
+        "id": "indah-evie-suleman",
+        "name": "Indah Evie Suleman",
+        "role": "Sie Bazaar",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/indah.jpg",
         "responsibilities": [
           "Koordinasi lomba bazar",
           "Pengaturan stand dan lokasi",
           "Penilaian kreativitas dan edukasi",
           "Koordinasi dengan peserta RT"
-        ],
-        "competition": "bazar"
+        ]
+      },
+      {
+        "id": "titik-wahyuning",
+        "name": "Titik Wahyuning Priatin",
+        "role": "Sie Bazaar",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/titik.jpg",
+        "responsibilities": [
+          "Dukungan koordinasi bazar",
+          "Pengaturan teknis bazar",
+          "Penilaian dan dokumentasi",
+          "Koordinasi dengan panitia inti"
+        ]
+      },
+      {
+        "id": "susilowati",
+        "name": "Susilowati",
+        "role": "Sie Senam",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/susilowati.jpg",
+        "responsibilities": [
+          "Koordinasi senam pagi dan kegiatan olahraga",
+          "Instruktur senam massal",
+          "Koordinasi dengan peserta senam",
+          "Pengaturan jadwal dan tempat"
+        ]
+      },
+      {
+        "id": "yani-bambang",
+        "name": "Yani Bambang Suhandoyo",
+        "role": "Sie Konsumsi",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/yani.jpg",
+        "responsibilities": [
+          "Koordinasi konsumsi panitia dan peserta",
+          "Pengadaan makanan dan minuman",
+          "Koordinasi dengan vendor makanan",
+          "Distribusi konsumsi selama acara"
+        ]
+      },
+      {
+        "id": "ratu-pambudi",
+        "name": "Ratu Pambudi Firdauf",
+        "role": "Sie Konsumsi",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/ratu.jpg",
+        "responsibilities": [
+          "Dukungan koordinasi konsumsi",
+          "Pengaturan distribusi makanan",
+          "Quality control makanan",
+          "Koordinasi dengan tim konsumsi"
+        ]
+      },
+      {
+        "id": "ety-yusnitasari",
+        "name": "Ety Yusnitasari",
+        "role": "Sie Konsumsi",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/ety.jpg",
+        "responsibilities": [
+          "Koordinasi konsumsi tambahan",
+          "Pengadaan snack dan minuman",
+          "Koordinasi dengan panitia lain",
+          "Administrasi konsumsi"
+        ]
+      },
+      {
+        "id": "dwi-ambarwati",
+        "name": "Dwi Ambarwati",
+        "role": "Sie Konsumsi",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/dwi.jpg",
+        "responsibilities": [
+          "Dukungan tim konsumsi",
+          "Koordinasi pengadaan bahan",
+          "Pengaturan jadwal masak",
+          "Koordinasi dengan volunteer"
+        ]
+      },
+      {
+        "id": "sri-sutjani",
+        "name": "Sri Sutjani",
+        "role": "Sie Konsumsi",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/sri.jpg",
+        "responsibilities": [
+          "Koordinasi konsumsi acara khusus",
+          "Pengaturan konsumsi VIP",
+          "Quality assurance makanan",
+          "Koordinasi dengan pengurus RW"
+        ]
+      },
+      {
+        "id": "akhmad-guntar",
+        "name": "Akhmad Guntar S.A.",
+        "role": "Sie Publikasi",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx",
+          "email": "guntar@example.com"
+        },
+        "photo": "/images/sections/guntar.jpg",
+        "responsibilities": [
+          "Koordinasi publikasi dan media",
+          "Pengelolaan website dan media sosial",
+          "Dokumentasi kegiatan",
+          "Koordinasi dengan media massa"
+        ]
+      },
+      {
+        "id": "sutikno",
+        "name": "Sutikno",
+        "role": "Sie Umum dan Lingkungan",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/sutikno.jpg",
+        "responsibilities": [
+          "Koordinasi umum dan kebersihan",
+          "Pengaturan lingkungan acara",
+          "Koordinasi dengan cleaning service",
+          "Pemeliharaan fasilitas umum"
+        ]
+      },
+      {
+        "id": "marsudi-rahmanto",
+        "name": "Marsudi Rahmanto",
+        "role": "Sie Umum dan Lingkungan",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/marsudi.jpg",
+        "responsibilities": [
+          "Dukungan koordinasi umum",
+          "Pengaturan tata letak acara",
+          "Koordinasi dengan vendor",
+          "Maintenance peralatan"
+        ]
+      },
+      {
+        "id": "nanda-endriansyah",
+        "name": "Nanda Endriansyah",
+        "role": "Sie Umum dan Lingkungan",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/nanda.jpg",
+        "responsibilities": [
+          "Koordinasi tata lingkungan",
+          "Pengaturan dekorasi",
+          "Koordinasi dengan tim kreatif",
+          "Support teknis umum"
+        ]
+      },
+      {
+        "id": "wahyu-suharto",
+        "name": "Wahyu Suharto",
+        "role": "Sie Umum dan Lingkungan",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/wahyu.jpg",
+        "responsibilities": [
+          "Koordinasi fasilitas umum",
+          "Pengaturan parkir dan keamanan",
+          "Support logistik umum",
+          "Koordinasi dengan satpam"
+        ]
+      },
+      {
+        "id": "sigit-dwi",
+        "name": "Sigit Dwi Setiawan",
+        "role": "Sie Umum dan Lingkungan",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/sigit.jpg",
+        "responsibilities": [
+          "Support koordinasi umum",
+          "Pengaturan infrastruktur",
+          "Koordinasi dengan kontraktor",
+          "Maintenance emergency"
+        ]
+      },
+      {
+        "id": "endar-sudaryati",
+        "name": "Endar Sudaryati",
+        "role": "Sie Kesehatan",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/endar.jpg",
+        "responsibilities": [
+          "Koordinasi kesehatan dan P3K",
+          "Pengadaan obat-obatan",
+          "Koordinasi dengan tenaga medis",
+          "Pos kesehatan selama acara"
+        ]
+      },
+      {
+        "id": "abdul-rozak",
+        "name": "Abdul Rozak",
+        "role": "Sie Keamanan",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/abdul.jpg",
+        "responsibilities": [
+          "Koordinasi keamanan acara",
+          "Pengaturan satuan pengamanan",
+          "Koordinasi dengan Polsek setempat",
+          "Keamanan parkir dan fasilitas"
+        ]
+      },
+      {
+        "id": "makmur-yusri",
+        "name": "Makmur Yusri",
+        "role": "Sie Lomba",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/makmur.jpg",
+        "responsibilities": [
+          "Koordinasi semua lomba",
+          "Pengaturan jadwal dan venue lomba",
+          "Koordinasi dengan juri",
+          "Pencatatan hasil lomba"
+        ]
+      },
+      {
+        "id": "singgih-prayoga",
+        "name": "Singgih Prayoga",
+        "role": "Sie Lomba",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/singgih.jpg",
+        "responsibilities": [
+          "Dukungan koordinasi lomba",
+          "Pengadaan peralatan lomba",
+          "Koordinasi dengan peserta",
+          "Dokumentasi lomba"
+        ]
+      },
+      {
+        "id": "erwin-fachrul",
+        "name": "Erwin Fachrul",
+        "role": "Sie Lomba Lingkungan Hidup",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/erwin.jpg",
+        "responsibilities": [
+          "Koordinasi lomba tema lingkungan",
+          "Edukasi lingkungan hidup",
+          "Penilaian aspek lingkungan",
+          "Koordinasi dengan aktivis lingkungan"
+        ]
+      },
+      {
+        "id": "suleman",
+        "name": "Suleman",
+        "role": "Sie Lomba Lingkungan Hidup",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/suleman.jpg",
+        "responsibilities": [
+          "Dukungan lomba lingkungan",
+          "Koordinasi penilaian hijau",
+          "Support edukasi lingkungan",
+          "Koordinasi dengan tim kreatif"
+        ]
+      },
+      {
+        "id": "dimas-wahyu",
+        "name": "Dimas Wahyu Nugroho",
+        "role": "Sie Dokumentasi",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/dimas.jpg",
+        "responsibilities": [
+          "Koordinasi dokumentasi foto dan video",
+          "Pengaturan tim fotografer",
+          "Editing dan post-production",
+          "Arsip dokumentasi kegiatan"
+        ]
+      },
+      {
+        "id": "susanti",
+        "name": "Susanti",
+        "role": "Dirigen Lagu Indonesia Raya",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/susanti.jpg",
+        "responsibilities": [
+          "Memimpin paduan suara Indonesia Raya",
+          "Koordinasi upacara bendera",
+          "Latihan paduan suara",
+          "Koordinasi dengan protokol"
+        ]
+      },
+      {
+        "id": "rizqiani-putri",
+        "name": "Rizqiani Putri Dimas",
+        "role": "MC Pendamping",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/rizqiani.jpg",
+        "responsibilities": [
+          "Master of Ceremony acara",
+          "Koordinasi rundown acara",
+          "Pembawa acara utama",
+          "Koordinasi dengan tim protokol"
+        ]
+      },
+      {
+        "id": "dewi-karuniawati",
+        "name": "Dewi Karuniawati",
+        "role": "MC Pendamping",
+        "rt": "RWIX Rewwin",
+        "contact": {
+          "whatsapp": "+62xxx"
+        },
+        "photo": "/images/sections/dewi.jpg",
+        "responsibilities": [
+          "Master of Ceremony pendamping",
+          "Support MC utama",
+          "Koordinasi dengan produksi",
+          "Backup presenter acara"
+        ]
       }
     ],
     "support": [
       {
-        "id": "ketua-rw",
-        "name": "Made Ascayas Madianto",
-        "role": "Ketua RW IX",
+        "id": "made-ascaya",
+        "name": "Made Ascaya",
+        "role": "Penanggung Jawab",
         "contact": {
           "phone": "+62xxx",
           "whatsapp": "+62xxx"
         },
-        "photo": "/images/committee/ketua-rw.jpg",
+        "photo": "/images/committee/made-ascaya.jpg",
         "responsibilities": [
-          "Dukungan administratif",
-          "Koordinasi antar RT",
-          "Pengawasan budget",
-          "Liaison dengan pemerintah desa"
+          "Penanggung jawab keseluruhan kegiatan",
+          "Koordinasi dengan pemerintah desa",
+          "Pengawasan dan evaluasi",
+          "Liaison dengan instansi terkait"
         ],
-        "bio": "Ketua RW IX yang memberikan dukungan penuh untuk kesuksesan acara HUT RI Ke-80."
-      },
-      {
-        "id": "wakil-ketua-rw",
-        "name": "Wakil Ketua RW IX",
-        "role": "Wakil Ketua RW IX",
-        "contact": {
-          "phone": "+62xxx"
-        },
-        "photo": "/images/committee/wakil-ketua-rw.jpg",
-        "responsibilities": [
-          "Dukungan operasional",
-          "Koordinasi fasilitas",
-          "Backup koordinasi kegiatan"
-        ]
-      },
-      {
-        "id": "sekretaris-rw",
-        "name": "Sekretaris RW IX",
-        "role": "Sekretaris RW IX",
-        "contact": {
-          "phone": "+62xxx"
-        },
-        "photo": "/images/committee/sekretaris-rw.jpg",
-        "responsibilities": [
-          "Dukungan administrasi",
-          "Dokumentasi resmi",
-          "Koordinasi surat menyurat"
-        ]
-      }
-    ],
-    "entertainment": [
-      {
-        "id": "pkk-angklung",
-        "name": "Ibu PKK RW IX",
-        "role": "Koordinator Angklung",
-        "contact": {
-          "whatsapp": "+62xxx"
-        },
-        "photo": "/images/committee/pkk-angklung.jpg",
-        "responsibilities": [
-          "Koordinasi penampilan angklung",
-          "Latihan grup angklung",
-          "Koordinasi dengan panggung hiburan"
-        ],
-        "performance": "Angklung Performance"
+        "bio": "Penanggung jawab acara HUT RI ke-80 RWIX Rewwin yang memberikan dukungan penuh untuk kesuksesan acara."
       }
     ]
   }
