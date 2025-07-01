@@ -22,12 +22,64 @@ export interface Competition {
   image?: string;
   icon: string;
   color: string;
-  schedule?: string;
+  schedule?: string | {
+    date?: string;
+    day?: string;
+    time?: string;
+    registration?: string;
+    briefing?: string;
+    penyisihan?: {
+      date: string;
+      time: string;
+      day: string;
+    };
+    final?: {
+      date: string;
+      time: string;
+      day: string;
+    };
+    preparation?: {
+      date: string;
+      activity: string;
+    };
+    setup?: {
+      date: string;
+      time: string;
+      activity: string;
+    };
+    judging?: {
+      date: string;
+      time: string;
+      judges: string;
+    };
+    bazaar?: {
+      date: string;
+      activity: string;
+    };
+  };
   rules?: string;
   categories?: string[];
   dressCode?: string;
   duration?: string;
   focus?: string;
+  judging?: {
+    date: string;
+    morning?: string;
+    evening?: string;
+  };
+  announcement?: string;
+  format?: string;
+  route?: {
+    start: string;
+    finish: string;
+    checkpoints: string[];
+  };
+  prizes?: {
+    first: string;
+    second: string;
+    third: string;
+  };
+  budget?: string;
 }
 
 // Committee Types
@@ -109,6 +161,7 @@ export interface GalleryPhoto {
   caption: string;
   category: string;
   date: string;
+  year: number;
   author?: string;
   competition?: string;
   rt?: string;

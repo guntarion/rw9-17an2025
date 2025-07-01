@@ -16,6 +16,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import competitionsData from '@/data/competitions.json';
+import { Competition } from '@/types';
 
 export const metadata: Metadata = {
   title: 'Lomba & Kompetisi - HUT RI Ke-80 RW IX Sidoarjo',
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   keywords: ['lomba', 'kompetisi', 'HUT RI', 'RW IX', 'lingkungan hidup'],
 };
 
-const { competitions } = competitionsData;
+const { competitions } = competitionsData as { competitions: Competition[] };
 
 const categoryColors = {
   decoration: 'bg-blue-100 text-blue-800',
@@ -39,7 +40,7 @@ const statusColors = {
 };
 
 export default function LombaPage() {
-  const totalParticipants = competitions.reduce((total, comp) => total + comp.participants, 0);
+  const totalParticipants = competitions.reduce((total, comp) => total + (comp.participants || 0), 0);
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -235,7 +236,9 @@ function CompetitionCard({ competition }: { competition: typeof competitions[0] 
             <Clock className="w-4 h-4" />
             <div>
               <div className="font-medium">Pendaftaran</div>
-              <div>Hingga {new Date(competition.timeline.registration).toLocaleDateString('id-ID')}</div>
+              <div>Hingga {competition.timeline.registration 
+                ? new Date(competition.timeline.registration).toLocaleDateString('id-ID')
+                : 'Akan diinformasikan'}</div>
             </div>
           </div>
         </div>

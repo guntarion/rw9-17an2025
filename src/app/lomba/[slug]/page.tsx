@@ -21,8 +21,9 @@ import {
   AlertCircle
 } from 'lucide-react';
 import competitionsData from '@/data/competitions.json';
+import { Competition } from '@/types';
 
-const { competitions } = competitionsData;
+const { competitions } = competitionsData as { competitions: Competition[] };
 
 type Params = Promise<{ slug: string }>;
 
@@ -69,7 +70,9 @@ export default async function CompetitionDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  const registrationOpen = new Date() < new Date(competition.timeline.registration);
+  const registrationOpen = competition.timeline.registration 
+    ? new Date() < new Date(competition.timeline.registration)
+    : false;
   const competitionActive = new Date() >= new Date(competition.timeline.start) && 
                            new Date() <= new Date(competition.timeline.end);
 
@@ -122,7 +125,9 @@ export default async function CompetitionDetailPage({ params }: PageProps) {
                   <CheckCircle className="w-6 h-6 text-green-500 mx-auto mb-2" />
                   <div className="text-sm font-medium text-green-800">Pendaftaran Dibuka</div>
                   <div className="text-xs text-green-600">
-                    Hingga {new Date(competition.timeline.registration).toLocaleDateString('id-ID')}
+                    Hingga {competition.timeline.registration 
+                      ? new Date(competition.timeline.registration).toLocaleDateString('id-ID')
+                      : 'Akan diinformasikan'}
                   </div>
                 </div>
               ) : (
@@ -162,7 +167,9 @@ export default async function CompetitionDetailPage({ params }: PageProps) {
                     <div className="bg-blue-50 rounded-lg p-3">
                       <div className="text-sm text-blue-600 font-medium">Pendaftaran</div>
                       <div className="text-sm text-gray-700">
-                        Hingga {new Date(competition.timeline.registration).toLocaleDateString('id-ID')}
+                        Hingga {competition.timeline.registration 
+                      ? new Date(competition.timeline.registration).toLocaleDateString('id-ID')
+                      : 'Akan diinformasikan'}
                       </div>
                     </div>
                     <div className="bg-green-50 rounded-lg p-3">
@@ -225,7 +232,14 @@ export default async function CompetitionDetailPage({ params }: PageProps) {
                     {competition.schedule && (
                       <div className="space-y-2">
                         <div className="text-sm text-gray-600">Jadwal</div>
-                        <div className="font-medium">{competition.schedule}</div>
+                        <div className="font-medium">
+                          {typeof competition.schedule === 'string' 
+                            ? competition.schedule 
+                            : Object.keys(competition.schedule).length > 0 
+                            ? `${competition.schedule.day || ''} ${competition.schedule.time || ''}`.trim()
+                            : 'Akan diinformasikan'
+                          }
+                        </div>
                       </div>
                     )}
                     

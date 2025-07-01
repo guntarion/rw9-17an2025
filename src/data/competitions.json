@@ -1,115 +1,196 @@
 {
   "competitions": [
     {
-      "id": "hias-kampung",
-      "name": "Lomba Hias Kampung/RT",
-      "description": "Lomba menghias kampung dengan tema Lingkungan Hidup dan Penghijauan. Penilaian meliputi aspek penghijauan, kebersihan, dan kreativitas hiasan kampung atau RT.",
+      "id": "lomba-lingkungan",
+      "name": "Lomba Lingkungan Hidup",
+      "description": "Lomba lingkungan hidup dengan 3 kategori: Kebersihan Lingkungan RT (30%), Hias Lingkungan RT (30%), dan Penanaman Pohon Lingkungan RT (40%). Bertujuan meningkatkan kesadaran warga terhadap pentingnya menjaga lingkungan hidup.",
       "coordinator": {
-        "name": "H. Suleman",
-        "contact": "+62xxx",
-        "photo": "/images/coordinators/suleman.jpg"
+        "name": "Koordinator RW",
+        "contact": "Akan diinformasikan",
+        "photo": "/images/coordinators/rw-coordinator.jpg"
       },
       "criteria": [
-        "Penghijauan kampung/RT",
-        "Kebersihan kampung/RT",
-        "Menghias kampung/RT"
+        "Kebersihan area lingkungan RT",
+        "Pengelolaan sampah dan daur ulang",
+        "Kreativitas dan inovasi hiasan",
+        "Kuantitas dan jenis pohon yang ditanam",
+        "Tingkat perawatan pohon",
+        "Partisipasi dan edukasi warga"
       ],
       "timeline": {
         "start": "2025-07-01",
         "end": "2025-08-24",
         "registration": "2025-06-30"
       },
+      "judging": {
+        "date": "2025-08-24",
+        "morning": "08:00",
+        "evening": "17:00"
+      },
+      "announcement": "2025-08-31",
       "category": "decoration",
       "status": "upcoming",
-      "theme": "Lingkungan Hidup",
-      "judges": "Juri dari luar RW IX",
-      "participants": 12,
-      "image": "/images/competitions/hias-kampung.jpg",
-      "icon": "🏡",
+      "theme": "Lingkungan Hidup dan Penghijauan",
+      "judges": "Ditentukan dan diberitahukan selanjutnya oleh RW",
+      "participants": 11,
+      "prizes": {
+        "first": "Rp 3.000.000",
+        "second": "Rp 2.500.000", 
+        "third": "Rp 2.000.000"
+      },
+      "image": "/images/competitions/lomba-lingkungan.jpg",
+      "icon": "🌱",
       "color": "primary"
     },
     {
-      "id": "bulu-tangkis-keluarga",
-      "name": "Lomba Bulu Tangkis Keluarga",
-      "description": "Lomba bulu tangkis dengan konsep keluarga (campuran laki-laki dan perempuan). Penilaian berdasarkan skor pertandingan, kostum unik, dan sportivitas suporter.",
+      "id": "badminton-fun",
+      "name": "Lomba Fun Badminton",
+      "description": "Lomba bulu tangkis ganda campuran (Suami Istri / Bapak Anak / Kakak Adik) untuk mempererat hubungan kekeluargaan antar RT. Sistem gugur dengan penilaian berdasarkan point kemenangan, kekompakan, dan penampilan kostum.",
       "coordinator": {
-        "name": "Bpk. Yusri",
-        "contact": "+62xxx",
-        "photo": "/images/coordinators/yusri.jpg"
+        "name": "Makmur Yusri",
+        "contact": "0818.515.363",
+        "photo": "/images/coordinators/makmur.jpg"
       },
       "criteria": [
-        "Skor pertandingan",
-        "Kostum yang unik",
-        "Sporter yang positif"
+        "Point kemenangan pertandingan",
+        "Kekompakan/Keserasian pasangan",
+        "Penampilan/Kostum kreatif"
       ],
       "timeline": {
-        "start": "2025-08-30",
-        "end": "2025-08-31",
-        "registration": "2025-08-25"
+        "start": "2025-08-09",
+        "end": "2025-08-10",
+        "registration": "2025-08-07"
+      },
+      "schedule": {
+        "penyisihan": {
+          "date": "2025-08-09",
+          "time": "19:30 WIB",
+          "day": "Sabtu"
+        },
+        "final": {
+          "date": "2025-08-10", 
+          "time": "09:00 WIB",
+          "day": "Minggu"
+        }
       },
       "category": "sports",
       "status": "upcoming",
-      "schedule": "Malam Sabtu dan Minggu",
-      "participants": 16,
-      "rules": "Peserta campuran laki-laki dan perempuan dalam satu keluarga",
-      "image": "/images/competitions/bulu-tangkis.jpg",
+      "format": "Ganda Campuran",
+      "participants": 11,
+      "rules": "Setiap RT mengirim 1 tim pasangan",
+      "judges": ["Pak Amir", "Pak Hadi", "Pak Nanang", "Pak Sutikno", "Pak Edo"],
+      "prizes": {
+        "first": "Rp 600.000",
+        "second": "Rp 400.000",
+        "third": "Rp 200.000"
+      },
+      "image": "/images/competitions/badminton-fun.jpg",
       "icon": "🏸",
       "color": "accent"
     },
     {
       "id": "jalan-sehat",
       "name": "Lomba Jalan Sehat",
-      "description": "Lomba jalan sehat dengan tema kostum Lingkungan Hidup. Penilaian meliputi kekompakan, keserasian, kostum bertema lingkungan, dan spanduk/yel-yel.",
+      "description": "Lomba jalan sehat dengan tema 'Generasi Muda Semangat dan Kreatif'. Peserta mengikuti rute dengan 4 pos kupon dan dinilai dari segi kekompakan barisan, kreativitas kostum, semangat, dan kedisiplinan.",
       "coordinator": {
-        "name": "dr. Edi Subagyo",
-        "contact": "+62xxx",
-        "photo": "/images/coordinators/edi.jpg"
+        "name": "Koordinator RW",
+        "contact": "Akan diinformasikan",
+        "photo": "/images/coordinators/rw-coordinator.jpg"
       },
       "criteria": [
-        "Kekompakan",
-        "Keserasian",
-        "Kostum Lingkungan Hidup",
-        "Spanduk"
+        "Kekompakan barisan dan formasi",
+        "Kreativitas kostum & penampilan",
+        "Semangat & antusiasme peserta",
+        "Kedisiplinan & sportivitas"
       ],
       "timeline": {
-        "start": "2025-08-30",
-        "end": "2025-08-30",
-        "registration": "2025-08-25"
+        "start": "2025-08-31",
+        "end": "2025-08-31",
+        "registration": "2025-08-30"
+      },
+      "schedule": {
+        "date": "2025-08-31",
+        "day": "Minggu",
+        "time": "06:00 WIB",
+        "registration": "05:30-05:55 WIB",
+        "briefing": "05:55-06:00 WIB"
+      },
+      "route": {
+        "start": "Depan Balai RW IX",
+        "finish": "Area Balai RW IX",
+        "checkpoints": [
+          "Pos Kupon 1 (depan rumah Pak Rozak)",
+          "Pos Kupon 2 (depan pintu masuk Jatayu timur)", 
+          "Pos Kupon 3 (pojok barat Jatayu)",
+          "Pos Kupon 4 (panggung)"
+        ]
       },
       "category": "health",
       "status": "upcoming",
-      "categories": ["Anak-anak", "Remaja", "Dewasa"],
-      "dressCode": "50% pakaian lingkungan hidup, 50% kostum kaos",
-      "participants": 150,
+      "theme": "Generasi Muda Semangat dan Kreatif",
+      "participants": 200,
+      "prizes": {
+        "first": "Rp 600.000",
+        "second": "Rp 400.000", 
+        "third": "Rp 200.000"
+      },
       "image": "/images/competitions/jalan-sehat.jpg",
       "icon": "🚶‍♂️",
       "color": "success"
     },
     {
-      "id": "bazar",
-      "name": "Lomba Bazar",
-      "description": "Lomba bazar kreatif dengan tema edukasi lingkungan hidup dan kelestarian alam. Penilaian berdasarkan aspek edukasi, kreativitas, dan kostum penjaga bazar.",
+      "id": "bazaar",
+      "name": "Lomba Bazaar",
+      "description": "Lomba bazaar dengan tema 'Lingkungan' yang menggabungkan aspek edukasi (25%), penjualan produk ramah lingkungan (35%), serta kreativitas dan inovasi (40%). Focus pada produk daur ulang dan edukasi lingkungan hidup.",
       "coordinator": {
-        "name": "Ibu Titik W.P",
-        "contact": "+62xxx",
-        "photo": "/images/coordinators/titik.jpg"
+        "name": "Koordinator PKK RW",
+        "contact": "Melalui koordinator PKK RT",
+        "photo": "/images/coordinators/pkk-coordinator.jpg"
       },
       "criteria": [
-        "Edukasi lingkungan hidup dan kelestarian alam",
-        "Kreativitas dan kreasi masing-masing RT",
-        "Kostum penjaga bazar"
+        "Edukasi lingkungan hidup (25%)",
+        "Penjualan produk ramah lingkungan (35%)",
+        "Kreativitas dan inovasi stand (40%)",
+        "Desain dan dekorasi berkelanjutan",
+        "Keikutsertaan Karang Taruna"
       ],
       "timeline": {
         "start": "2025-08-30",
-        "end": "2025-08-31",
+        "end": "2025-08-31", 
         "registration": "2025-08-25"
+      },
+      "schedule": {
+        "preparation": {
+          "date": "2025-07-01",
+          "activity": "Penjelasan kisi-kisi di pertemuan PKK RW"
+        },
+        "setup": {
+          "date": "2025-08-30",
+          "time": "08:00 WIB",
+          "activity": "Penataan meja dan dekorasi stand"
+        },
+        "judging": {
+          "date": "2025-08-30", 
+          "time": "17:00 WIB",
+          "judges": "1 juri per RT (juri internal)"
+        },
+        "bazaar": {
+          "date": "2025-08-31",
+          "activity": "Bazaar tema bebas (fokus penjualan)"
+        }
       },
       "category": "bazaar",
       "status": "upcoming",
-      "duration": "2 hari",
+      "theme": "Lingkungan",
       "participants": 12,
-      "focus": "Edukasi lingkungan hidup",
-      "image": "/images/competitions/bazar.jpg",
+      "focus": "Edukasi lingkungan dan produk ramah lingkungan",
+      "prizes": {
+        "first": "Rp 1.500.000",
+        "second": "Rp 1.000.000",
+        "third": "Rp 500.000"
+      },
+      "budget": "Rp 3.015.000",
+      "image": "/images/competitions/bazaar.jpg",
       "icon": "🛍️",
       "color": "secondary"
     }

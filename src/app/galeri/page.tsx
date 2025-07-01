@@ -21,7 +21,9 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
-  Eye
+  Eye,
+  Star,
+  Clock
 } from 'lucide-react';
 import galleryData from '@/data/gallery.json';
 import { GalleryPhoto } from '@/types';
@@ -38,12 +40,28 @@ const categoryColors = {
 
 export default function GaleriPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedYear, setSelectedYear] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPhoto, setSelectedPhoto] = useState<GalleryPhoto | null>(null);
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
+  const availableYears = Array.from(new Set(photos.map(photo => photo.year))).sort((a, b) => b - a);
+
+  // Get featured photos (current year - 2025)
+  const featuredPhotos = useMemo(() => {
+    return photos
+      .filter(photo => photo.year === 2025)
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, 6);
+  }, []);
+
   const filteredPhotos = useMemo(() => {
     let filtered = photos;
+
+    // Filter by year
+    if (selectedYear !== 'all') {
+      filtered = filtered.filter(photo => photo.year === parseInt(selectedYear));
+    }
 
     // Filter by category
     if (selectedCategory !== 'all') {
@@ -56,14 +74,14 @@ export default function GaleriPage() {
       filtered = filtered.filter(photo => 
         photo.caption.toLowerCase().includes(query) ||
         photo.tags.some(tag => tag.toLowerCase().includes(query)) ||
-        photo.author.toLowerCase().includes(query) ||
-        photo.rt.toLowerCase().includes(query)
+        photo.author?.toLowerCase().includes(query) ||
+        photo.rt?.toLowerCase().includes(query)
       );
     }
 
     // Sort by date (newest first)
     return filtered.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  }, [selectedCategory, searchQuery]);
+  }, [selectedCategory, selectedYear, searchQuery]);
 
   const openPhotoModal = (photo: GalleryPhoto, index: number) => {
     setSelectedPhoto(photo);
@@ -96,8 +114,8 @@ export default function GaleriPage() {
             <Camera className="w-8 h-8 text-primary-500" />
           </div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            Dokumentasi persiapan dan kegiatan HUT RI Ke-80 RW IX Sidoarjo 
-            dengan tema <strong>Lingkungan Hidup dan Penghijauan</strong>
+            Dokumentasi kegiatan HUT RI RW IX Sidoarjo dari tahun ke tahun. 
+            <strong>Tahun 2025</strong> dengan tema <strong>Lingkungan Hidup dan Penghijauan</strong>
           </p>
 
           {/* Stats */}
@@ -107,18 +125,18 @@ export default function GaleriPage() {
               <div className="text-sm text-gray-600">Total Foto</div>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-soft">
-              <div className="text-2xl font-bold text-accent-600">{categories.length - 1}</div>
-              <div className="text-sm text-gray-600">Kategori</div>
+              <div className="text-2xl font-bold text-accent-600">{availableYears.length}</div>
+              <div className="text-sm text-gray-600">Tahun Dokumentasi</div>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-soft">
               <div className="text-2xl font-bold text-secondary-600">
-                {photos.reduce((sum, photo) => sum + photo.likes, 0)}
+                {photos.reduce((sum, photo) => sum + (photo.likes || 0), 0)}
               </div>
               <div className="text-sm text-gray-600">Total Likes</div>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-soft">
               <div className="text-2xl font-bold text-success-600">
-                {photos.reduce((sum, photo) => sum + photo.comments, 0)}
+                {photos.reduce((sum, photo) => sum + (photo.comments || 0), 0)}
               </div>
               <div className="text-sm text-gray-600">Komentar</div>
             </div>
@@ -130,6 +148,32 @@ export default function GaleriPage() {
             Upload Foto Baru
           </Button>
         </div>
+
+        {/* Featured Section - Current Year (2025) */}
+        {featuredPhotos.length > 0 && (
+          <div className="mb-12">
+            <div className="flex items-center justify-center space-x-3 mb-6">
+              <Star className="w-6 h-6 text-yellow-500" />
+              <h2 className="text-2xl font-bold text-gray-900">
+                Galeri Unggulan 2025
+              </h2>
+              <Star className="w-6 h-6 text-yellow-500" />
+            </div>
+            <p className="text-center text-gray-600 mb-6">
+              Dokumentasi terbaru persiapan HUT RI Ke-80 dengan tema Lingkungan Hidup dan Penghijauan
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {featuredPhotos.map((photo, index) => (
+                <PhotoCard 
+                  key={photo.id} 
+                  photo={photo} 
+                  onClick={() => openPhotoModal(photo, index)}
+                  featured
+                />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Search and Filters */}
         <div className="mb-8">
@@ -149,29 +193,63 @@ export default function GaleriPage() {
             </div>
           </div>
 
-          {/* Category Filters */}
-          <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
-            <TabsList className="grid w-full grid-cols-3 md:grid-cols-6">
-              {categories.map((category) => (
-                <TabsTrigger 
-                  key={category.id} 
-                  value={category.id}
-                  className="text-xs md:text-sm"
-                >
-                  <span className="mr-1">{category.icon}</span>
-                  <span className="hidden sm:inline">{category.name}</span>
+          {/* Year Filter */}
+          <div className="mb-4">
+            <div className="flex items-center space-x-2 mb-3">
+              <Clock className="w-4 h-4 text-gray-500" />
+              <span className="text-sm font-medium text-gray-700">Filter Tahun:</span>
+            </div>
+            <Tabs value={selectedYear} onValueChange={setSelectedYear} className="w-full">
+              <TabsList className="grid w-full grid-cols-2 md:grid-cols-5">
+                <TabsTrigger value="all" className="text-xs md:text-sm">
+                  📅 Semua Tahun
                 </TabsTrigger>
-              ))}
-            </TabsList>
-          </Tabs>
+                {availableYears.map((year) => (
+                  <TabsTrigger 
+                    key={year} 
+                    value={year.toString()}
+                    className="text-xs md:text-sm"
+                  >
+                    {year === 2025 && <Star className="w-3 h-3 mr-1" />}
+                    {year}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </Tabs>
+          </div>
+
+          {/* Category Filters */}
+          <div className="mb-4">
+            <div className="flex items-center space-x-2 mb-3">
+              <Tag className="w-4 h-4 text-gray-500" />
+              <span className="text-sm font-medium text-gray-700">Filter Kategori:</span>
+            </div>
+            <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
+              <TabsList className="grid w-full grid-cols-3 md:grid-cols-6">
+                {categories.map((category) => (
+                  <TabsTrigger 
+                    key={category.id} 
+                    value={category.id}
+                    className="text-xs md:text-sm"
+                  >
+                    <span className="mr-1">{category.icon}</span>
+                    <span className="hidden sm:inline">{category.name}</span>
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </Tabs>
+          </div>
         </div>
 
         {/* Results Info */}
         <div className="mb-6 flex justify-between items-center">
           <div className="text-gray-600">
             Menampilkan <strong>{filteredPhotos.length}</strong> foto
+            {selectedYear !== 'all' && (
+              <span> dari tahun <strong>{selectedYear}</strong></span>
+            )}
             {selectedCategory !== 'all' && (
-              <span> dari kategori <strong>
+              <span> kategori <strong>
                 {categories.find(c => c.id === selectedCategory)?.name}
               </strong></span>
             )}
@@ -180,12 +258,13 @@ export default function GaleriPage() {
             )}
           </div>
           
-          {(selectedCategory !== 'all' || searchQuery) && (
+          {(selectedCategory !== 'all' || selectedYear !== 'all' || searchQuery) && (
             <Button 
               variant="outline" 
               size="sm"
               onClick={() => {
                 setSelectedCategory('all');
+                setSelectedYear('all');
                 setSearchQuery('');
               }}
             >
@@ -219,6 +298,7 @@ export default function GaleriPage() {
               variant="outline"
               onClick={() => {
                 setSelectedCategory('all');
+                setSelectedYear('all');
                 setSearchQuery('');
               }}
             >
@@ -337,11 +417,13 @@ export default function GaleriPage() {
   );
 }
 
-function PhotoCard({ photo, onClick }: { photo: GalleryPhoto; onClick: () => void }) {
+function PhotoCard({ photo, onClick, featured = false }: { photo: GalleryPhoto; onClick: () => void; featured?: boolean }) {
   const category = categories.find(c => c.id === photo.category);
   
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden" onClick={onClick}>
+    <Card className={`group hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden ${
+      featured ? 'ring-2 ring-yellow-200 hover:ring-yellow-300' : ''
+    }`} onClick={onClick}>
       <div className="aspect-square relative overflow-hidden">
         <Image
           src={photo.thumbnail || photo.url}
@@ -351,10 +433,18 @@ function PhotoCard({ photo, onClick }: { photo: GalleryPhoto; onClick: () => voi
           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-        <div className="absolute top-3 left-3">
+        <div className="absolute top-3 left-3 flex space-x-2">
           {category && (
             <Badge className={`${categoryColors[category.color as keyof typeof categoryColors]} text-xs`}>
               {category.icon}
+            </Badge>
+          )}
+          <Badge className="bg-black/70 text-white text-xs">
+            {photo.year}
+          </Badge>
+          {featured && (
+            <Badge className="bg-yellow-500 text-white text-xs">
+              <Star className="w-3 h-3" />
             </Badge>
           )}
         </div>
@@ -375,7 +465,11 @@ function PhotoCard({ photo, onClick }: { photo: GalleryPhoto; onClick: () => voi
         </p>
         <div className="flex items-center justify-between text-xs text-gray-500">
           <span>{photo.author}</span>
-          <span>{new Date(photo.date).toLocaleDateString('id-ID')}</span>
+          <div className="flex items-center space-x-2">
+            <span>{photo.year}</span>
+            <span>•</span>
+            <span>{new Date(photo.date).toLocaleDateString('id-ID')}</span>
+          </div>
         </div>
       </CardContent>
     </Card>
