@@ -57,11 +57,11 @@ const navigation = [
     href: '/faq',
     icon: HelpCircle,
   },
-  {
-    name: 'Kontak',
-    href: '/kontak',
-    icon: Phone,
-  },
+  // {
+  //   name: 'Kontak',
+  //   href: '/kontak',
+  //   icon: Phone,
+  // },
 ];
 
 export default function Header() {

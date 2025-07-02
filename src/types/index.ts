@@ -165,10 +165,13 @@ export interface GalleryPhoto {
 }
 
 export type GalleryCategory = 
+  | 'all'
   | 'dokumentasi' 
   | 'doorprize' 
   | 'hiburan' 
-  | 'wargapanitia';
+  | 'wargapanitia'
+  | 'lomba'
+  | 'standbazar';
 
 export interface GalleryCategoryInfo {
   id: string;

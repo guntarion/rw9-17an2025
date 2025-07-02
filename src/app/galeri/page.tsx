@@ -11,7 +11,6 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Camera,
   Search,
-  Upload,
   Filter,
   Calendar,
   Tag,
@@ -28,14 +27,18 @@ const { photos, categories } = galleryData;
 
 // Helper function to normalize image URLs for Next.js
 const normalizeImageUrl = (url: string) => {
+  let normalizedUrl = url;
+  
   if (url.startsWith('public/')) {
-    return '/' + url.substring(7); // Remove 'public/' and add leading slash
+    normalizedUrl = '/' + url.substring(7); // Remove 'public/' and add leading slash
+  } else if (!url.startsWith('/') && !url.startsWith('http')) {
+    normalizedUrl = '/' + url; // Add leading slash if missing
   }
-  if (url.startsWith('/') || url.startsWith('http')) {
-    return url; // Already properly formatted
-  }
-  return '/' + url; // Add leading slash if missing
+  
+  // Encode spaces and special characters for Next.js Image component
+  return encodeURI(normalizedUrl);
 };
+
 
 const categoryColors = {
   default: 'bg-gray-100 text-gray-800',
@@ -78,7 +81,8 @@ export default function GaleriPage() {
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       filtered = filtered.filter(photo => 
-        photo.caption.toLowerCase().includes(query) ||
+        photo.category.toLowerCase().includes(query) ||
+        (photo.caption && photo.caption.toLowerCase().includes(query)) ||
         (photo.tags && photo.tags.some((tag: string) => tag.toLowerCase().includes(query)))
       );
     }
@@ -158,10 +162,10 @@ export default function GaleriPage() {
           </div>
 
           {/* Upload Button for Admin */}
-          <Button className="bg-gradient-green hover:shadow-green">
+          {/* <Button className="bg-gradient-green hover:shadow-green">
             <Upload className="w-4 h-4 mr-2" />
             Upload Foto Baru
-          </Button>
+          </Button> */}
         </div>
 
         {/* Featured Section - Current Year (2025) */}
@@ -177,7 +181,7 @@ export default function GaleriPage() {
             <p className="text-center text-gray-600 mb-6">
               Dokumentasi terbaru kegiatan HUT RI Ke-79 dengan tema Lingkungan Hidup dan Penghijauan
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
               {featuredPhotos.map((photo, index) => (
                 <PhotoCard 
                   key={photo.id} 
@@ -196,7 +200,7 @@ export default function GaleriPage() {
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
               <Input
-                placeholder="Cari foto berdasarkan caption atau tag..."
+                placeholder="Cari foto berdasarkan tag atau kategori..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10"
@@ -240,15 +244,15 @@ export default function GaleriPage() {
               <span className="text-sm font-medium text-gray-700">Filter Kategori:</span>
             </div>
             <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
-              <TabsList className="grid w-full grid-cols-3 md:grid-cols-6">
+              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-1">
                 {categories.map((category) => (
                   <TabsTrigger 
                     key={category.id} 
                     value={category.id}
-                    className="text-xs md:text-sm"
+                    className="text-xs md:text-sm flex-shrink-0"
                   >
                     <span className="mr-1">{category.icon}</span>
-                    <span className="hidden sm:inline">{category.name}</span>
+                    <span className="hidden sm:inline truncate">{category.name}</span>
                   </TabsTrigger>
                 ))}
               </TabsList>
@@ -291,7 +295,7 @@ export default function GaleriPage() {
 
         {/* Photo Grid */}
         {filteredPhotos.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
             {filteredPhotos.map((photo, index) => (
               <PhotoCard 
                 key={photo.id} 
@@ -355,7 +359,7 @@ export default function GaleriPage() {
                 
                 <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
                   {/* Image */}
-                  <div className="flex-1 relative bg-black">
+                  <div className="flex-1 relative bg-black min-h-[400px]">
                     <Image
                       src={normalizeImageUrl(selectedPhoto.url)}
                       alt={selectedPhoto.caption}
@@ -367,9 +371,11 @@ export default function GaleriPage() {
                   
                   {/* Photo Info */}
                   <div className="w-full md:w-80 p-6 bg-white overflow-y-auto">
-                    <h3 className="font-semibold text-gray-900 mb-3">
-                      {selectedPhoto.caption}
-                    </h3>
+                    {selectedPhoto.caption && (
+                      <h3 className="font-semibold text-gray-900 mb-3">
+                        {selectedPhoto.caption}
+                      </h3>
+                    )}
                     
                     <div className="space-y-3 mb-4">
                       <div className="flex items-center space-x-2 text-sm text-gray-600">
@@ -432,13 +438,17 @@ function PhotoCard({ photo, onClick, featured = false }: { photo: GalleryPhoto; 
     <Card className={`group hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden ${
       featured ? 'ring-2 ring-yellow-200 hover:ring-yellow-300' : ''
     }`} onClick={onClick}>
-      <div className="aspect-square relative overflow-hidden">
+      <div className="aspect-square relative overflow-hidden min-h-[120px]">
         <Image
           src={normalizeImageUrl(photo.thumbnail || photo.url)}
-          alt={photo.caption}
+          alt={photo.caption || `Foto ${photo.category} ${photo.year}`}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-300"
           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+          onError={(e) => {
+            console.log('Image failed to load:', normalizeImageUrl(photo.thumbnail || photo.url));
+            e.currentTarget.src = '/images/logos/Logo_RW_IX_nobg.png';
+          }}
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
         <div className="absolute top-3 left-3 flex space-x-2">
@@ -463,14 +473,11 @@ function PhotoCard({ photo, onClick, featured = false }: { photo: GalleryPhoto; 
           </div>
         </div>
       </div>
-      <CardContent className="p-4">
-        <p className="text-sm text-gray-600 mb-2 line-clamp-2">
-          {photo.caption}
-        </p>
-        <div className="flex items-center justify-between text-xs text-gray-500">
-          <span>Tahun {photo.year}</span>
-          <div className="flex items-center space-x-2">
-            <span>{categories.find(c => c.id === photo.category)?.name || 'Umum'}</span>
+      <CardContent className="p-2">
+        <div className="flex items-center justify-between text-xs text-gray-600">
+          <span className="font-medium">Tahun {photo.year}</span>
+          <div className="flex items-center space-x-1">
+            <span className="text-gray-500 truncate">{categories.find(c => c.id === photo.category)?.name || 'Umum'}</span>
           </div>
         </div>
       </CardContent>
