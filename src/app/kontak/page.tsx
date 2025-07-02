@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -110,6 +111,17 @@ export default function KontakPage() {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-12">
+          {/* RW IX Logo */}
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/images/logos/Logo_RW_IX_nobg.png"
+              alt="Logo RW IX"
+              width={80}
+              height={73}
+              className="drop-shadow-md"
+            />
+          </div>
+          
           <div className="flex justify-center items-center space-x-3 mb-6">
             <Phone className="w-8 h-8 text-primary-500" />
             <h1 className="text-4xl font-bold text-gray-900">

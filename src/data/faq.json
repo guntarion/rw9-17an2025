@@ -1,0 +1,140 @@
+{
+  "competition": [
+    {
+      "id": "comp-general-1",
+      "category": "competition", 
+      "question": "Apa saja lomba yang tersedia dalam HUT RI Ke-80 RW IX?",
+      "answer": "Terdapat 4 lomba utama: 1) Lomba Fun Badminton (Ganda Campuran), 2) Lomba Bazaar bertema Lingkungan, 3) Lomba Jalan Sehat, dan 4) Lomba Lingkungan Hidup (kebersihan, hias kampung, penanaman pohon). Setiap RT wajib mengikuti minimal 3 dari 4 lomba yang tersedia.",
+      "tags": ["lomba", "jenis-lomba", "RT", "wajib"],
+      "featured": true
+    },
+    {
+      "id": "comp-general-2", 
+      "category": "competition",
+      "question": "Siapa saja yang bisa mengikuti lomba?",
+      "answer": "Seluruh RT 01-11 di wilayah RW IX Rewwin, Wedoro, Waru, Sidoarjo dapat berpartisipasi. Peserta harus berdomisili di RT setempat dan mewakili RT masing-masing sesuai ketentuan lomba.",
+      "tags": ["peserta", "RT", "domisili", "syarat"],
+      "featured": true
+    },
+    {
+      "id": "comp-badminton-1",
+      "category": "competition",
+      "question": "Bagaimana sistem pertandingan Lomba Fun Badminton?",
+      "answer": "Lomba badminton menggunakan sistem ganda campuran (suami istri/bapak anak/kakak adik). Babak penyisihan tanggal 9 Agustus 2025 (19.30 WIB) dengan sistem gugur, dan babak final tanggal 10 Agustus 2025 (09.00 WIB) untuk 3 tim terbaik.",
+      "tags": ["badminton", "ganda-campuran", "jadwal", "sistem"],
+      "featured": false
+    },
+    {
+      "id": "comp-badminton-2",
+      "category": "competition", 
+      "question": "Berapa hadiah untuk juara lomba badminton?",
+      "answer": "Juara I mendapat Rp 600.000, Juara II mendapat Rp 400.000, dan Juara III mendapat Rp 200.000. Batas pendaftaran adalah 7 Agustus 2025.",
+      "tags": ["badminton", "hadiah", "pendaftaran"],
+      "featured": false
+    },
+    {
+      "id": "comp-badminton-3",
+      "category": "competition",
+      "question": "Apa kriteria penilaian lomba badminton?",
+      "answer": "Penilaian berdasarkan: Point Kemenangan (Menang=3, Kalah=0), Kekompakan/Keserasian (Kompak=1, Tidak kompak=0), dan Penampilan/Kostum (Kreatif inovatif=2, Seragam biasa=1, Tidak seragam=0). Kostum dengan tema lingkungan hidup mendapat nilai tambah.",
+      "tags": ["badminton", "penilaian", "kostum", "lingkungan"],
+      "featured": false
+    },
+    {
+      "id": "comp-bazaar-1",
+      "category": "competition",
+      "question": "Apa tema dan kriteria penilaian Lomba Bazaar?",
+      "answer": "Tema 'LINGKUNGAN' dengan 3 kriteria: Edukasi (25%) - ilmu tentang lingkungan dan media peraga, Penjualan Produk (35%) - makanan alami dan kerajinan daur ulang, Kreativitas & Inovasi (40%) - desain ramah lingkungan dan partisipasi Karang Taruna.",
+      "tags": ["bazaar", "lingkungan", "edukasi", "kreativitas"],
+      "featured": true
+    },
+    {
+      "id": "comp-bazaar-2",
+      "category": "competition",
+      "question": "Kapan penilaian dan pelaksanaan Lomba Bazaar?",
+      "answer": "30 Agustus 2025: penataan stand (08.00) dan penilaian juri internal (17.00). 31 Agustus 2025: bazaar tema bebas untuk penjualan. Konfirmasi partisipasi sebelum 25 Agustus 2025.",
+      "tags": ["bazaar", "jadwal", "penilaian", "registrasi"],
+      "featured": false
+    },
+    {
+      "id": "comp-bazaar-3",
+      "category": "competition",
+      "question": "Berapa total hadiah Lomba Bazaar?",
+      "answer": "Total hadiah Rp 3.000.000 dengan rincian: Juara I Rp 1.500.000, Juara II Rp 1.000.000, dan Juara III Rp 500.000. Ini adalah lomba dengan hadiah terbesar.",
+      "tags": ["bazaar", "hadiah", "terbesar"],
+      "featured": true
+    },
+    {
+      "id": "comp-jalan-sehat-1",
+      "category": "competition",
+      "question": "Bagaimana rute dan sistem Lomba Jalan Sehat?",
+      "answer": "Dimulai 31 Agustus 2025 pukul 06.00 dari Balai RW IX. Rute: Balai RW IX → Jl. Raya Waru (Pos Kupon 1) → Jl. Jatayu (Pos Kupon 2 & 3) → kembali ke Balai RW IX (Pos Kupon 4). Wajib mengambil kupon di setiap pos.",
+      "tags": ["jalan-sehat", "rute", "kupon", "jadwal"],
+      "featured": false
+    },
+    {
+      "id": "comp-jalan-sehat-2",
+      "category": "competition",
+      "question": "Apa kriteria penilaian Lomba Jalan Sehat?",
+      "answer": "Kekompakan Barisan (30%), Kreativitas Kostum & Penampilan (40%), Semangat & Antusiasme (20%), dan Kedisiplinan & Sportivitas (10%). Kostum dengan tema lingkungan hidup dianjurkan.",
+      "tags": ["jalan-sehat", "penilaian", "kostum", "kekompakan"],
+      "featured": false
+    },
+    {
+      "id": "comp-lingkungan-1",
+      "category": "competition",
+      "question": "Apa saja yang dinilai dalam Lomba Lingkungan Hidup?",
+      "answer": "3 aspek utama: Kebersihan Lingkungan RT (30%) - kebersihan area dan pengelolaan sampah, Hias Lingkungan RT (30%) - kreativitas gapura/penjor dengan bahan daur ulang, dan Penanaman Pohon (40%) - kuantitas, jenis pohon produktif, dan perawatan.",
+      "tags": ["lingkungan", "kebersihan", "hias-kampung", "pohon"],
+      "featured": true
+    },
+    {
+      "id": "comp-lingkungan-2",
+      "category": "competition",
+      "question": "Berapa periode dan hadiah Lomba Lingkungan Hidup?",
+      "answer": "Periode lomba: 1 Juli - 24 Agustus 2025, penjurian 24 Agustus, pengumuman 31 Agustus. Hadiah: Juara I Rp 3.000.000 (2.500.000 + 500.000 dari RT 11), Juara II Rp 2.500.000, Juara III Rp 2.000.000. Semua dapat piagam.",
+      "tags": ["lingkungan", "periode", "hadiah", "piagam"],
+      "featured": true
+    },
+    {
+      "id": "comp-kostum-1",
+      "category": "competition",
+      "question": "Apakah ada aturan khusus untuk kostum dalam semua lomba?",
+      "answer": "Kostum dengan tema lingkungan hidup sangat dianjurkan di semua lomba dan mendapat nilai tambah. Untuk badminton: kostum bebas tapi tema lingkungan dapat bonus. Bazaar: penjaga stand harus berpakaian ramah lingkungan dan estetik.",
+      "tags": ["kostum", "lingkungan", "tema", "nilai-tambah"],
+      "featured": false
+    },
+    {
+      "id": "comp-pendaftaran-1",
+      "category": "competition",
+      "question": "Bagaimana cara dan batas waktu pendaftaran setiap lomba?",
+      "answer": "Badminton: daftar sebelum 7 Agustus 2025. Bazaar: konfirmasi sebelum 25 Agustus 2025. Jalan Sehat: registrasi 05.30-05.55 WIB di hari H. Lingkungan Hidup: otomatis semua RT berpartisipasi periode 1 Juli - 24 Agustus 2025.",
+      "tags": ["pendaftaran", "batas-waktu", "registrasi"],
+      "featured": true
+    },
+    {
+      "id": "comp-contact-1",
+      "category": "competition",
+      "question": "Siapa yang bisa dihubungi untuk informasi lomba?",
+      "answer": "Lomba Badminton: Makmur Yusri (0818.515.363) dan Singgih Prayoga (0822.2800.7600). Untuk lomba lainnya, informasi akan disampaikan melalui koordinator RT masing-masing atau panitia RW.",
+      "tags": ["kontak", "narahubung", "koordinator"],
+      "featured": false
+    },
+    {
+      "id": "comp-prize-total",
+      "category": "competition",
+      "question": "Berapa total hadiah keseluruhan untuk semua lomba?",
+      "answer": "Total hadiah semua lomba mencapai lebih dari Rp 10.000.000: Bazaar (Rp 3.000.000), Lingkungan Hidup (Rp 7.500.000), Badminton (Rp 1.200.000), dan Jalan Sehat (Rp 1.200.000). Belum termasuk doorprize malam puncak.",
+      "tags": ["hadiah", "total", "semua-lomba"],
+      "featured": true
+    },
+    {
+      "id": "comp-additional-rules",
+      "category": "competition",
+      "question": "Apa saja aturan umum yang harus dipatuhi peserta lomba?",
+      "answer": "Semua kegiatan harus ramah lingkungan, tidak menggunakan bahan berbahaya. Peserta wajib hadir tepat waktu dan menjaga sportivitas. Untuk lomba yang memerlukan peralatan, peserta membawa sendiri kecuali yang disediakan panitia. Keputusan juri bersifat mutlak.",
+      "tags": ["aturan", "sportivitas", "ramah-lingkungan"],
+      "featured": false
+    }
+  ]
+}

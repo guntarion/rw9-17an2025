@@ -19,32 +19,10 @@ import {
   MessageCircle,
   Filter
 } from 'lucide-react';
+import competitionFAQs from '@/data/faq.json';
 
-const faqData = [
-  {
-    id: 'lomba-1',
-    category: 'competition',
-    question: 'Bagaimana cara mendaftar lomba?',
-    answer: 'Pendaftaran lomba dilakukan melalui koordinator RT masing-masing. Setiap RT wajib mengikuti minimal 3 dari 4 lomba yang tersedia. Batas pendaftaran adalah 25 Agustus 2025.',
-    tags: ['pendaftaran', 'lomba', 'RT'],
-    featured: true
-  },
-  {
-    id: 'lomba-2',
-    category: 'competition',
-    question: 'Apa saja kriteria penilaian lomba hias kampung?',
-    answer: 'Kriteria penilaian meliputi: 1) Penghijauan kampung/RT, 2) Kebersihan kampung/RT, 3) Kreativitas menghias kampung/RT. Penilaian dilakukan oleh juri dari luar RW IX untuk menjaga objektivitas.',
-    tags: ['hias-kampung', 'penilaian', 'kriteria'],
-    featured: true
-  },
-  {
-    id: 'lomba-3',
-    category: 'competition',
-    question: 'Apakah ada batasan umur untuk lomba jalan sehat?',
-    answer: 'Lomba jalan sehat terbagi dalam 3 kategori: Anak-anak, Remaja, dan Dewasa. Setiap RT dapat mengirim peserta sesuai kategori dengan kostum bertema lingkungan hidup.',
-    tags: ['jalan-sehat', 'kategori', 'umur'],
-    featured: false
-  },
+// Competition FAQs are now loaded from external JSON file
+const otherFaqData = [
   {
     id: 'event-1',
     category: 'event',
@@ -110,6 +88,9 @@ const faqData = [
     featured: true
   }
 ];
+
+// Combine all FAQ data
+const faqData = [...competitionFAQs.competition, ...otherFaqData];
 
 const categories = [
   { id: 'all', name: 'Semua', icon: HelpCircle, color: 'default' },

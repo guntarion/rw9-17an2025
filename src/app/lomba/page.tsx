@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent } from '@/components/ui/card';
 import {
@@ -29,6 +30,17 @@ export default function LombaPage() {
       <div className="container-custom">
         {/* Header Section */}
         <div className="text-center mb-12">
+          {/* RW IX Logo */}
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/images/logos/Logo_RW_IX_nobg.png"
+              alt="Logo RW IX"
+              width={80}
+              height={73}
+              className="drop-shadow-md"
+            />
+          </div>
+          
           <div className="flex justify-center items-center space-x-3 mb-6">
             <Trophy className="w-8 h-8 text-primary-500" />
             <h1 className="text-4xl font-bold text-gray-900">

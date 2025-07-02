@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { 
@@ -10,7 +11,8 @@ import {
   TreePine, 
   Recycle,
   Target,
-  Heart
+  Heart,
+  Handshake
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -25,6 +27,17 @@ export default function TentangPage() {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-12">
+          {/* RW IX Logo */}
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/images/logos/Logo_RW_IX_nobg.png"
+              alt="Logo RW IX"
+              width={80}
+              height={73}
+              className="drop-shadow-md"
+            />
+          </div>
+          
           <div className="flex justify-center items-center space-x-3 mb-6">
             <Info className="w-8 h-8 text-primary-500" />
             <h1 className="text-4xl font-bold text-gray-900">
@@ -36,6 +49,70 @@ export default function TentangPage() {
             Mengenal lebih dekat acara HUT RI Ke-80 RW IX Sidoarjo dengan tema 
             <strong> Lingkungan Hidup dan Penghijauan</strong>
           </p>
+        </div>
+
+        {/* Chairman's Greeting */}
+        <div className="mb-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 border border-green-100">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+              {/* Chairman Photo */}
+              <div className="flex-shrink-0">
+                <div className="w-32 h-32 bg-green-100 rounded-full flex items-center justify-center overflow-hidden border-4 border-green-200 relative">
+                  <Image
+                    src="/images/committee/made-ascaya.jpg"
+                    alt="Made Ascaya"
+                    fill
+                    className="object-cover"
+                    sizes="128px"
+                  />
+                </div>
+                <div className="text-center mt-4">
+                  <h3 className="font-bold text-gray-800">Made Ascaya</h3>
+                  <p className="text-sm text-gray-600">Ketua RW IX</p>
+                </div>
+              </div>
+              
+              {/* Message Content */}
+              <div className="flex-1 text-center md:text-left">
+                <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
+                  <Heart className="w-6 h-6 text-red-500" />
+                  <h2 className="text-2xl font-bold text-gray-800">Sambutan Ketua RW IX</h2>
+                </div>
+                
+                <blockquote className="text-gray-700 leading-relaxed mb-6 italic">
+                  &ldquo;Assalamualaikum Warahmatullahi Wabarakatuh dan Salam sejahtera bagi kita semua,
+                  <br /><br />
+                  Alhamdulillahirabbil&apos;alamin, dengan penuh rasa syukur kepada Allah SWT, kita dapat 
+                  merayakan HUT RI ke-80 di lingkungan RW IX Sidoarjo dengan tema yang sangat bermakna: 
+                  <strong>&lsquo;Lingkungan Hidup dan Penghijauan&rsquo;</strong>.
+                  <br /><br />
+                  Saya berharap acara ini dapat menjadi momentum istimewa bagi seluruh warga RW IX untuk 
+                  semakin mempererat keakraban dan kebersamaan. Mari kita jadikan peringatan kemerdekaan 
+                  ini sebagai ajang untuk memperkuat silaturahmi, menjalin persahabatan yang lebih erat, 
+                  dan bersama-sama membangun lingkungan yang hijau dan asri.
+                  <br /><br />
+                  Kepada seluruh warga, marilah kita berpartisipasi aktif dalam setiap kegiatan dengan 
+                  semangat gotong royong yang tinggi. Semoga acara ini dapat memberikan kebahagiaan dan 
+                  manfaat bagi kita semua. <strong>Merdeka!</strong>&rdquo;
+                </blockquote>
+                
+                <div className="flex flex-wrap items-center justify-center md:justify-start space-x-4 text-sm text-gray-600">
+                  <div className="flex items-center space-x-1">
+                    <Target className="w-4 h-4 text-green-500" />
+                    <span>Keakraban Warga</span>
+                  </div>
+                  <div className="flex items-center space-x-1">
+                    <Handshake className="w-4 h-4 text-blue-500" />
+                    <span>Gotong Royong</span>
+                  </div>
+                  <div className="flex items-center space-x-1">
+                    <Leaf className="w-4 h-4 text-green-500" />
+                    <span>Lingkungan Hijau</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Event Overview */}

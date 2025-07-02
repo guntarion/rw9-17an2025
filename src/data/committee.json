@@ -170,12 +170,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/titik.jpg",
-        "responsibilities": [
-          "Dukungan koordinasi bazar",
-          "Pengaturan teknis bazar",
-          "Penilaian dan dokumentasi",
-          "Koordinasi dengan panitia inti"
-        ]
+        "responsibilities": ["Dukungan koordinasi bazar", "Pengaturan teknis bazar", "Penilaian dan dokumentasi", "Koordinasi dengan panitia inti"]
       },
       {
         "id": "susilowati",
@@ -234,12 +229,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/ety.jpg",
-        "responsibilities": [
-          "Koordinasi konsumsi tambahan",
-          "Pengadaan snack dan minuman",
-          "Koordinasi dengan panitia lain",
-          "Administrasi konsumsi"
-        ]
+        "responsibilities": ["Koordinasi konsumsi tambahan", "Pengadaan snack dan minuman", "Koordinasi dengan panitia lain", "Administrasi konsumsi"]
       },
       {
         "id": "dwi-ambarwati",
@@ -250,12 +240,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/dwi.jpg",
-        "responsibilities": [
-          "Dukungan tim konsumsi",
-          "Koordinasi pengadaan bahan",
-          "Pengaturan jadwal masak",
-          "Koordinasi dengan volunteer"
-        ]
+        "responsibilities": ["Dukungan tim konsumsi", "Koordinasi pengadaan bahan", "Pengaturan jadwal masak", "Koordinasi dengan volunteer"]
       },
       {
         "id": "sri-sutjani",
@@ -315,12 +300,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/marsudi.jpg",
-        "responsibilities": [
-          "Dukungan koordinasi umum",
-          "Pengaturan tata letak acara",
-          "Koordinasi dengan vendor",
-          "Maintenance peralatan"
-        ]
+        "responsibilities": ["Dukungan koordinasi umum", "Pengaturan tata letak acara", "Koordinasi dengan vendor", "Maintenance peralatan"]
       },
       {
         "id": "nanda-endriansyah",
@@ -331,12 +311,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/nanda.jpg",
-        "responsibilities": [
-          "Koordinasi tata lingkungan",
-          "Pengaturan dekorasi",
-          "Koordinasi dengan tim kreatif",
-          "Support teknis umum"
-        ]
+        "responsibilities": ["Koordinasi tata lingkungan", "Pengaturan dekorasi", "Koordinasi dengan tim kreatif", "Support teknis umum"]
       },
       {
         "id": "wahyu-suharto",
@@ -347,12 +322,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/wahyu.jpg",
-        "responsibilities": [
-          "Koordinasi fasilitas umum",
-          "Pengaturan parkir dan keamanan",
-          "Support logistik umum",
-          "Koordinasi dengan satpam"
-        ]
+        "responsibilities": ["Koordinasi fasilitas umum", "Pengaturan parkir dan keamanan", "Support logistik umum", "Koordinasi dengan satpam"]
       },
       {
         "id": "sigit-dwi",
@@ -363,12 +333,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/sigit.jpg",
-        "responsibilities": [
-          "Support koordinasi umum",
-          "Pengaturan infrastruktur",
-          "Koordinasi dengan kontraktor",
-          "Maintenance emergency"
-        ]
+        "responsibilities": ["Support koordinasi umum", "Pengaturan infrastruktur", "Koordinasi dengan kontraktor", "Maintenance emergency"]
       },
       {
         "id": "endar-sudaryati",
@@ -379,12 +344,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/endar.jpg",
-        "responsibilities": [
-          "Koordinasi kesehatan dan P3K",
-          "Pengadaan obat-obatan",
-          "Koordinasi dengan tenaga medis",
-          "Pos kesehatan selama acara"
-        ]
+        "responsibilities": ["Koordinasi kesehatan dan P3K", "Pengadaan obat-obatan", "Koordinasi dengan tenaga medis", "Pos kesehatan selama acara"]
       },
       {
         "id": "abdul-rozak",
@@ -411,12 +371,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/makmur.jpg",
-        "responsibilities": [
-          "Koordinasi semua lomba",
-          "Pengaturan jadwal dan venue lomba",
-          "Koordinasi dengan juri",
-          "Pencatatan hasil lomba"
-        ]
+        "responsibilities": ["Koordinasi semua lomba", "Pengaturan jadwal dan venue lomba", "Koordinasi dengan juri", "Pencatatan hasil lomba"]
       },
       {
         "id": "singgih-prayoga",
@@ -427,12 +382,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/singgih.jpg",
-        "responsibilities": [
-          "Dukungan koordinasi lomba",
-          "Pengadaan peralatan lomba",
-          "Koordinasi dengan peserta",
-          "Dokumentasi lomba"
-        ]
+        "responsibilities": ["Dukungan koordinasi lomba", "Pengadaan peralatan lomba", "Koordinasi dengan peserta", "Dokumentasi lomba"]
       },
       {
         "id": "erwin-fachrul",
@@ -459,12 +409,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/suleman.jpg",
-        "responsibilities": [
-          "Dukungan lomba lingkungan",
-          "Koordinasi penilaian hijau",
-          "Support edukasi lingkungan",
-          "Koordinasi dengan tim kreatif"
-        ]
+        "responsibilities": ["Dukungan lomba lingkungan", "Koordinasi penilaian hijau", "Support edukasi lingkungan", "Koordinasi dengan tim kreatif"]
       },
       {
         "id": "dimas-wahyu",
@@ -507,12 +452,7 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/rizqiani.jpg",
-        "responsibilities": [
-          "Master of Ceremony acara",
-          "Koordinasi rundown acara",
-          "Pembawa acara utama",
-          "Koordinasi dengan tim protokol"
-        ]
+        "responsibilities": ["Master of Ceremony acara", "Koordinasi rundown acara", "Pembawa acara utama", "Koordinasi dengan tim protokol"]
       },
       {
         "id": "dewi-karuniawati",
@@ -523,19 +463,14 @@
           "whatsapp": "+62xxx"
         },
         "photo": "/images/sections/dewi.jpg",
-        "responsibilities": [
-          "Master of Ceremony pendamping",
-          "Support MC utama",
-          "Koordinasi dengan produksi",
-          "Backup presenter acara"
-        ]
+        "responsibilities": ["Master of Ceremony pendamping", "Support MC utama", "Koordinasi dengan produksi", "Backup presenter acara"]
       }
     ],
     "support": [
       {
         "id": "made-ascaya",
         "name": "Made Ascaya",
-        "role": "Penanggung Jawab",
+        "role": "Ketua RW IX",
         "contact": {
           "phone": "+62xxx",
           "whatsapp": "+62xxx"

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { CountdownHero } from '@/components/features/CountdownTimer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -113,6 +114,20 @@ export default function HomePage() {
       <section className="hero-gradient py-20 px-4 sm:px-6 lg:px-8">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
+            {/* RW IX Logo */}
+            <div className="flex justify-center mb-8">
+              <div className="relative">
+                <Image
+                  src="/images/logos/Logo_RW_IX_nobg.png"
+                  alt="Logo RW IX"
+                  width={120}
+                  height={109}
+                  className="drop-shadow-md"
+                  priority
+                />
+              </div>
+            </div>
+            
             {/* Environmental Icons */}
             <div className="flex justify-center items-center space-x-4 mb-8 animate-fade-in">
               <Leaf className="w-8 h-8 text-primary-500 animate-bounce-gentle" />

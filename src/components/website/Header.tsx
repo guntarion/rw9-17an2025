@@ -14,7 +14,6 @@ import {
   Camera,
   Users,
   Info,
-  Music,
   HelpCircle,
   Phone,
   Leaf,
@@ -48,11 +47,11 @@ const navigation = [
     href: '/tentang',
     icon: Info,
   },
-  {
-    name: 'Hiburan',
-    href: '/hiburan',
-    icon: Music,
-  },
+  // {
+  //   name: 'Hiburan',
+  //   href: '/hiburan',
+  //   icon: Music,
+  // },
   {
     name: 'FAQ',
     href: '/faq',
