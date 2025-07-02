@@ -1,22 +1,21 @@
 import { Metadata } from 'next';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import Link from 'next/link';
+import { Card, CardContent } from '@/components/ui/card';
 import {
-  Calendar,
-  Users,
   Trophy,
-  Clock,
-  Phone,
-  CheckCircle,
-  Target,
-  Award,
-  ChevronRight
+  Leaf,
+  Zap,
+  MapPin,
+  ShoppingBag,
+  Calendar,
+  Award
 } from 'lucide-react';
-import competitionsData from '@/data/competitions.json';
-import { Competition } from '@/types';
+
+// Import lomba components
+import LombaLingkungan from '@/components/lomba/LombaLingkungan';
+import LombaBadminton from '@/components/lomba/LombaBadminton';
+import LombaJalanSehat from '@/components/lomba/LombaJalanSehat';
+import LombaBazaar from '@/components/lomba/LombaBazaar';
 
 export const metadata: Metadata = {
   title: 'Lomba & Kompetisi - HUT RI Ke-80 RW IX Sidoarjo',
@@ -24,24 +23,7 @@ export const metadata: Metadata = {
   keywords: ['lomba', 'kompetisi', 'HUT RI', 'RW IX', 'lingkungan hidup'],
 };
 
-const { competitions } = competitionsData as { competitions: Competition[] };
-
-const categoryColors = {
-  decoration: 'bg-blue-100 text-blue-800',
-  sports: 'bg-green-100 text-green-800',
-  health: 'bg-emerald-100 text-emerald-800',
-  bazaar: 'bg-purple-100 text-purple-800',
-};
-
-const statusColors = {
-  upcoming: 'bg-yellow-100 text-yellow-800',
-  ongoing: 'bg-blue-100 text-blue-800',
-  completed: 'bg-green-100 text-green-800',
-};
-
 export default function LombaPage() {
-  const totalParticipants = competitions.reduce((total, comp) => total + (comp.participants || 0), 0);
-
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="container-custom">
@@ -59,205 +41,147 @@ export default function LombaPage() {
             untuk memeriahkan HUT RI Ke-80 RW IX Sidoarjo
           </p>
           
-          {/* Quick Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-            <div className="bg-white rounded-lg p-4 shadow-soft">
-              <div className="text-2xl font-bold text-primary-600">{competitions.length}</div>
-              <div className="text-sm text-gray-600">Total Lomba</div>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-soft">
-              <div className="text-2xl font-bold text-accent-600">{totalParticipants}</div>
-              <div className="text-sm text-gray-600">Total Peserta</div>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-soft">
-              <div className="text-2xl font-bold text-secondary-600">12</div>
-              <div className="text-sm text-gray-600">RT Peserta</div>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-soft">
-              <div className="text-2xl font-bold text-success-600">2</div>
-              <div className="text-sm text-gray-600">Hari Acara</div>
-            </div>
+          {/* Quick Overview Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <Card className="text-center">
+              <CardContent className="p-4">
+                <div className="text-2xl font-bold text-primary-600">4</div>
+                <div className="text-sm text-gray-600">Kategori Lomba</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center">
+              <CardContent className="p-4">
+                <div className="text-2xl font-bold text-accent-600">11-12</div>
+                <div className="text-sm text-gray-600">RT Peserta</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center">
+              <CardContent className="p-4">
+                <div className="text-2xl font-bold text-secondary-600">13,2M</div>
+                <div className="text-sm text-gray-600">Total Hadiah</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center">
+              <CardContent className="p-4">
+                <div className="text-2xl font-bold text-success-600">Jul-Aug</div>
+                <div className="text-sm text-gray-600">Periode</div>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
         {/* Competition Tabs */}
-        <Tabs defaultValue="semua" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
-            <TabsTrigger value="semua">Semua</TabsTrigger>
-            <TabsTrigger value="decoration">Hias Kampung</TabsTrigger>
-            <TabsTrigger value="sports">Olahraga</TabsTrigger>
-            <TabsTrigger value="health">Kesehatan</TabsTrigger>
-            <TabsTrigger value="bazaar">Bazar</TabsTrigger>
+        <Tabs defaultValue="lingkungan" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
+            <TabsTrigger 
+              value="lingkungan" 
+              className="flex items-center gap-2 text-sm"
+            >
+              <Leaf className="w-4 h-4" />
+              <span className="hidden sm:inline">Lomba</span> Lingkungan
+            </TabsTrigger>
+            <TabsTrigger 
+              value="badminton" 
+              className="flex items-center gap-2 text-sm"
+            >
+              <Zap className="w-4 h-4" />
+              <span className="hidden sm:inline">Fun</span> Badminton
+            </TabsTrigger>
+            <TabsTrigger 
+              value="jalan-sehat" 
+              className="flex items-center gap-2 text-sm"
+            >
+              <MapPin className="w-4 h-4" />
+              Jalan Sehat
+            </TabsTrigger>
+            <TabsTrigger 
+              value="bazaar" 
+              className="flex items-center gap-2 text-sm"
+            >
+              <ShoppingBag className="w-4 h-4" />
+              Bazaar
+            </TabsTrigger>
           </TabsList>
 
-          {/* All Competitions */}
-          <TabsContent value="semua" className="space-y-6">
-            <div className="grid gap-6">
-              {competitions.map((competition) => (
-                <CompetitionCard key={competition.id} competition={competition} />
-              ))}
-            </div>
+          {/* Tab Contents */}
+          <TabsContent value="lingkungan" className="space-y-6">
+            <LombaLingkungan />
           </TabsContent>
 
-          {/* Individual Category Tabs */}
-          {['decoration', 'sports', 'health', 'bazaar'].map((category) => (
-            <TabsContent key={category} value={category} className="space-y-6">
-              <div className="grid gap-6">
-                {competitions
-                  .filter((comp) => comp.category === category)
-                  .map((competition) => (
-                    <CompetitionCard key={competition.id} competition={competition} />
-                  ))}
-              </div>
-            </TabsContent>
-          ))}
+          <TabsContent value="badminton" className="space-y-6">
+            <LombaBadminton />
+          </TabsContent>
+
+          <TabsContent value="jalan-sehat" className="space-y-6">
+            <LombaJalanSehat />
+          </TabsContent>
+
+          <TabsContent value="bazaar" className="space-y-6">
+            <LombaBazaar />
+          </TabsContent>
         </Tabs>
 
-        {/* Important Notes */}
-        <div className="mt-12 bg-gradient-nature rounded-xl p-8">
+        {/* Overall Competition Info */}
+        <div className="mt-16 bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            📋 Informasi Penting
+            📋 Informasi Umum Lomba
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="font-semibold text-gray-800 flex items-center">
-                <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                Pendaftaran
+                <Calendar className="w-5 h-5 text-blue-500 mr-2" />
+                Periode & Pendaftaran
               </h3>
               <ul className="space-y-2 text-gray-600 text-sm">
-                <li>• Pendaftaran melalui koordinator masing-masing RT</li>
-                <li>• Setiap RT wajib mengikuti minimal 3 lomba</li>
-                <li>• Batas pendaftaran: 25 Agustus 2025</li>
-                <li>• Konfirmasi peserta kepada koordinator lomba</li>
+                <li>• <strong>Lomba Lingkungan:</strong> 1 Juli - 24 Agustus 2025</li>
+                <li>• <strong>Fun Badminton:</strong> 9-10 Agustus 2025 (Daftar: 7 Agustus)</li>
+                <li>• <strong>Jalan Sehat:</strong> 31 Agustus 2025</li>
+                <li>• <strong>Bazaar:</strong> 30-31 Agustus 2025 (Daftar: 25 Agustus)</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h3 className="font-semibold text-gray-800 flex items-center">
                 <Award className="w-5 h-5 text-yellow-500 mr-2" />
-                Penilaian & Hadiah
+                Penilaian & Penyelenggaraan
               </h3>
               <ul className="space-y-2 text-gray-600 text-sm">
-                <li>• Juri dari luar RW IX untuk objektivitas</li>
-                <li>• Hadiah untuk juara 1, 2, 3 setiap kategori</li>
-                <li>• Piala bergilir untuk juara umum</li>
-                <li>• Sertifikat untuk semua peserta</li>
+                <li>• Semua lomba bertemakan <strong>Lingkungan Hidup</strong></li>
+                <li>• Juri dari luar dan internal RW IX untuk objektivitas</li>
+                <li>• Setiap RT wajib mengikuti minimal 1 lomba</li>
+                <li>• Dokumentasi kegiatan wajib oleh masing-masing RT</li>
               </ul>
+            </div>
+          </div>
+          
+          <div className="mt-8 text-center">
+            <div className="bg-white rounded-lg p-6 inline-block">
+              <Trophy className="w-12 h-12 text-yellow-500 mx-auto mb-3" />
+              <div className="text-2xl font-bold text-gray-800">Total Hadiah</div>
+              <div className="text-3xl font-bold text-yellow-600">Rp 13.200.000</div>
+              <div className="text-sm text-gray-600 mt-1">Across all competitions</div>
             </div>
           </div>
         </div>
 
-        {/* Contact Section */}
+        {/* Call to Action */}
         <div className="mt-12 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Butuh Informasi Lebih Lanjut?
+            Siap Berkompetisi?
           </h2>
+          <p className="text-gray-600 mb-6">
+            Hubungi koordinator masing-masing lomba atau panitia RW untuk informasi pendaftaran
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/panitia">
-              <Button size="lg" className="bg-gradient-green hover:shadow-green">
-                <Phone className="w-5 h-5 mr-2" />
-                Hubungi Panitia
-              </Button>
-            </Link>
-            <Link href="/faq">
-              <Button variant="outline" size="lg">
-                Tanya Jawab
-              </Button>
-            </Link>
+            <div className="text-center">
+              <div className="text-sm text-gray-500 mb-1">Contact untuk</div>
+              <div className="space-y-1">
+                <div className="text-sm"><strong>Badminton:</strong> Makmur Yusri (0818.515.363)</div>
+                <div className="text-sm"><strong>Lainnya:</strong> Koordinator RW/PKK</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  );
-}
-
-function CompetitionCard({ competition }: { competition: typeof competitions[0] }) {
-  return (
-    <Card className="group hover:shadow-green transition-all duration-300">
-      <CardHeader>
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
-          <div className="flex items-start space-x-4">
-            <div className="text-4xl">{competition.icon}</div>
-            <div className="flex-1">
-              <CardTitle className="text-xl mb-2">{competition.name}</CardTitle>
-              <p className="text-gray-600 mb-3">{competition.description}</p>
-              <div className="flex flex-wrap items-center gap-2 mb-3">
-                <Badge className={categoryColors[competition.category as keyof typeof categoryColors]}>
-                  {competition.category === 'decoration' && 'Dekorasi'}
-                  {competition.category === 'sports' && 'Olahraga'}
-                  {competition.category === 'health' && 'Kesehatan'}
-                  {competition.category === 'bazaar' && 'Bazar'}
-                </Badge>
-                <Badge className={statusColors[competition.status as keyof typeof statusColors]}>
-                  {competition.status === 'upcoming' && 'Akan Datang'}
-                  {competition.status === 'ongoing' && 'Berlangsung'}
-                  {competition.status === 'completed' && 'Selesai'}
-                </Badge>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center md:text-right">
-            <div className="bg-primary-50 rounded-lg p-3 mb-3">
-              <div className="text-sm text-gray-600">Koordinator</div>
-              <div className="font-semibold text-primary-700">{competition.coordinator.name}</div>
-            </div>
-            <Link href={`/lomba/${competition.id}`}>
-              <Button className="w-full group-hover:bg-primary-600">
-                Lihat Detail
-                <ChevronRight className="w-4 h-4 ml-1" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </CardHeader>
-      
-      <CardContent>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="flex items-center space-x-2 text-sm text-gray-600">
-            <Calendar className="w-4 h-4" />
-            <div>
-              <div className="font-medium">Periode</div>
-              <div>
-                {new Date(competition.timeline.start).toLocaleDateString('id-ID')} - 
-                {new Date(competition.timeline.end).toLocaleDateString('id-ID')}
-              </div>
-            </div>
-          </div>
-          
-          <div className="flex items-center space-x-2 text-sm text-gray-600">
-            <Users className="w-4 h-4" />
-            <div>
-              <div className="font-medium">Peserta</div>
-              <div>{competition.participants} {competition.id === 'jalan-sehat' ? 'orang' : 'RT'}</div>
-            </div>
-          </div>
-          
-          <div className="flex items-center space-x-2 text-sm text-gray-600">
-            <Clock className="w-4 h-4" />
-            <div>
-              <div className="font-medium">Pendaftaran</div>
-              <div>Hingga {competition.timeline.registration 
-                ? new Date(competition.timeline.registration).toLocaleDateString('id-ID')
-                : 'Akan diinformasikan'}</div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Criteria */}
-        <div className="mt-4">
-          <h4 className="font-medium text-gray-800 mb-2 flex items-center">
-            <Target className="w-4 h-4 mr-2" />
-            Kriteria Penilaian
-          </h4>
-          <div className="flex flex-wrap gap-2">
-            {competition.criteria.map((criterion, index) => (
-              <Badge key={index} variant="outline" className="text-xs">
-                {criterion}
-              </Badge>
-            ))}
-          </div>
-        </div>
-      </CardContent>
-    </Card>
   );
 }
