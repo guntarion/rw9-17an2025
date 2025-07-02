@@ -160,22 +160,15 @@ export interface GalleryPhoto {
   thumbnail?: string;
   caption: string;
   category: string;
-  date: string;
   year: number;
-  author?: string;
-  competition?: string;
-  rt?: string;
-  tags: string[];
-  likes?: number;
-  comments?: number;
+  tags?: string[];
 }
 
 export type GalleryCategory = 
-  | 'preparation' 
-  | 'competition' 
-  | 'entertainment' 
-  | 'committee' 
-  | 'general';
+  | 'dokumentasi' 
+  | 'doorprize' 
+  | 'hiburan' 
+  | 'wargapanitia';
 
 export interface GalleryCategoryInfo {
   id: string;

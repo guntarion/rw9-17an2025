@@ -10,25 +10,32 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Camera,
-  Heart,
-  MessageCircle,
   Search,
   Upload,
   Filter,
   Calendar,
-  User,
   Tag,
   X,
   ChevronLeft,
   ChevronRight,
-  Eye,
   Star,
   Clock
 } from 'lucide-react';
-import galleryData from '@/data/gallery.json';
+import galleryData from '@/data/galeri-rw9-rewwin.json';
 import { GalleryPhoto } from '@/types';
 
 const { photos, categories } = galleryData;
+
+// Helper function to normalize image URLs for Next.js
+const normalizeImageUrl = (url: string) => {
+  if (url.startsWith('public/')) {
+    return '/' + url.substring(7); // Remove 'public/' and add leading slash
+  }
+  if (url.startsWith('/') || url.startsWith('http')) {
+    return url; // Already properly formatted
+  }
+  return '/' + url; // Add leading slash if missing
+};
 
 const categoryColors = {
   default: 'bg-gray-100 text-gray-800',
@@ -47,11 +54,10 @@ export default function GaleriPage() {
 
   const availableYears = Array.from(new Set(photos.map(photo => photo.year))).sort((a, b) => b - a);
 
-  // Get featured photos (current year - 2025)
+  // Get featured photos (current year - 2024)
   const featuredPhotos = useMemo(() => {
     return photos
-      .filter(photo => photo.year === 2025)
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .filter(photo => photo.year === 2024)
       .slice(0, 6);
   }, []);
 
@@ -73,14 +79,12 @@ export default function GaleriPage() {
       const query = searchQuery.toLowerCase();
       filtered = filtered.filter(photo => 
         photo.caption.toLowerCase().includes(query) ||
-        photo.tags.some(tag => tag.toLowerCase().includes(query)) ||
-        photo.author?.toLowerCase().includes(query) ||
-        photo.rt?.toLowerCase().includes(query)
+        (photo.tags && photo.tags.some((tag: string) => tag.toLowerCase().includes(query)))
       );
     }
 
-    // Sort by date (newest first)
-    return filtered.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    // Sort by year (newest first)
+    return filtered.sort((a, b) => b.year - a.year);
   }, [selectedCategory, selectedYear, searchQuery]);
 
   const openPhotoModal = (photo: GalleryPhoto, index: number) => {
@@ -126,7 +130,7 @@ export default function GaleriPage() {
           </div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
             Dokumentasi kegiatan HUT RI RW IX Sidoarjo dari tahun ke tahun. 
-            <strong>Tahun 2025</strong> dengan tema <strong>Lingkungan Hidup dan Penghijauan</strong>
+            <strong>Tahun 2024</strong> dengan tema <strong>Lingkungan Hidup dan Penghijauan</strong>
           </p>
 
           {/* Stats */}
@@ -141,15 +145,15 @@ export default function GaleriPage() {
             </div>
             <div className="bg-white rounded-lg p-4 shadow-soft">
               <div className="text-2xl font-bold text-secondary-600">
-                {photos.reduce((sum, photo) => sum + (photo.likes || 0), 0)}
+                {categories.length}
               </div>
-              <div className="text-sm text-gray-600">Total Likes</div>
+              <div className="text-sm text-gray-600">Kategori</div>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-soft">
               <div className="text-2xl font-bold text-success-600">
-                {photos.reduce((sum, photo) => sum + (photo.comments || 0), 0)}
+                {photos.filter(photo => photo.tags && photo.tags.length > 0).length}
               </div>
-              <div className="text-sm text-gray-600">Komentar</div>
+              <div className="text-sm text-gray-600">Foto dengan Tag</div>
             </div>
           </div>
 
@@ -166,12 +170,12 @@ export default function GaleriPage() {
             <div className="flex items-center justify-center space-x-3 mb-6">
               <Star className="w-6 h-6 text-yellow-500" />
               <h2 className="text-2xl font-bold text-gray-900">
-                Galeri Unggulan 2025
+                Galeri Unggulan 2024
               </h2>
               <Star className="w-6 h-6 text-yellow-500" />
             </div>
             <p className="text-center text-gray-600 mb-6">
-              Dokumentasi terbaru persiapan HUT RI Ke-80 dengan tema Lingkungan Hidup dan Penghijauan
+              Dokumentasi terbaru kegiatan HUT RI Ke-79 dengan tema Lingkungan Hidup dan Penghijauan
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {featuredPhotos.map((photo, index) => (
@@ -192,7 +196,7 @@ export default function GaleriPage() {
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
               <Input
-                placeholder="Cari foto berdasarkan caption, tag, atau RT..."
+                placeholder="Cari foto berdasarkan caption atau tag..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10"
@@ -221,7 +225,7 @@ export default function GaleriPage() {
                     value={year.toString()}
                     className="text-xs md:text-sm"
                   >
-                    {year === 2025 && <Star className="w-3 h-3 mr-1" />}
+                    {year === 2024 && <Star className="w-3 h-3 mr-1" />}
                     {year}
                   </TabsTrigger>
                 ))}
@@ -353,7 +357,7 @@ export default function GaleriPage() {
                   {/* Image */}
                   <div className="flex-1 relative bg-black">
                     <Image
-                      src={selectedPhoto.url}
+                      src={normalizeImageUrl(selectedPhoto.url)}
                       alt={selectedPhoto.caption}
                       fill
                       className="object-contain"
@@ -370,15 +374,7 @@ export default function GaleriPage() {
                     <div className="space-y-3 mb-4">
                       <div className="flex items-center space-x-2 text-sm text-gray-600">
                         <Calendar className="w-4 h-4" />
-                        <span>{new Date(selectedPhoto.date).toLocaleDateString('id-ID')}</span>
-                      </div>
-                      <div className="flex items-center space-x-2 text-sm text-gray-600">
-                        <User className="w-4 h-4" />
-                        <span>{selectedPhoto.author}</span>
-                      </div>
-                      <div className="flex items-center space-x-2 text-sm text-gray-600">
-                        <Eye className="w-4 h-4" />
-                        <span>{selectedPhoto.rt}</span>
+                        <span>Tahun {selectedPhoto.year}</span>
                       </div>
                     </div>
 
@@ -409,12 +405,13 @@ export default function GaleriPage() {
 
                     <div className="flex items-center space-x-4 pt-4 border-t">
                       <div className="flex items-center space-x-1">
-                        <Heart className="w-4 h-4 text-red-500" />
-                        <span className="text-sm">{selectedPhoto.likes}</span>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        <MessageCircle className="w-4 h-4 text-blue-500" />
-                        <span className="text-sm">{selectedPhoto.comments}</span>
+                        <Tag className="w-4 h-4 text-gray-500" />
+                        <span className="text-sm">
+                          {selectedPhoto.tags && selectedPhoto.tags.length > 0 
+                            ? `${selectedPhoto.tags.length} Tag${selectedPhoto.tags.length > 1 ? 's' : ''}` 
+                            : 'Tidak ada tag'
+                          }
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -437,7 +434,7 @@ function PhotoCard({ photo, onClick, featured = false }: { photo: GalleryPhoto; 
     }`} onClick={onClick}>
       <div className="aspect-square relative overflow-hidden">
         <Image
-          src={photo.thumbnail || photo.url}
+          src={normalizeImageUrl(photo.thumbnail || photo.url)}
           alt={photo.caption}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -461,12 +458,8 @@ function PhotoCard({ photo, onClick, featured = false }: { photo: GalleryPhoto; 
         </div>
         <div className="absolute bottom-3 right-3 flex space-x-2">
           <div className="bg-black/70 text-white px-2 py-1 rounded text-xs flex items-center space-x-1">
-            <Heart className="w-3 h-3" />
-            <span>{photo.likes}</span>
-          </div>
-          <div className="bg-black/70 text-white px-2 py-1 rounded text-xs flex items-center space-x-1">
-            <MessageCircle className="w-3 h-3" />
-            <span>{photo.comments}</span>
+            <Tag className="w-3 h-3" />
+            <span>{photo.tags ? photo.tags.length : 0}</span>
           </div>
         </div>
       </div>
@@ -475,11 +468,9 @@ function PhotoCard({ photo, onClick, featured = false }: { photo: GalleryPhoto; 
           {photo.caption}
         </p>
         <div className="flex items-center justify-between text-xs text-gray-500">
-          <span>{photo.author}</span>
+          <span>Tahun {photo.year}</span>
           <div className="flex items-center space-x-2">
-            <span>{photo.year}</span>
-            <span>•</span>
-            <span>{new Date(photo.date).toLocaleDateString('id-ID')}</span>
+            <span>{categories.find(c => c.id === photo.category)?.name || 'Umum'}</span>
           </div>
         </div>
       </CardContent>
