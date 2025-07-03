@@ -30,7 +30,12 @@ export default function LombaBazaar() {
     {
       category: "EDUKASI",
       weight: "25%",
-      color: "blue",
+      borderColor: "border-l-blue-500",
+      iconColor: "text-blue-600",
+      badgeColor: "bg-blue-100 text-blue-800",
+      bgColor: "bg-blue-50",
+      textColor: "text-blue-800",
+      textColorLight: "text-blue-700",
       icon: BookOpen,
       subcriteria: [
         { name: "Ilmu yang didapat masyarakat", points: "≥10 topik = 10 poin, 5-9 topik = 7 poin, <5 topik = 4 poin" },
@@ -40,7 +45,12 @@ export default function LombaBazaar() {
     {
       category: "PENJUALAN PRODUK",
       weight: "35%",
-      color: "green",
+      borderColor: "border-l-green-500",
+      iconColor: "text-green-600",
+      badgeColor: "bg-green-100 text-green-800",
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+      textColorLight: "text-green-700",
       icon: ShoppingBag,
       subcriteria: [
         { name: "Makanan & minuman ramah lingkungan", points: "Menggunakan bahan alami = 5-10 poin" },
@@ -51,7 +61,12 @@ export default function LombaBazaar() {
     {
       category: "KREATIVITAS & INOVASI",
       weight: "40%",
-      color: "purple",
+      borderColor: "border-l-purple-500",
+      iconColor: "text-purple-600",
+      badgeColor: "bg-purple-100 text-purple-800",
+      bgColor: "bg-purple-50",
+      textColor: "text-purple-800",
+      textColorLight: "text-purple-700",
       icon: Lightbulb,
       subcriteria: [
         { name: "Desain & dekorasi ramah lingkungan", points: "Estetika & kreativitas = 5-10 poin" },
@@ -62,11 +77,11 @@ export default function LombaBazaar() {
   ];
 
   const timeline = [
-    { date: "Juli 2025", activity: "Penjelasan kisi-kisi saat pertemuan PKK RW", icon: BookOpen, color: "blue" },
-    { date: "Agustus 2025", activity: "Penentuan nama juri dari masing-masing RT di pertemuan PKK", icon: Users, color: "green" },
-    { date: "30 Agustus 2025 - 08:00", activity: "Penataan meja dan dekorasi stand oleh masing-masing RT", icon: Coffee, color: "orange" },
-    { date: "30 Agustus 2025 - 17:00", activity: "Penilaian stand oleh juri internal (1 juri per RT)", icon: Eye, color: "red" },
-    { date: "31 Agustus 2025", activity: "Bazaar tema bebas (fokus penjualan)", icon: ShoppingBag, color: "purple" }
+    { date: "Juli 2025", activity: "Penjelasan kisi-kisi saat pertemuan PKK RW", icon: BookOpen, bgColor: "bg-blue-500", borderColor: "border-l-blue-500", cardBg: "bg-blue-50", textColor: "text-blue-800", textColorLight: "text-blue-700" },
+    { date: "Agustus 2025", activity: "Penentuan nama juri dari masing-masing RT di pertemuan PKK", icon: Users, bgColor: "bg-green-500", borderColor: "border-l-green-500", cardBg: "bg-green-50", textColor: "text-green-800", textColorLight: "text-green-700" },
+    { date: "30 Agustus 2025 - 08:00", activity: "Penataan meja dan dekorasi stand oleh masing-masing RT", icon: Coffee, bgColor: "bg-orange-500", borderColor: "border-l-orange-500", cardBg: "bg-orange-50", textColor: "text-orange-800", textColorLight: "text-orange-700" },
+    { date: "30 Agustus 2025 - 17:00", activity: "Penilaian stand oleh juri internal (1 juri per RT)", icon: Eye, bgColor: "bg-red-500", borderColor: "border-l-red-500", cardBg: "bg-red-50", textColor: "text-red-800", textColorLight: "text-red-700" },
+    { date: "31 Agustus 2025", activity: "Bazaar tema bebas (fokus penjualan)", icon: ShoppingBag, bgColor: "bg-purple-500", borderColor: "border-l-purple-500", cardBg: "bg-purple-50", textColor: "text-purple-800", textColorLight: "text-purple-700" }
   ];
 
   return (
@@ -167,13 +182,13 @@ export default function LombaBazaar() {
         <CardContent>
           <div className="space-y-4">
             {timeline.map((item, index) => (
-              <div key={index} className={`flex items-center gap-4 p-4 bg-${item.color}-50 rounded-lg border-l-4 border-l-${item.color}-500`}>
-                <div className={`w-12 h-12 bg-${item.color}-500 rounded-full flex items-center justify-center`}>
+              <div key={index} className={`flex items-center gap-4 p-4 ${item.cardBg} rounded-lg border-l-4 ${item.borderColor}`}>
+                <div className={`w-12 h-12 ${item.bgColor} rounded-full flex items-center justify-center`}>
                   <item.icon className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <div className={`font-semibold text-${item.color}-800`}>{item.date}</div>
-                  <div className={`text-sm text-${item.color}-700`}>{item.activity}</div>
+                  <div className={`font-semibold ${item.textColor}`}>{item.date}</div>
+                  <div className={`text-sm ${item.textColorLight}`}>{item.activity}</div>
                 </div>
               </div>
             ))}
@@ -197,14 +212,14 @@ export default function LombaBazaar() {
         <h2 className="text-2xl font-bold text-gray-900 text-center">Kriteria Penilaian</h2>
         
         {judgesCriteria.map((criteria, index) => (
-          <Card key={index} className={`border-l-4 border-l-${criteria.color}-500`}>
+          <Card key={index} className={`border-l-4 ${criteria.borderColor}`}>
             <CardHeader>
               <div className="flex items-center justify-between">
                 <CardTitle className="flex items-center gap-2">
-                  <criteria.icon className={`w-6 h-6 text-${criteria.color}-600`} />
+                  <criteria.icon className={`w-6 h-6 ${criteria.iconColor}`} />
                   {index + 1}. {criteria.category}
                 </CardTitle>
-                <Badge className={`bg-${criteria.color}-100 text-${criteria.color}-800 text-lg px-3 py-1`}>
+                <Badge className={`${criteria.badgeColor} text-lg px-3 py-1`}>
                   Bobot: {criteria.weight}
                 </Badge>
               </div>
@@ -212,9 +227,9 @@ export default function LombaBazaar() {
             <CardContent>
               <div className="space-y-3">
                 {criteria.subcriteria.map((sub, subIndex) => (
-                  <div key={subIndex} className={`p-3 bg-${criteria.color}-50 rounded-lg`}>
-                    <div className={`font-semibold text-${criteria.color}-800 mb-1`}>{sub.name}</div>
-                    <div className={`text-sm text-${criteria.color}-700`}>{sub.points}</div>
+                  <div key={subIndex} className={`p-3 ${criteria.bgColor} rounded-lg`}>
+                    <div className={`font-semibold ${criteria.textColor} mb-1`}>{sub.name}</div>
+                    <div className={`text-sm ${criteria.textColorLight}`}>{sub.points}</div>
                   </div>
                 ))}
               </div>

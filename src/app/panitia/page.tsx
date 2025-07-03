@@ -396,7 +396,7 @@ export default function PanitiaPage() {
         </Tabs>
 
         {/* Mission Statement */}
-        <div className="mt-16 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl p-8">
+        <div className="mt-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-xl p-8">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 flex items-center justify-center">
               <Flag className="w-8 h-8 mr-3" />
@@ -435,7 +435,7 @@ export default function PanitiaPage() {
         </div>
 
         {/* Contact Information */}
-        <div className="mt-16 bg-gradient-green text-white rounded-xl p-8">
+        {/* <div className="mt-16 bg-gradient-green text-white rounded-xl p-8">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">
               📞 Hubungi Panitia
@@ -476,7 +476,8 @@ export default function PanitiaPage() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
+
       </div>
     </div>
   );

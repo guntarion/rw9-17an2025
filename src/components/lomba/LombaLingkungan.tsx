@@ -14,7 +14,8 @@ import {
   CheckCircle,
   Recycle,
   TreePine,
-  Sparkles
+  Sparkles,
+  Download
 } from 'lucide-react';
 
 export default function LombaLingkungan() {
@@ -32,6 +33,33 @@ export default function LombaLingkungan() {
         <p className="text-lg text-gray-600 max-w-4xl mx-auto">
           HUT RI ke-80 RW IX REWWIN - Meningkatkan kesadaran warga terhadap pentingnya menjaga lingkungan hidup
         </p>
+      </div>
+
+      {/* Download Button */}
+      <div className="text-center">
+        <Card className="bg-gradient-to-br from-green-50 to-blue-50 border-2 border-green-300 shadow-lg">
+          <CardContent className="p-6">
+            <div className="flex flex-col items-center space-y-4">
+              <div className="flex items-center space-x-2">
+                <Download className="w-8 h-8 text-green-600" />
+                <h3 className="text-xl font-bold text-gray-900">Download Kisi-Kisi Lomba</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Unduh panduan lengkap dan kisi-kisi penilaian lomba lingkungan hidup
+              </p>
+              <a
+                href="/docs/Kisi_lomba_lingkungan-hidup.pdf"
+                download="Kisi_lomba_lingkungan-hidup.pdf"
+                className="inline-block"
+              >
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all">
+                  <Download className="w-5 h-5 mr-2" />
+                  Download PDF
+                </Button>
+              </a>
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Quick Stats */}

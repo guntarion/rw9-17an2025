@@ -16,7 +16,7 @@ import {
   Route,
   Flag,
   Coffee,
-  Ticket,
+  MapPinIcon,
   Shield,
   FileText,
   Sun
@@ -24,12 +24,12 @@ import {
 
 export default function LombaJalanSehat() {
   const routeSteps = [
-    { step: "START", location: "Depan Balai RW IX", icon: Flag, color: "green" },
-    { step: "POS 1", location: "Depan rumah Pak Rozak (Jl. Waru Indah)", icon: Ticket, color: "blue" },
-    { step: "POS 2", location: "Pintu masuk Jatayu timur", icon: Ticket, color: "purple" },
-    { step: "POS 3", location: "Pojok barat Jatayu", icon: Ticket, color: "orange" },
-    { step: "POS 4", location: "Panggung", icon: Ticket, color: "red" },
-    { step: "FINISH", location: "Area Balai RW IX", icon: Trophy, color: "yellow" }
+    { step: "START", location: "Depan Balai RW IX", icon: Flag, bgColor: "bg-green-500" },
+    { step: "POS 1", location: "Depan rumah Pak Rozak (Jl. Waru Indah)", icon: MapPinIcon, bgColor: "bg-blue-500" },
+    { step: "POS 2", location: "Pintu masuk Jatayu timur", icon: MapPinIcon, bgColor: "bg-purple-500" },
+    { step: "POS 3", location: "Pojok barat Jatayu", icon: MapPinIcon, bgColor: "bg-orange-500" },
+    { step: "POS 4", location: "Panggung", icon: MapPinIcon, bgColor: "bg-red-500" },
+    { step: "FINISH", location: "Area Balai RW IX", icon: Trophy, bgColor: "bg-yellow-500" }
   ];
 
   return (
@@ -166,7 +166,7 @@ export default function LombaJalanSehat() {
           <div className="space-y-4">
             {routeSteps.map((step, index) => (
               <div key={index} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
-                <div className={`w-12 h-12 bg-${step.color}-500 rounded-full flex items-center justify-center`}>
+                <div className={`w-12 h-12 ${step.bgColor} rounded-full flex items-center justify-center`}>
                   <step.icon className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
@@ -208,14 +208,14 @@ export default function LombaJalanSehat() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-3">
               <div className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
-                <Ticket className="w-8 h-8 text-blue-600" />
+                <MapPinIcon className="w-8 h-8 text-blue-600" />
                 <div>
                   <div className="font-semibold text-blue-800">Pos Kupon 1</div>
                   <div className="text-sm text-blue-600">Pak Antok & Tim</div>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-3 bg-purple-50 rounded-lg">
-                <Ticket className="w-8 h-8 text-purple-600" />
+                <MapPinIcon className="w-8 h-8 text-purple-600" />
                 <div>
                   <div className="font-semibold text-purple-800">Pos Kupon 2</div>
                   <div className="text-sm text-purple-600">Mas Sigit & Tim</div>
@@ -224,14 +224,14 @@ export default function LombaJalanSehat() {
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3 p-3 bg-orange-50 rounded-lg">
-                <Ticket className="w-8 h-8 text-orange-600" />
+                <MapPinIcon className="w-8 h-8 text-orange-600" />
                 <div>
                   <div className="font-semibold text-orange-800">Pos Kupon 3</div>
                   <div className="text-sm text-orange-600">Mas Nanda & Tim</div>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-3 bg-red-50 rounded-lg">
-                <Ticket className="w-8 h-8 text-red-600" />
+                <MapPinIcon className="w-8 h-8 text-red-600" />
                 <div>
                   <div className="font-semibold text-red-800">Pos Kupon 4</div>
                   <div className="text-sm text-red-600">Pak Edy & Pak Yosi</div>

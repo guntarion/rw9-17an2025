@@ -63,7 +63,7 @@ export default function LombaPage() {
             </Card>
             <Card className="text-center">
               <CardContent className="p-4">
-                <div className="text-2xl font-bold text-accent-600">11-12</div>
+                <div className="text-2xl font-bold text-accent-600">11</div>
                 <div className="text-sm text-gray-600">RT Peserta</div>
               </CardContent>
             </Card>

@@ -246,12 +246,12 @@ export default function HomePage() {
                       <span className="font-medium">{competition.participants} {competition.id === 'jalan-sehat' ? 'orang' : 'RT'}</span>
                     </div>
                   </div>
-                  <Link href={`/lomba/${competition.id}`}>
+                  {/* <Link href={`/lomba/${competition.id}`}>
                     <Button variant="outline" size="sm" className="w-full mt-4 group-hover:bg-primary-50">
                       Lihat Detail
                       <ChevronRight className="w-4 h-4 ml-1" />
                     </Button>
-                  </Link>
+                  </Link> */}
                 </CardContent>
               </Card>
             ))}
@@ -343,12 +343,12 @@ export default function HomePage() {
               </div>
             </div>
             
-            <Link href="/hiburan">
+            {/* <Link href="/hiburan">
               <Button variant="secondary" size="lg" className="bg-white text-primary-600 hover:bg-gray-100">
                 Lihat Jadwal Lengkap
                 <ChevronRight className="w-5 h-5 ml-2" />
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
