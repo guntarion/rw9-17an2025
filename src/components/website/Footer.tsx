@@ -4,17 +4,12 @@ import Link from 'next/link';
 import {
   ChevronUp,
   Calendar,
-  Facebook,
   Heart,
-  Instagram,
   Leaf,
-  Mail,
   MapPin,
   Phone,
   Trophy,
   Users,
-  MessageCircle,
-  Youtube,
 } from 'lucide-react';
 
 interface FooterLink {
@@ -64,12 +59,7 @@ const contactInfo = {
   eventDate: '30-31 Agustus 2025',
 };
 
-const socialMedia = [
-  { icon: Facebook, href: '#', label: 'Facebook RW IX' },
-  { icon: Instagram, href: '#', label: 'Instagram RW IX' },
-  { icon: Youtube, href: '#', label: 'YouTube RW IX' },
-  { icon: MessageCircle, href: '#', label: 'WhatsApp Panitia' },
-];
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
