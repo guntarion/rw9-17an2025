@@ -32,7 +32,7 @@ const competitions = [
     icon: '🏡',
     color: 'primary',
     period: '1 Juli - 24 Agustus 2025',
-    participants: 12,
+    participants: 11,
   },
   {
     id: 'bulu-tangkis-keluarga',
@@ -42,7 +42,7 @@ const competitions = [
     icon: '🏸',
     color: 'accent',
     period: 'Malam Sabtu & Minggu',
-    participants: 16,
+    participants: 11,
   },
   {
     id: 'jalan-sehat',
@@ -52,7 +52,7 @@ const competitions = [
     icon: '🚶‍♂️',
     color: 'success',
     period: '30 Agustus 2025',
-    participants: 150,
+    participants: 500,
   },
   {
     id: 'bazar',
@@ -62,15 +62,15 @@ const competitions = [
     icon: '🛍️',
     color: 'secondary',
     period: '30-31 Agustus 2025',
-    participants: 12,
+    participants: 11,
   },
 ];
 
 const quickStats = [
   { label: 'Total Lomba', value: '4', icon: Trophy },
-  { label: 'RT Peserta', value: '12', icon: Users },
+  { label: 'RT Peserta', value: '11', icon: Users },
   { label: 'Hari Acara', value: '2', icon: Calendar },
-  { label: 'Total Peserta', value: '190+', icon: Heart },
+  { label: 'Total Peserta', value: '520+', icon: Heart },
 ];
 
 
