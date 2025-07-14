@@ -69,6 +69,7 @@ export default function LombaLingkungan() {
             <Users className="w-8 h-8 text-primary-600 mx-auto mb-2" />
             <div className="text-2xl font-bold text-primary-600">11</div>
             <div className="text-sm text-gray-600">RT Peserta</div>
+            <div className="text-xs text-gray-500">RW 09 Rewwin</div>
           </CardContent>
         </Card>
         <Card className="text-center">
@@ -176,9 +177,9 @@ export default function LombaLingkungan() {
                 <h4 className="font-semibold text-gray-800 mb-2">Kriteria Penilaian:</h4>
                 <ul className="space-y-1 text-sm text-gray-600">
                   <li>• <strong>Kebersihan area</strong> - tingkat kebersihan keseluruhan lingkungan RT</li>
-                  <li>• <strong>Pengelolaan sampah</strong> - implementasi daur ulang dan pemilahan sampah</li>
-                  <li>• <strong>Estetika lingkungan</strong> - penataan taman dan tanaman yang indah</li>
-                  <li>• <strong>Partisipasi warga</strong> - tingkat keterlibatan warga RT dalam kegiatan</li>
+                  <li>• <strong>Pengelolaan sampah</strong> - daur ulang dan pemilahan sampah</li>
+                  <li>• <strong>Estetika lingkungan</strong> - penataan taman dan tanaman</li>
+                  <li>• <strong>Partisipasi warga</strong> - keterlibatan warga dalam kegiatan kebersihan</li>
                 </ul>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">
@@ -249,7 +250,7 @@ export default function LombaLingkungan() {
                   <li>• <strong>Kuantitas pohon</strong> - seberapa banyak pohon yang sudah tertanam</li>
                   <li>• <strong>Jenis pohon</strong> - pohon produktif (buah/peneduh) lebih diutamakan</li>
                   <li>• <strong>Tingkat perawatan</strong> - kondisi dan kesehatan pohon yang ditanam</li>
-                  <li>• <strong>Edukasi warga</strong> - program sosialisasi tentang manfaat pohon kepada warga</li>
+                  <li>• <strong>Edukasi warga</strong> - edukasi kepada warga tentang manfaat pohon</li>
                 </ul>
               </div>
               <div className="bg-green-50 p-4 rounded-lg">
@@ -321,8 +322,8 @@ export default function LombaLingkungan() {
               <ul className="space-y-1 text-sm text-gray-600">
                 <li>• Semua kegiatan harus mematuhi prinsip ramah lingkungan</li>
                 <li>• Tidak menggunakan bahan berbahaya atau merusak lingkungan</li>
+                <li>• Peserta: Seluruh RT 01-11, di wilayah RW 09, Rewwin, Wedoro, Waru, Sidoarjo</li>
                 <li>• Dokumentasi kegiatan wajib dilakukan oleh masing-masing RT</li>
-                <li>• Laporan progress dapat disampaikan kepada RW secara berkala</li>
               </ul>
             </div>
             <div>
@@ -332,10 +333,31 @@ export default function LombaLingkungan() {
               </h4>
               <ul className="space-y-1 text-sm text-gray-600">
                 <li>• Keputusan juri bersifat mutlak dan tidak dapat diganggu gugat</li>
-                <li>• Lomba dianggap selesai sejak pemenang diumumkan dan hadiah diserahkan</li>
-                <li>• Dewan juri akan ditentukan dan diberitahukan oleh RW</li>
+                <li>• Lomba lingkungan hidup dianggap sudah selesai sejak pemenang diumumkan dan hadiah diserahterimakan</li>
+                <li>• Dewan juri dari Dinas Lingkungan Hidup Provinsi Jawa Timur</li>
                 <li>• Contact person akan diinformasikan lebih lanjut oleh RW</li>
               </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Info Juri */}
+      <Card className="border-l-4 border-l-blue-500">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Award className="w-6 h-6 text-blue-600" />
+            Dewan Juri
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="text-center">
+            <div className="bg-blue-50 p-6 rounded-lg border-2 border-blue-200">
+              <Award className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+              <div className="text-xl font-bold text-blue-800 mb-2">Dewan Juri Resmi</div>
+              <div className="text-lg font-semibold text-blue-700">Dinas Lingkungan Hidup</div>
+              <div className="text-md text-blue-600">Provinsi Jawa Timur</div>
+              <div className="text-sm text-blue-500 mt-2">Juri profesional dari instansi pemerintah terkait</div>
             </div>
           </div>
         </CardContent>

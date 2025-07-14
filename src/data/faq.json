@@ -22,28 +22,127 @@
       "id": "comp-badminton-1",
       "category": "competition",
       "lomba": "badminton",
-      "question": "Bagaimana sistem pertandingan Lomba Fun Badminton?",
-      "answer": "Lomba badminton menggunakan sistem ganda campuran (suami istri/bapak anak/kakak adik). Babak penyisihan tanggal 9 Agustus 2025 (19.30 WIB) dengan sistem gugur, dan babak final tanggal 10 Agustus 2025 (09.00 WIB) untuk 3 tim terbaik.",
-      "tags": ["badminton", "ganda-campuran", "jadwal", "sistem"],
-      "featured": false
+      "question": "Bagaimana sistem pertandingan Lomba Fun Badminton yang baru?",
+      "answer": "Lomba badminton menggunakan sistem ganda campuran (suami istri/bapak anak/kakak adik). Babak penyisihan tanggal 9 Agustus 2025 (19.30 WIB) di GOR Bulu Tangkis Jatayu dengan sistem gugur, score 21 Rally Point dengan 2x kemenangan. Babak final tanggal 10 Agustus 2025 (08.00 WIB) untuk 3 tim terbaik menentukan juara 1, 2, dan 3.",
+      "tags": ["badminton", "ganda-campuran", "jadwal", "sistem", "jatayu"],
+      "featured": true
     },
     {
       "id": "comp-badminton-2",
       "category": "competition",
       "lomba": "badminton",
-      "question": "Berapa hadiah untuk juara lomba badminton?",
-      "answer": "Juara I mendapat Rp 600.000, Juara II mendapat Rp 400.000, dan Juara III mendapat Rp 200.000. Batas pendaftaran adalah 7 Agustus 2025.",
-      "tags": ["badminton", "hadiah", "pendaftaran"],
-      "featured": false
+      "question": "Berapa hadiah lomba badminton dan apakah ada perubahan sistem hadiah?",
+      "answer": "Sistem hadiah telah berubah menjadi 3 kategori terpisah! Setiap kategori berhadiah Rp 600.000: (1) Juara Kategori Point Kemenangan, (2) Juara Kategori Kekompakan/Keserasian, (3) Juara Kategori Kreatifitas Tema. Total hadiah Rp 1.800.000. Satu RT bisa memenangkan lebih dari 1 kategori. Batas pendaftaran 7 Agustus 2025.",
+      "tags": ["badminton", "hadiah", "kategori-terpisah", "pendaftaran", "1.8-juta"],
+      "featured": true
     },
     {
       "id": "comp-badminton-3",
       "category": "competition",
       "lomba": "badminton",
-      "question": "Apa kriteria penilaian lomba badminton?",
-      "answer": "Penilaian berdasarkan: Point Kemenangan (Menang=3, Kalah=0), Kekompakan/Keserasian (Kompak=1, Tidak kompak=0), dan Penampilan/Kostum (Kreatif inovatif=2, Seragam biasa=1, Tidak seragam=0). Kostum dengan tema lingkungan hidup mendapat nilai tambah.",
-      "tags": ["badminton", "penilaian", "kostum", "lingkungan"],
+      "question": "Bagaimana detail sistem penilaian 3 kategori terpisah lomba badminton?",
+      "answer": "Sistem penilaian kini terpisah dalam 3 kategori independen: (1) Point Kemenangan - murni dari hasil pertandingan di lapangan, (2) Kekompakan/Keserasian - dinilai dari koordinasi dan keharmonisan pasangan, (3) Kreatifitas Tema - penilaian kostum dan penampilan bertema lingkungan hidup. Setiap kategori memiliki juri dan sistem penilaian terpisah untuk memastikan fairness.",
+      "tags": ["badminton", "penilaian", "3-kategori", "terpisah", "fairness"],
+      "featured": true
+    },
+    {
+      "id": "comp-badminton-wasit-independen",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Bagaimana memastikan wasit badminton objektif dan tidak memihak RT tertentu?",
+      "answer": "Sistem wasit dirancang sangat transparan: wasit pertandingan ditunjuk panitia dari 5 orang netral (Pak Amir, Pak Hadi, Pak Nanang, Pak Sutikno, Pak Edo) yang tidak boleh dari RT yang sedang bertanding. Setiap pertandingan ditangani wasit yang berbeda dari RT yang bertanding untuk menjaga objektivitas penuh. Semua wasit sudah berpengalaman dan akan mendapat briefing seragam tentang aturan Rally Point 21 dengan 2x kemenangan.",
+      "tags": ["wasit", "objektif", "netral", "transparan", "briefing"],
+      "featured": true
+    },
+    {
+      "id": "comp-badminton-juri-penilaian",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Siapa yang menilai kategori Kekompakan dan Kreatifitas? Bagaimana memastikan penilaian adil?",
+      "answer": "Penilaian dilakukan oleh 11 juri yang terdiri dari perwakilan masing-masing RT. Setiap juri menilai semua RT kecuali RT sendiri untuk menjaga objektivitas. Kriteria penilaian telah distandarisasi dengan rubrik jelas: Kekompakan dinilai dari koordinasi gerakan dan keharmonisan pasangan, Kreatifitas dinilai dari inovasi kostum bertema lingkungan dan daya tarik visual. Semua juri akan mendapat briefing khusus dengan contoh penilaian untuk menyamakan persepsi.",
+      "tags": ["juri", "11-orang", "standar", "rubrik", "objektivitas"],
+      "featured": true
+    },
+    {
+      "id": "comp-badminton-undian-fair",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Bagaimana sistem undian nomor urut 1-11? Apakah benar-benar random dan fair?",
+      "answer": "Undian nomor urut dilakukan secara transparan dengan perwakilan semua RT hadir. Proses undian menggunakan metode lot tertutup yang dikocok di hadapan peserta, kemudian setiap RT mengambil nomor secara bergiliran sesuai urutan RT (01, 02, dst). Tidak ada manipulasi atau pengaturan nomor. Nomor urut ini menentukan bracket pertandingan sistem gugur, sehingga fairness undian sangat dijaga ketat oleh panitia.",
+      "tags": ["undian", "nomor-urut", "transparan", "random", "bracket"],
       "featured": false
+    },
+    {
+      "id": "comp-badminton-peralatan-shuttlecock",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Siapa yang menyediakan shuttlecock dan peralatan? Bagaimana memastikan kualitas sama untuk semua?",
+      "answer": "Shuttlecock disediakan panitia untuk memastikan kualitas dan standar yang sama untuk semua pertandingan. Peserta wajib membawa raket dan perlengkapan pribadi sendiri. Shuttlecock yang digunakan adalah merek standar yang sama untuk semua pertandingan. Jika ada shuttlecock rusak saat pertandingan, akan diganti dengan yang baru dari stok panitia. Hal ini menjamin keadilan dan konsistensi kualitas permainan untuk semua RT.",
+      "tags": ["shuttlecock", "peralatan", "standar", "kualitas", "konsistensi"],
+      "featured": false
+    },
+    {
+      "id": "comp-badminton-toleransi-waktu",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Bagaimana ketentuan toleransi keterlambatan? Apakah benar hanya 15 menit?",
+      "answer": "Ya, toleransi keterlambatan maksimal 15 menit dari jadwal yang ditentukan untuk menjaga kelancaran turnamen. RT yang terlambat lebih dari 15 menit akan dianggap WO (Walk Over) dan gugur otomatis. Namun panitia memahami kemungkinan kendala tak terduga, sehingga jika ada situasi force majeure (macet parah, hujan deras), dapat dipertimbangkan kelonggaran khusus dengan persetujuan panitia dan peserta lain. Yang terpenting adalah komunikasi segera dengan koordinator lomba saat ada kendala.",
+      "tags": ["toleransi", "15-menit", "keterlambatan", "WO", "force-majeure"],
+      "featured": false
+    },
+    {
+      "id": "comp-badminton-venue-fasilitas",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Bagaimana kondisi GOR Bulu Tangkis Jatayu? Apakah lapangan dalam kondisi layak dan sama?",
+      "answer": "GOR Bulu Tangkis Jatayu telah dipilih karena memiliki fasilitas lapangan standar dengan kondisi baik. Semua pertandingan menggunakan lapangan dengan spesifikasi yang sama (net, marking, pencahayaan). Panitia telah melakukan survei dan persiapan venue untuk memastikan kondisi optimal. Jika ada kendala cuaca atau fasilitas, panitia memiliki contingency plan termasuk kemungkinan penjadwalan ulang untuk menjaga fairness kompetisi.",
+      "tags": ["venue", "jatayu", "fasilitas", "standar", "contingency"],
+      "featured": false
+    },
+    {
+      "id": "comp-badminton-multiple-winner",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Apakah mungkin satu RT memenangi lebih dari satu kategori? Bagaimana sistem pembagiannya?",
+      "answer": "Ya, sepenuhnya mungkin! Sistem 3 kategori terpisah memungkinkan satu RT unggul di multiple kategori dan berhak mendapat hadiah dari setiap kategori yang dimenangkan. Misalnya RT yang menang di lapangan (Point Kemenangan) sekaligus kompak (Kekompakan) bisa meraih 2 x Rp 600.000 = Rp 1.200.000. Ini justru mendorong RT untuk maksimal di semua aspek: skill bermain, kekompakan pasangan, dan kreativitas kostum. Tidak ada pembatasan atau pengurangan hadiah.",
+      "tags": ["multiple-winner", "kategori-ganda", "maksimal-hadiah", "motivasi"],
+      "featured": true
+    },
+    {
+      "id": "comp-badminton-technical-meeting",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Kapan technical meeting badminton? Apakah wajib hadir untuk semua RT?",
+      "answer": "Technical meeting akan dijelaskan detail di website kegiatan RW IX dan diinformasikan melalui koordinator masing-masing RT. Kehadiran sangat dianjurkan untuk memahami aturan terbaru, sistem 3 kategori penilaian, dan tata cara pertandingan. Namun jika berhalangan hadir, informasi lengkap akan diberikan melalui koordinator RT dan tersedia di website. Yang terpenting adalah setiap RT memahami aturan sebelum hari pertandingan untuk menghindari kesalahpahaman.",
+      "tags": ["technical-meeting", "website", "koordinator", "aturan"],
+      "featured": false
+    },
+    {
+      "id": "comp-badminton-supporter-aturan",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Bagaimana aturan untuk supporter? Apakah ada batasan jumlah atau perilaku?",
+      "answer": "Setiap RT dibolehkan membawa supporter mewakili RT untuk memberikan dukungan moral. Tidak ada batasan jumlah yang ketat, namun harus wajar dan tidak mengganggu jalannya pertandingan. Supporter harus menjaga sportivitas, tidak boleh menganggu konsentrasi peserta lawan, dan mengikuti instruksi panitia venue. Dukungan yang positif dan sportif justru diharapkan untuk mempererat semangat kekeluargaan antar RT. Yang dilarang adalah tindakan unsporting atau menganggu wasit.",
+      "tags": ["supporter", "sportivitas", "batasan", "kekeluargaan"],
+      "featured": false
+    },
+    {
+      "id": "comp-badminton-cuaca-hujan",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Apa yang terjadi jika hujan atau cuaca buruk saat jadwal pertandingan?",
+      "answer": "GOR Bulu Tangkis Jatayu adalah venue indoor sehingga cuaca tidak akan mempengaruhi pertandingan. Namun jika ada kendala akses jalan atau transportasi akibat cuaca ekstrem, panitia memiliki fleksibilitas untuk menunda pertandingan maksimal 2 jam. Jika masih tidak memungkinkan, akan ada penjadwalan ulang dengan koordinasi semua RT. Keselamatan peserta menjadi prioritas utama, dan keputusan penundaan akan diambil demi fairness semua pihak.",
+      "tags": ["cuaca", "hujan", "indoor", "penundaan", "keselamatan"],
+      "featured": false
+    },
+    {
+      "id": "comp-badminton-protest-keberatan",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Bagaimana mekanisme jika ada keberatan terhadap keputusan wasit atau hasil penilaian?",
+      "answer": "Sistem komplain telah disiapkan untuk menjaga fairness: (1) Keberatan terhadap keputusan wasit harus disampaikan segera saat pertandingan dengan tetap menjaga sportivitas. (2) Untuk penilaian kategori, rekap skor akan dijelaskan kepada setiap RT dalam 2 hari pasca pertandingan. (3) Keberatan formal dapat diajukan dalam 5 hari dengan disertai alasan jelas. (4) Tim review (panitia + tokoh netral) akan meninjau dengan prinsip kekeluargaan dan keadilan. Keputusan final bersifat mengikat untuk menjaga harmoni RW.",
+      "tags": ["protest", "komplain", "wasit", "review", "fairness"],
+      "featured": true
     },
     {
       "id": "comp-bazaar-1",
@@ -76,36 +175,279 @@
       "id": "comp-jalan-sehat-1",
       "category": "competition",
       "lomba": "jalan-sehat",
-      "question": "Bagaimana rute dan sistem Lomba Jalan Sehat?",
-      "answer": "Dimulai 31 Agustus 2025 pukul 06.00 dari Balai RW IX. Rute: Balai RW IX → Jl. Raya Waru (Pos Kupon 1) → Jl. Jatayu (Pos Kupon 2 & 3) → kembali ke Balai RW IX (Pos Kupon 4). Wajib mengambil kupon di setiap pos.",
-      "tags": ["jalan-sehat", "rute", "kupon", "jadwal"],
-      "featured": false
+      "question": "Bagaimana rute dan jadwal lengkap Lomba Jalan Sehat?",
+      "answer": "Dimulai 31 Agustus 2025 dari Depan Masjid At Taqwa (sesuai nomor urut undian). Registrasi 05.30-05.55, briefing 05.55-06.00, start 06.00 WIB. Rute: Start (Masjid At Taqwa) → Pos 1 (rumah Pak Rozak, Jl. Waru Indah) → Pos 2 (pintu masuk Jatayu timur) → Pos 3 (pojok barat Jatayu) → Pos 4 (panggung) → Finish (Area Balai RW IX). Wajib meletakkan kupon di setiap pos.",
+      "tags": ["jalan-sehat", "rute", "kupon", "jadwal", "masjid-at-taqwa", "undian"],
+      "featured": true
     },
     {
       "id": "comp-jalan-sehat-2",
       "category": "competition",
       "lomba": "jalan-sehat",
-      "question": "Apa kriteria penilaian Lomba Jalan Sehat?",
-      "answer": "Kekompakan Barisan (30%), Kreativitas Kostum & Penampilan (40%), Semangat & Antusiasme (20%), dan Kedisiplinan & Sportivitas (10%). Kostum dengan tema lingkungan hidup dianjurkan.",
-      "tags": ["jalan-sehat", "penilaian", "kostum", "kekompakan"],
+      "question": "Apa kriteria penilaian dan hadiah Lomba Jalan Sehat?",
+      "answer": "4 aspek penilaian: Kekompakan Barisan (30%) - kerapian formasi, keseragaman gerakan, kedisiplinan; Kreativitas Kostum & Penampilan (40%) - originalitas, kesesuaian tema, daya tarik visual; Semangat & Antusiasme (20%) - energi, yel-yel, partisipasi aktif; Kedisiplinan & Sportivitas (10%) - ketepatan waktu, mengikuti rute, meletakkan kupon. Total hadiah Rp 4.500.000: Juara 1 (Rp 2.000.000), Juara 2 (Rp 1.500.000), Juara 3 (Rp 1.000.000).",
+      "tags": ["jalan-sehat", "penilaian", "kostum", "kekompakan", "hadiah", "4.5-juta"],
+      "featured": true
+    },
+    {
+      "id": "comp-jalan-sehat-juri-sistematis",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Siapa juri Lomba Jalan Sehat dan bagaimana sistem penilaian yang fair?",
+      "answer": "Tim juri terdiri dari 11 orang perwakilan masing-masing RT: RT 01 (Bu Heni), RT 02 (Hery Saptono), RT 03 (Pak Ulijadi), RT 04 (Hapsari Haniditya), RT 05 (Pak Eric), RT 06 (Bu Erliyana), RT 07 (Ridayati Nani), RT 08 (Pak Charles H), RT 09 (Pak Windarto), RT 10 (Bu Rita), RT 11 (Pak H. Yusri). Setiap juri menilai semua RT kecuali RT sendiri untuk menjaga objektivitas. Juri akan menyebar di titik strategis dan mendapat briefing khusus dari koordinator lomba.",
+      "tags": ["juri", "11-orang", "objektif", "briefing", "sistematis"],
+      "featured": true
+    },
+    {
+      "id": "comp-jalan-sehat-formasi-anak",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Bagaimana aturan formasi 'anak-anak paling depan'? Apakah ada batasan usia?",
+      "answer": "Formasi 'anak-anak paling depan' bertujuan menciptakan suasana ceria dan melindungi anak-anak selama perjalanan. Batasan usia: anak-anak (0-12 tahun) di barisan terdepan, remaja (13-17 tahun) di tengah, dewasa di belakang sebagai pengawas. Tidak ada jumlah minimal anak per RT - yang penting adalah penataan yang aman dan menarik. RT yang tidak memiliki anak kecil tetap bisa berpartisipasi dengan formasi kreatif sesuai komposisi warga.",
+      "tags": ["formasi", "anak-anak", "batasan-usia", "keselamatan", "fleksibel"],
+      "featured": true
+    },
+    {
+      "id": "comp-jalan-sehat-partisipasi-warga",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Berapa jumlah minimal dan maksimal peserta per RT? Bagaimana jika RT kecil vs RT besar?",
+      "answer": "Tidak ada batasan minimal atau maksimal peserta - semua warga RT dipersilakan ikut. Penilaian tidak berdasarkan jumlah absolut tapi kualitas: kekompakan relatif terhadap jumlah peserta, kreativitas formasi, dan semangat bersama. RT kecil dengan 20 orang kompak bisa unggul dari RT besar dengan 100 orang tidak teratur. Yang dinilai adalah proporsi partisipasi, koordinasi, dan antusiasme kolektif, bukan kuantitas peserta.",
+      "tags": ["jumlah-peserta", "fleksibel", "kualitas", "proporsi", "semua-usia"],
+      "featured": true
+    },
+    {
+      "id": "comp-jalan-sehat-undian-start",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Bagaimana sistem undian nomor urut start? Apakah mempengaruhi penilaian?",
+      "answer": "Undian nomor urut dilakukan transparan dengan perwakilan semua RT hadir. Nomor urut menentukan giliran start dari Masjid At Taqwa dengan interval waktu tertentu untuk menghindari kepadatan. Nomor urut TIDAK mempengaruhi penilaian - juri menilai performance masing-masing RT secara independen. Yang pertama start tidak otomatis unggul, karena penilaian fokus pada kualitas penampilan, bukan kecepatan menyelesaikan rute.",
+      "tags": ["undian", "nomor-urut", "transparan", "interval", "tidak-mempengaruhi"],
+      "featured": true
+    },
+    {
+      "id": "comp-jalan-sehat-pos-kupon-sistem",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Bagaimana sistem kupon di setiap pos? Apa sanksi jika terlewat atau hilang?",
+      "answer": "Sistem kupon untuk memastikan semua RT mengikuti rute lengkap. Di setiap pos (Pos 1-4), koordinator RT wajib meletakkan kupon yang disediakan panitia ke kotak yang tersedia. Kupon berbeda warna untuk setiap pos. Jika terlewat satu pos, RT mendapat pengurangan nilai kedisiplinan tapi tidak diskualifikasi. Jika ada kendala (macet, kesalahan rute), segera koordinasi dengan petugas pos atau panitia untuk solusi terbaik tanpa mengurangi nilai.",
+      "tags": ["kupon", "4-pos", "sanksi", "pengurangan-nilai", "koordinasi"],
+      "featured": true
+    },
+    {
+      "id": "comp-jalan-sehat-kostum-tema",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Seperti apa 'kostum tema lingkungan' yang dinilai? Apakah ada contoh konkret?",
+      "answer": "Kostum tema lingkungan dinilai dari: (1) Penggunaan bahan ramah lingkungan (kain organik, daur ulang), (2) Warna natural (hijau, coklat, biru), (3) Aksesoris dari bahan alam (daun, bunga, bambu), (4) Pesan lingkungan dalam desain (logo recycle, slogan go green). Contoh: kaos hijau dengan topi dari daun pisang, atau seragam biru dengan tas dari kain goni. Yang dinilai kreativitas dan effort, bukan kemewahan. Kostum sederhana tapi konsisten tema sering lebih unggul dari kostum mahal tanpa pesan lingkungan.",
+      "tags": ["kostum", "tema-lingkungan", "contoh", "kreativitas", "ramah-lingkungan"],
+      "featured": true
+    },
+    {
+      "id": "comp-jalan-sehat-yel-yel-penilaian",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Bagaimana penilaian yel-yel dan semangat? Apakah perlu dipersiapkan khusus?",
+      "answer": "Yel-yel dinilai dari: (1) Kekompakan suara dan gerakan, (2) Kreativitas lirik yang mencerminkan semangat RT, (3) Energi dan antusiasme peserta, (4) Kesesuaian dengan tema 'Generasi Muda Semangat dan Kreatif'. Tidak harus lirik baru - modifikasi lagu populer dengan lirik RT juga bagus. Yang terpenting adalah kebersamaan dan keceriaan. Yel-yel spontan di sepanjang rute juga dinilai, bukan hanya saat start/finish.",
+      "tags": ["yel-yel", "kekompakan", "kreativitas", "energi", "spontan"],
       "featured": false
+    },
+    {
+      "id": "comp-jalan-sehat-cuaca-hujan",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Apa yang terjadi jika hujan deras saat jalan sehat? Apakah ada plan B?",
+      "answer": "Jika hujan ringan, kegiatan tetap dilanjutkan dengan penyesuaian (peserta boleh menggunakan payung/jas hujan). Jika hujan deras yang membahayakan keselamatan, acara akan ditunda maksimal 2 jam. Jika cuaca tidak membaik, akan dijadwal ulang ke hari berikutnya dengan koordinasi semua RT. Keputusan penundaan berdasarkan keselamatan peserta, terutama anak-anak dan lansia. Penilaian tetap fair untuk semua kondisi yang dialami bersama-sama.",
+      "tags": ["hujan", "cuaca", "penundaan", "keselamatan", "plan-b"],
+      "featured": false
+    },
+    {
+      "id": "comp-jalan-sehat-kesehatan-p3k",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Bagaimana jaminan keselamatan peserta, terutama anak-anak dan lansia?",
+      "answer": "Keselamatan adalah prioritas utama: (1) Tim P3K tersedia di sepanjang rute, (2) Setiap RT wajib ada koordinator dewasa yang bertanggung jawab, (3) Rute sudah disurvey untuk memastikan aman untuk semua usia, (4) Peserta dengan riwayat jantung/kesehatan serius harap konsultasi dokter dulu. Anak-anak wajib didampingi orang tua/dewasa. Jika ada peserta yang kelelahan atau sakit, bisa istirahat di pos terdekat dan tidak mempengaruhi penilaian RT.",
+      "tags": ["keselamatan", "p3k", "koordinator", "anak-lansia", "survei-rute"],
+      "featured": true
+    },
+    {
+      "id": "comp-jalan-sehat-waktu-tempuh",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Berapa estimasi waktu tempuh rute? Apakah ada batasan waktu maksimal?",
+      "answer": "Estimasi waktu tempuh normal 45-60 menit dengan pace santai sesuai semangat 'jalan sehat'. Tidak ada batasan waktu maksimal - yang penting semua peserta sampai finish dengan selamat. Yang dinilai bukan kecepatan, tapi penampilan dan semangat di sepanjang rute. RT boleh berhenti untuk foto, istirahat, atau mengatur formasi tanpa penalti. Panitia akan standby hingga RT terakhir finish untuk memastikan semua peserta aman.",
+      "tags": ["waktu-tempuh", "45-60-menit", "santai", "tidak-ada-batasan", "keselamatan"],
+      "featured": false
+    },
+    {
+      "id": "comp-jalan-sehat-dokumentasi-wajib",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Apakah ada kewajiban dokumentasi khusus? Bagaimana dengan RT yang tidak punya kamera bagus?",
+      "answer": "Dokumentasi dianjurkan tapi tidak wajib untuk penilaian. Yang dinilai adalah penampilan langsung oleh juri, bukan foto/video. Dokumentasi berguna untuk kenang-kenangan dan publikasi kegiatan RW. RT boleh gunakan kamera HP sederhana atau minta bantuan RT lain untuk dokumentasi bersama. Panitia juga akan mendokumentasikan seluruh kegiatan, sehingga setiap RT akan mendapat foto/video dari acara ini.",
+      "tags": ["dokumentasi", "tidak-wajib", "kenangan", "kamera-hp", "panitia"],
+      "featured": false
+    },
+    {
+      "id": "comp-jalan-sehat-rute-alternatif",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Bagaimana jika ada RT yang tersesat atau salah rute? Apakah langsung diskualifikasi?",
+      "answer": "Tidak ada diskualifikasi untuk kesalahan rute - yang penting semangat dan keselamatan. Petugas pos dan panitia akan membantu mengarahkan RT yang tersesat kembali ke rute yang benar. RT yang terlewat pos bisa kembali untuk mengambil kupon (jika memungkinkan) atau melaporkan kendala ke panitia. Yang dinilai adalah usaha mengikuti aturan dan sportivitas, bukan kesempurnaan navigasi. Koordinator lomba akan mempertimbangkan situasi khusus dalam penilaian akhir.",
+      "tags": ["tersesat", "tidak-diskualifikasi", "bantuan", "sportivitas", "pertimbangan"],
+      "featured": false
+    },
+    {
+      "id": "comp-jalan-sehat-rt-kecil-besar",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Apakah RT 10-11 yang masih konfirmasi akan mempengaruhi sistem penilaian?",
+      "answer": "Sistem penilaian sudah dirancang fleksibel untuk 9-11 RT peserta. Jika RT 10-11 tidak ikut, juri dari RT tersebut tetap akan menilai secara objektif. Yang terpenting adalah keikutsertaan RT 01-09 yang sudah pasti. Penilaian tidak berubah karena jumlah peserta - setiap RT dinilai berdasarkan performance sendiri, bukan perbandingan relatif. Sistem scoring tetap konsisten dan fair untuk semua RT yang berpartisipasi.",
+      "tags": ["rt-10-11", "konfirmasi", "fleksibel", "9-11-rt", "konsisten"],
+      "featured": false
+    },
+    {
+      "id": "comp-jalan-sehat-komplain-penilaian",
+      "category": "competition",
+      "lomba": "jalan-sehat",
+      "question": "Apa mekanisme jika ada RT yang keberatan dengan hasil penilaian juri?",
+      "answer": "Mekanisme komplain transparan: (1) Rekap skor per kriteria akan diberikan kepada semua RT dalam 2 hari pasca acara, (2) Keberatan dapat diajukan dalam 5 hari dengan alasan tertulis, (3) Tim review (koordinator lomba + tokoh netral) akan meninjau dengan melibatkan dokumentasi panitia, (4) Keputusan review bersifat final untuk menjaga keharmonisan. Proses dilakukan dengan mengedepankan sportivitas dan kekeluargaan warga RW IX.",
+      "tags": ["komplain", "rekap-skor", "review", "dokumentasi", "kekeluargaan"],
+      "featured": true
     },
     {
       "id": "comp-lingkungan-1",
       "category": "competition",
       "lomba": "lingkungan",
-      "question": "Apa saja yang dinilai dalam Lomba Lingkungan Hidup?",
-      "answer": "3 aspek utama: Kebersihan Lingkungan RT (30%) - kebersihan area dan pengelolaan sampah, Hias Lingkungan RT (30%) - kreativitas gapura/penjor dengan bahan daur ulang, dan Penanaman Pohon (40%) - kuantitas, jenis pohon produktif, dan perawatan.",
-      "tags": ["lingkungan", "kebersihan", "hias-kampung", "pohon"],
+      "question": "Apa saja yang dinilai dalam Lomba Lingkungan Hidup dan bagaimana bobotnya?",
+      "answer": "3 aspek dengan bobot berbeda: (1) Kebersihan Lingkungan RT (30%) - kebersihan area, daur ulang dan pemilahan sampah, estetika lingkungan, partisipasi warga, (2) Hias Lingkungan RT (30%) - kreativitas gapura/penjor/lampu hias dengan bahan daur ulang dan penyampaian pesan lingkungan, (3) Penanaman Pohon (40%) - kuantitas, jenis pohon produktif/peneduh, perawatan, dan edukasi warga tentang manfaat pohon.",
+      "tags": ["lingkungan", "kebersihan", "hias-kampung", "pohon", "bobot-penilaian"],
       "featured": true
     },
     {
       "id": "comp-lingkungan-2",
       "category": "competition",
       "lomba": "lingkungan",
-      "question": "Berapa periode dan hadiah Lomba Lingkungan Hidup?",
-      "answer": "Periode lomba: 1 Juli - 24 Agustus 2025, penjurian 24 Agustus, pengumuman 31 Agustus. Hadiah: Juara I Rp 3.000.000 (2.500.000 + 500.000 dari RT 11), Juara II Rp 2.500.000, Juara III Rp 2.000.000. Semua dapat piagam.",
-      "tags": ["lingkungan", "periode", "hadiah", "piagam"],
+      "question": "Berapa periode, jadwal penjurian, dan total hadiah Lomba Lingkungan Hidup?",
+      "answer": "Periode lomba: 1 Juli - 24 Agustus 2025 (55 hari). Penjurian serentak 24 Agustus 2025 pagi (08.00) dan sore (17.00). Pengumuman 31 Agustus 2025. Total hadiah Rp 7.500.000: Juara I Rp 3.000.000 (2.500.000 + bonus 500.000 dari RT 11), Juara II Rp 2.500.000 (2.000.000 + bonus 500.000), Juara III Rp 2.000.000 (1.500.000 + bonus 500.000). Semua pemenang mendapat piagam penghargaan.",
+      "tags": ["lingkungan", "periode", "jadwal", "hadiah", "7.5-juta", "bonus-rt11"],
+      "featured": true
+    },
+    {
+      "id": "comp-lingkungan-juri-profesional",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Siapa juri Lomba Lingkungan Hidup? Bagaimana memastikan objektivitas penilaian?",
+      "answer": "Dewan juri resmi dari Dinas Lingkungan Hidup Provinsi Jawa Timur - instansi pemerintah profesional yang kompeten di bidang lingkungan. Juri adalah pihak eksternal yang netral, tidak ada kepentingan pribadi dengan RT manapun. Mereka menggunakan standar penilaian lingkungan yang baku dan terukur sesuai kaidah ilmiah. Keputusan juri bersifat mutlak untuk menjaga kredibilitas lomba tingkat provinsi ini.",
+      "tags": ["juri", "dinas-lingkungan", "profesional", "objektif", "provinsi"],
+      "featured": true
+    },
+    {
+      "id": "comp-lingkungan-penilaian-standar",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Bagaimana standar penilaian yang objektif untuk aspek 'kreativitas' dan 'estetika' yang subjektif?",
+      "answer": "Penilaian menggunakan rubrik terstandar dari Dinas Lingkungan Hidup dengan parameter terukur: (1) Kreativitas dinilai dari inovasi penggunaan bahan daur ulang, keunikan ide, dan solusi ramah lingkungan, (2) Estetika dinilai dari kerapian, harmonisasi warna natural, dan integrasi dengan lingkungan sekitar, (3) Pesan lingkungan dinilai dari kejelasan edukasi dan dampak awareness. Setiap kriteria memiliki scoring 1-10 dengan indikator spesifik untuk meminimalkan subjektivitas.",
+      "tags": ["standar", "rubrik", "kreativitas", "estetika", "terukur"],
+      "featured": true
+    },
+    {
+      "id": "comp-lingkungan-pohon-kriteria",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Apa kriteria 'pohon produktif' yang diutamakan? Apakah ada daftar jenis pohon yang direkomendasikan?",
+      "answer": "Pohon produktif adalah tanaman yang memberikan manfaat langsung: (1) Pohon buah: mangga, jambu, jeruk, kelengkeng, rambutan, (2) Pohon peneduh: ketapang, tanjung, mahoni, flamboyan, (3) Tanaman obat: sirih, kunyit, jahe, lengkuas. Yang dinilai bukan jenis eksklusif, tapi kesesuaian dengan iklim lokal, perawatan yang baik, dan manfaat jangka panjang. RT dapat berkonsultasi dengan Dinas Lingkungan untuk rekomendasi pohon sesuai kondisi tanah dan ruang yang tersedia.",
+      "tags": ["pohon-produktif", "buah", "peneduh", "rekomendasi", "konsultasi"],
+      "featured": true
+    },
+    {
+      "id": "comp-lingkungan-partisipasi-warga",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Bagaimana mengukur 'partisipasi warga' secara adil? RT dengan warga sedikit vs banyak?",
+      "answer": "Partisipasi dinilai secara proporsional, bukan absolut. Yang dilihat adalah: (1) Persentase keterlibatan dari total KK di RT, (2) Konsistensi kegiatan selama periode lomba, (3) Inovasi program yang melibatkan berbagai usia, (4) Dokumentasi aktivitas gotong royong. RT kecil dengan partisipasi 80% bisa unggul dari RT besar dengan partisipasi 40%. Kualitas kolaborasi dan sustainability program lebih penting daripada jumlah absolut peserta.",
+      "tags": ["partisipasi", "proporsional", "persentase", "konsistensi", "dokumentasi"],
+      "featured": true
+    },
+    {
+      "id": "comp-lingkungan-waktu-penilaian",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Kenapa penjurian dilakukan 2 kali (pagi dan sore)? Apakah kondisi penilaian sama?",
+      "answer": "Penjurian ganda untuk memastikan assessment komprehensif: (1) Pagi (08.00) - fokus penilaian kebersihan area dan kondisi tanaman saat optimal, (2) Sore (17.00) - observasi aktivitas warga, sistem pengelolaan sampah harian, dan estetika dalam pencahayaan natural. Kedua sesi menggunakan form penilaian yang sama. Jika ada perbedaan kondisi karena cuaca, juri akan mempertimbangkan faktor eksternal untuk fairness. Total skor adalah rata-rata kedua sesi penilaian.",
+      "tags": ["penjurian-ganda", "pagi-sore", "komprehensif", "fairness", "rata-rata"],
+      "featured": false
+    },
+    {
+      "id": "comp-lingkungan-cuaca-musim",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Bagaimana jika terjadi musim kemarau/hujan ekstrem yang mempengaruhi kondisi tanaman?",
+      "answer": "Juri memahami faktor alam yang di luar kendali RT. Penilaian difokuskan pada: (1) Usaha perawatan yang optimal sesuai kondisi cuaca, (2) Inovasi sistem pengairan atau perlindungan tanaman, (3) Adaptasi strategi sesuai musim. Yang dinilai adalah effort dan kreativitas menghadapi tantangan, bukan hasil yang sempurna. Dokumentasi proses perawatan menjadi bukti penting. Jika cuaca ekstrem saat penjurian, ada fleksibilitas jadwal dengan koordinasi RW.",
+      "tags": ["cuaca", "musim", "adaptasi", "effort", "dokumentasi"],
+      "featured": false
+    },
+    {
+      "id": "comp-lingkungan-biaya-bahan",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Apakah RT dengan budget terbatas bisa bersaing dengan RT yang lebih mampu?",
+      "answer": "Sepenuhnya bisa! Filosofi lomba lingkungan adalah 'kreativitas dan gotong royong mengalahkan modal besar'. Banyak material ramah lingkungan tersedia gratis: bambu, daun-daunan, botol bekas, kardus, tanah kompos. Pohon bisa didapat dari program pemerintah atau pembibitan mandiri. Yang dinilai adalah inovasi penggunaan bahan lokal dan partisipasi komunal, bukan kemewahan investasi. Bahkan solusi sederhana tapi sustainability tinggi sering mendapat nilai terbaik.",
+      "tags": ["budget", "terbatas", "kreativitas", "gotong-royong", "bahan-lokal"],
+      "featured": true
+    },
+    {
+      "id": "comp-lingkungan-lahan-terbatas",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Bagaimana jika RT kami memiliki lahan terbatas untuk penanaman pohon?",
+      "answer": "Keterbatasan lahan bukan halangan! Inovasi yang dinilai: (1) Vertical gardening menggunakan pot bertingkat, (2) Pemanfaatan sudut-sudut strategis seperti pinggir jalan, (3) Tanaman gantung di teras atau balkon, (4) Kerjasama dengan fasilitas umum di area RT. Yang terpenting adalah optimalisasi ruang yang ada. RT dengan lahan kecil tapi dimanfaatkan maksimal bisa unggul dari RT luas yang tidak dirawat optimal. Kreativitas ruang adalah nilai plus tersendiri.",
+      "tags": ["lahan-terbatas", "vertical-gardening", "optimalisasi", "kreativitas-ruang"],
+      "featured": true
+    },
+    {
+      "id": "comp-lingkungan-dokumentasi-wajib",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Seperti apa dokumentasi yang diminta? Apakah ada format atau standar tertentu?",
+      "answer": "Dokumentasi fleksibel tapi informatif: (1) Foto before-after area yang dikerjakan, (2) Dokumentasi proses gotong royong dan partisipasi warga, (3) Progress perawatan tanaman dari waktu ke waktu, (4) Aktivitas edukasi lingkungan kepada warga. Format bebas: album foto, video sederhana, atau laporan visual. Yang penting adalah kronologi dan bukti partisipasi warga. Dokumentasi ini membantu juri memahami effort dan sustainability program RT selama periode lomba.",
+      "tags": ["dokumentasi", "before-after", "progress", "partisipasi", "fleksibel"],
+      "featured": false
+    },
+    {
+      "id": "comp-lingkungan-kisi-kisi-detail",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Dimana bisa mendapatkan kisi-kisi penilaian detail dan panduan lengkap lomba?",
+      "answer": "Kisi-kisi lengkap tersedia dalam bentuk PDF yang bisa didownload di website RW IX bagian Lomba Lingkungan Hidup. Dokumen berisi: (1) Rubrik penilaian detail setiap aspek, (2) Contoh best practices dari lomba sebelumnya, (3) Tips praktis untuk setiap kategori, (4) Daftar material ramah lingkungan yang direkomendasikan. RT sangat dianjurkan download dan pelajari panduan ini untuk memaksimalkan persiapan. Ada juga bisa konsultasi melalui koordinator RT masing-masing.",
+      "tags": ["kisi-kisi", "panduan", "download", "PDF", "best-practices"],
+      "featured": false
+    },
+    {
+      "id": "comp-lingkungan-komplain-sistem",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Apa mekanisme jika ada RT yang merasa hasil penilaian tidak adil?",
+      "answer": "Sistem komplain tersedia dengan prosedur jelas: (1) Rekap penilaian per aspek akan diberikan kepada semua RT dalam 3 hari pasca pengumuman, (2) Keberatan formal dapat diajukan dalam 7 hari dengan alasan tertulis dan bukti pendukung, (3) Tim review independen (Dinas Lingkungan + tokoh masyarakat netral) akan meninjau ulang, (4) Keputusan review bersifat final. Proses dilakukan transparan dengan mengedepankan data objektif dan tetap menjaga kekeluargaan warga RW.",
+      "tags": ["komplain", "rekap-penilaian", "review", "transparansi", "kekeluargaan"],
+      "featured": true
+    },
+    {
+      "id": "comp-lingkungan-rt11-bonus",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Mengapa RT 11 memberikan bonus untuk semua pemenang? Apakah mereka tidak ikut lomba?",
+      "answer": "RT 11 tetap ikut lomba dan berkompetisi setara dengan RT lainnya. Bonus Rp 500.000 untuk setiap pemenang adalah bentuk apresiasi dan dukungan RT 11 terhadap program lingkungan RW secara keseluruhan. Ini menunjukkan semangat kekeluargaan dan komitmen bersama terhadap kelestarian lingkungan. Penilaian tetap objektif dan RT 11 tidak mendapat perlakuan khusus. Justru ini menjadi contoh bagaimana lomba bisa mempererat solidaritas antar RT.",
+      "tags": ["rt11", "bonus", "apresiasi", "kekeluargaan", "solidaritas"],
+      "featured": false
+    },
+    {
+      "id": "comp-lingkungan-sustainability",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Bagaimana memastikan program lingkungan berlanjut setelah lomba selesai?",
+      "answer": "Sustainability adalah tujuan utama lomba ini. Strategi keberlanjutan: (1) Edukasi warga tentang manfaat jangka panjang, (2) Pembentukan kelompok peduli lingkungan di setiap RT, (3) Jadwal perawatan rutin yang disepakati bersama, (4) Evaluasi berkala kondisi program. Yang dinilai juga komitmen RT untuk menjaga hasil lomba. Program terbaik akan dijadikan model untuk RT lain dan mendapat dukungan RW untuk pengembangan lebih lanjut.",
+      "tags": ["sustainability", "keberlanjutan", "edukasi", "evaluasi", "model"],
       "featured": true
     },
     {
@@ -131,8 +473,8 @@
       "category": "competition",
       "lomba": "general",
       "question": "Siapa yang bisa dihubungi untuk informasi lomba?",
-      "answer": "Lomba Badminton: Makmur Yusri (0818.515.363) dan Singgih Prayoga (0822.2800.7600). Untuk lomba lainnya, informasi akan disampaikan melalui koordinator RT masing-masing atau panitia RW.",
-      "tags": ["kontak", "narahubung", "koordinator"],
+      "answer": "Lomba Badminton: Makmur Yusri (0818.515.363) dan Singgih Prayoga (0822.2800.7600). Untuk lomba lainnya, informasi akan disampaikan melalui koordinator RT masing-masing atau panitia RW. Technical meeting dan informasi detail tersedia di website kegiatan RW IX.",
+      "tags": ["kontak", "narahubung", "koordinator", "website"],
       "featured": false
     },
     {
@@ -140,8 +482,8 @@
       "category": "competition",
       "lomba": "general",
       "question": "Berapa total hadiah keseluruhan untuk semua lomba?",
-      "answer": "Total hadiah semua lomba mencapai lebih dari Rp 10.000.000: Bazaar (Rp 3.000.000), Lingkungan Hidup (Rp 7.500.000), Badminton (Rp 1.200.000), dan Jalan Sehat (Rp 1.200.000). Belum termasuk doorprize malam puncak.",
-      "tags": ["hadiah", "total", "semua-lomba"],
+      "answer": "Total hadiah semua lomba mencapai lebih dari Rp 16.000.000: Lingkungan Hidup (Rp 7.500.000), Jalan Sehat (Rp 4.500.000), Bazaar (Rp 3.000.000), dan Badminton (Rp 1.800.000). Belum termasuk doorprize malam puncak. Badminton menggunakan sistem 3 kategori terpisah yang memungkinkan RT meraih multiple hadiah.",
+      "tags": ["hadiah", "total", "semua-lomba", "16-juta"],
       "featured": true
     },
     {

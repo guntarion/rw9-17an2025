@@ -179,15 +179,15 @@ export default function FAQPage() {
               setSelectedLomba('all-lomba');
             }
           }} className="w-full">
-            <TabsList className="grid w-full grid-cols-3 md:grid-cols-5">
+            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-1 h-auto p-1">
               {categories.map((category) => (
                 <TabsTrigger 
                   key={category.id} 
                   value={category.id}
-                  className="text-xs md:text-sm"
+                  className="flex flex-col items-center justify-center px-2 py-3 h-auto min-h-[60px] sm:min-h-[50px] md:min-h-[40px] data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
                 >
-                  <category.icon className="w-4 h-4 mr-1" />
-                  <span className="hidden sm:inline">{category.name}</span>
+                  <category.icon className="w-4 h-4 mb-1 flex-shrink-0" />
+                  <span className="text-[10px] sm:text-xs leading-tight text-center break-words">{category.name}</span>
                 </TabsTrigger>
               ))}
             </TabsList>
@@ -201,15 +201,15 @@ export default function FAQPage() {
                 Filter berdasarkan jenis lomba:
               </div>
               <Tabs value={selectedLomba} onValueChange={setSelectedLomba} className="w-full">
-                <TabsList className="grid w-full grid-cols-2 md:grid-cols-6">
+                <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-1 h-auto p-1">
                   {lombaCategories.map((lomba) => (
                     <TabsTrigger 
                       key={lomba.id} 
                       value={lomba.id}
-                      className="text-xs md:text-sm"
+                      className="flex flex-col items-center justify-center px-1 py-2 h-auto min-h-[50px] sm:min-h-[45px] md:min-h-[40px] data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
                     >
-                      <lomba.icon className="w-4 h-4 mr-1" />
-                      <span className="hidden sm:inline">{lomba.name}</span>
+                      <lomba.icon className="w-3 h-3 mb-1 flex-shrink-0" />
+                      <span className="text-[9px] sm:text-[10px] leading-tight text-center break-words px-1">{lomba.name}</span>
                     </TabsTrigger>
                   ))}
                 </TabsList>
