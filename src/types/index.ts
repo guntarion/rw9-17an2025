@@ -216,6 +216,7 @@ export interface FAQItem {
   question: string;
   answer: string;
   category: 'competition' | 'event' | 'logistics' | 'general';
+  lomba?: 'general' | 'lingkungan' | 'badminton' | 'jalan-sehat' | 'bazaar';
   tags: string[];
   featured: boolean;
 }

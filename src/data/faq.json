@@ -2,7 +2,8 @@
   "competition": [
     {
       "id": "comp-general-1",
-      "category": "competition", 
+      "category": "competition",
+      "lomba": "general",
       "question": "Apa saja lomba yang tersedia dalam HUT RI Ke-80 RW IX?",
       "answer": "Terdapat 4 lomba utama: 1) Lomba Fun Badminton (Ganda Campuran), 2) Lomba Bazaar bertema Lingkungan, 3) Lomba Jalan Sehat, dan 4) Lomba Lingkungan Hidup (kebersihan, hias kampung, penanaman pohon). Setiap RT wajib mengikuti minimal 3 dari 4 lomba yang tersedia.",
       "tags": ["lomba", "jenis-lomba", "RT", "wajib"],
@@ -11,6 +12,7 @@
     {
       "id": "comp-general-2", 
       "category": "competition",
+      "lomba": "general",
       "question": "Siapa saja yang bisa mengikuti lomba?",
       "answer": "Seluruh RT 01-11 di wilayah RW IX Rewwin, Wedoro, Waru, Sidoarjo dapat berpartisipasi. Peserta harus berdomisili di RT setempat dan mewakili RT masing-masing sesuai ketentuan lomba.",
       "tags": ["peserta", "RT", "domisili", "syarat"],
@@ -19,6 +21,7 @@
     {
       "id": "comp-badminton-1",
       "category": "competition",
+      "lomba": "badminton",
       "question": "Bagaimana sistem pertandingan Lomba Fun Badminton?",
       "answer": "Lomba badminton menggunakan sistem ganda campuran (suami istri/bapak anak/kakak adik). Babak penyisihan tanggal 9 Agustus 2025 (19.30 WIB) dengan sistem gugur, dan babak final tanggal 10 Agustus 2025 (09.00 WIB) untuk 3 tim terbaik.",
       "tags": ["badminton", "ganda-campuran", "jadwal", "sistem"],
@@ -26,7 +29,8 @@
     },
     {
       "id": "comp-badminton-2",
-      "category": "competition", 
+      "category": "competition",
+      "lomba": "badminton",
       "question": "Berapa hadiah untuk juara lomba badminton?",
       "answer": "Juara I mendapat Rp 600.000, Juara II mendapat Rp 400.000, dan Juara III mendapat Rp 200.000. Batas pendaftaran adalah 7 Agustus 2025.",
       "tags": ["badminton", "hadiah", "pendaftaran"],
@@ -35,6 +39,7 @@
     {
       "id": "comp-badminton-3",
       "category": "competition",
+      "lomba": "badminton",
       "question": "Apa kriteria penilaian lomba badminton?",
       "answer": "Penilaian berdasarkan: Point Kemenangan (Menang=3, Kalah=0), Kekompakan/Keserasian (Kompak=1, Tidak kompak=0), dan Penampilan/Kostum (Kreatif inovatif=2, Seragam biasa=1, Tidak seragam=0). Kostum dengan tema lingkungan hidup mendapat nilai tambah.",
       "tags": ["badminton", "penilaian", "kostum", "lingkungan"],
@@ -43,6 +48,7 @@
     {
       "id": "comp-bazaar-1",
       "category": "competition",
+      "lomba": "bazaar",
       "question": "Apa tema dan kriteria penilaian Lomba Bazaar?",
       "answer": "Tema 'LINGKUNGAN' dengan 3 kriteria: Edukasi (25%) - ilmu tentang lingkungan dan media peraga, Penjualan Produk (35%) - makanan alami dan kerajinan daur ulang, Kreativitas & Inovasi (40%) - desain ramah lingkungan dan partisipasi Karang Taruna.",
       "tags": ["bazaar", "lingkungan", "edukasi", "kreativitas"],
@@ -51,6 +57,7 @@
     {
       "id": "comp-bazaar-2",
       "category": "competition",
+      "lomba": "bazaar",
       "question": "Kapan penilaian dan pelaksanaan Lomba Bazaar?",
       "answer": "30 Agustus 2025: penataan stand (08.00) dan penilaian juri internal (17.00). 31 Agustus 2025: bazaar tema bebas untuk penjualan. Konfirmasi partisipasi sebelum 25 Agustus 2025.",
       "tags": ["bazaar", "jadwal", "penilaian", "registrasi"],
@@ -59,6 +66,7 @@
     {
       "id": "comp-bazaar-3",
       "category": "competition",
+      "lomba": "bazaar",
       "question": "Berapa total hadiah Lomba Bazaar?",
       "answer": "Total hadiah Rp 3.000.000 dengan rincian: Juara I Rp 1.500.000, Juara II Rp 1.000.000, dan Juara III Rp 500.000. Ini adalah lomba dengan hadiah terbesar.",
       "tags": ["bazaar", "hadiah", "terbesar"],
@@ -67,6 +75,7 @@
     {
       "id": "comp-jalan-sehat-1",
       "category": "competition",
+      "lomba": "jalan-sehat",
       "question": "Bagaimana rute dan sistem Lomba Jalan Sehat?",
       "answer": "Dimulai 31 Agustus 2025 pukul 06.00 dari Balai RW IX. Rute: Balai RW IX → Jl. Raya Waru (Pos Kupon 1) → Jl. Jatayu (Pos Kupon 2 & 3) → kembali ke Balai RW IX (Pos Kupon 4). Wajib mengambil kupon di setiap pos.",
       "tags": ["jalan-sehat", "rute", "kupon", "jadwal"],
@@ -75,6 +84,7 @@
     {
       "id": "comp-jalan-sehat-2",
       "category": "competition",
+      "lomba": "jalan-sehat",
       "question": "Apa kriteria penilaian Lomba Jalan Sehat?",
       "answer": "Kekompakan Barisan (30%), Kreativitas Kostum & Penampilan (40%), Semangat & Antusiasme (20%), dan Kedisiplinan & Sportivitas (10%). Kostum dengan tema lingkungan hidup dianjurkan.",
       "tags": ["jalan-sehat", "penilaian", "kostum", "kekompakan"],
@@ -83,6 +93,7 @@
     {
       "id": "comp-lingkungan-1",
       "category": "competition",
+      "lomba": "lingkungan",
       "question": "Apa saja yang dinilai dalam Lomba Lingkungan Hidup?",
       "answer": "3 aspek utama: Kebersihan Lingkungan RT (30%) - kebersihan area dan pengelolaan sampah, Hias Lingkungan RT (30%) - kreativitas gapura/penjor dengan bahan daur ulang, dan Penanaman Pohon (40%) - kuantitas, jenis pohon produktif, dan perawatan.",
       "tags": ["lingkungan", "kebersihan", "hias-kampung", "pohon"],
@@ -91,6 +102,7 @@
     {
       "id": "comp-lingkungan-2",
       "category": "competition",
+      "lomba": "lingkungan",
       "question": "Berapa periode dan hadiah Lomba Lingkungan Hidup?",
       "answer": "Periode lomba: 1 Juli - 24 Agustus 2025, penjurian 24 Agustus, pengumuman 31 Agustus. Hadiah: Juara I Rp 3.000.000 (2.500.000 + 500.000 dari RT 11), Juara II Rp 2.500.000, Juara III Rp 2.000.000. Semua dapat piagam.",
       "tags": ["lingkungan", "periode", "hadiah", "piagam"],
@@ -99,6 +111,7 @@
     {
       "id": "comp-kostum-1",
       "category": "competition",
+      "lomba": "general",
       "question": "Apakah ada aturan khusus untuk kostum dalam semua lomba?",
       "answer": "Kostum dengan tema lingkungan hidup sangat dianjurkan di semua lomba dan mendapat nilai tambah. Untuk badminton: kostum bebas tapi tema lingkungan dapat bonus. Bazaar: penjaga stand harus berpakaian ramah lingkungan dan estetik.",
       "tags": ["kostum", "lingkungan", "tema", "nilai-tambah"],
@@ -107,6 +120,7 @@
     {
       "id": "comp-pendaftaran-1",
       "category": "competition",
+      "lomba": "general",
       "question": "Bagaimana cara dan batas waktu pendaftaran setiap lomba?",
       "answer": "Badminton: daftar sebelum 7 Agustus 2025. Bazaar: konfirmasi sebelum 25 Agustus 2025. Jalan Sehat: registrasi 05.30-05.55 WIB di hari H. Lingkungan Hidup: otomatis semua RT berpartisipasi periode 1 Juli - 24 Agustus 2025.",
       "tags": ["pendaftaran", "batas-waktu", "registrasi"],
@@ -115,6 +129,7 @@
     {
       "id": "comp-contact-1",
       "category": "competition",
+      "lomba": "general",
       "question": "Siapa yang bisa dihubungi untuk informasi lomba?",
       "answer": "Lomba Badminton: Makmur Yusri (0818.515.363) dan Singgih Prayoga (0822.2800.7600). Untuk lomba lainnya, informasi akan disampaikan melalui koordinator RT masing-masing atau panitia RW.",
       "tags": ["kontak", "narahubung", "koordinator"],
@@ -123,6 +138,7 @@
     {
       "id": "comp-prize-total",
       "category": "competition",
+      "lomba": "general",
       "question": "Berapa total hadiah keseluruhan untuk semua lomba?",
       "answer": "Total hadiah semua lomba mencapai lebih dari Rp 10.000.000: Bazaar (Rp 3.000.000), Lingkungan Hidup (Rp 7.500.000), Badminton (Rp 1.200.000), dan Jalan Sehat (Rp 1.200.000). Belum termasuk doorprize malam puncak.",
       "tags": ["hadiah", "total", "semua-lomba"],
@@ -131,10 +147,110 @@
     {
       "id": "comp-additional-rules",
       "category": "competition",
+      "lomba": "general",
       "question": "Apa saja aturan umum yang harus dipatuhi peserta lomba?",
       "answer": "Semua kegiatan harus ramah lingkungan, tidak menggunakan bahan berbahaya. Peserta wajib hadir tepat waktu dan menjaga sportivitas. Untuk lomba yang memerlukan peralatan, peserta membawa sendiri kecuali yang disediakan panitia. Keputusan juri bersifat mutlak.",
       "tags": ["aturan", "sportivitas", "ramah-lingkungan"],
       "featured": false
+    },
+    {
+      "id": "comp-bazaar-juri-independen",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Bagaimana memastikan penilaian juri bazaar objektif dan tidak memihak?",
+      "answer": "Sistem juri dirancang transparan: 1 juri internal dari setiap RT (11 juri total) yang ditentukan di pertemuan PKK Agustus minggu II. Setiap juri menilai semua stand kecuali stand RT sendiri untuk menjaga objektivitas. Semua juri mendapat briefing standar tentang kriteria penilaian yang sama. Form penilaian terstandar digunakan dengan poin numerik untuk menghindari subjektivitas.",
+      "tags": ["juri", "objektif", "independen", "transparan", "briefing"],
+      "featured": true
+    },
+    {
+      "id": "comp-bazaar-lokasi-undian",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Apakah sistem undian lokasi stand bazaar benar-benar fair untuk semua RT?",
+      "answer": "Ya, sistem undian dilakukan transparan di pertemuan PKK minggu I Agustus dengan perwakilan semua RT hadir. Lot undian dilakukan secara terbuka dan RT 11 mendapat alokasi khusus di bagian barat kanopi sebagai bentuk apresiasi kontribusi khusus. Semua RT lain mendapat kesempatan yang sama dalam undian lokasi utama. Panitia menjamin tidak ada manipulasi dalam proses undian.",
+      "tags": ["undian", "lokasi", "fair", "transparan", "alokasi"],
+      "featured": true
+    },
+    {
+      "id": "comp-bazaar-kriteria-detail",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Apa standar konkret untuk menilai 'kreativitas' dan 'estetika' yang subjektif?",
+      "answer": "Kriteria penilaian telah distandarisasi: Kreativitas Desain dinilai dari penggunaan bahan ramah lingkungan yang inovatif, variasi warna natural, dan integrasi tema lingkungan yang konsisten. Estetika dinilai dari kerapihan penataan, harmonisasi visual, dan daya tarik stand. Semua juri akan mendapat rubrik penilaian detail dengan contoh visual untuk menyamakan persepsi. Skor diberikan dalam rentang angka 1-10 dengan parameter terukur.",
+      "tags": ["kreativitas", "estetika", "standar", "rubrik", "terukur"],
+      "featured": true
+    },
+    {
+      "id": "comp-bazaar-waktu-setup",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Apakah 8,5 jam (08:00-16:30) cukup untuk setup stand? Bagaimana jika ada RT yang terlambat?",
+      "answer": "Waktu 8,5 jam setup dipandang mencukupi berdasarkan pengalaman sebelumnya. RT yang datang lebih awal tidak mendapat keuntungan penilaian karena juri hanya menilai hasil akhir pada jam 17:00-18:00. Namun untuk fairness, RT yang terkendala dapat melaporkan ke panitia maksimal jam 15:00 untuk mendapat perpanjangan waktu hingga 16:45. Yang penting semua stand siap saat pembukaan oleh Ketua PKK jam 16:30.",
+      "tags": ["waktu", "setup", "terlambat", "perpanjangan", "fairness"],
+      "featured": false
+    },
+    {
+      "id": "comp-bazaar-produk-standar",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Bagaimana memastikan semua RT punya akses yang sama untuk produk dan bahan berkualitas?",
+      "answer": "Panitia memahami keterbatasan akses yang berbeda-beda antar RT. Yang dinilai bukan mahalnya bahan, tapi kreativitas penggunaan bahan lokal dan daur ulang. Juri diinstruksikan menilai inovasi dan usaha, bukan nilai investasi. RT dianjurkan memanfaatkan bahan-bahan yang tersedia di lingkungan sekitar seperti dedaunan, bambu bekas, plastik daur ulang. Konsultasi dengan panitia terbuka untuk saran bahan alternatif yang ramah lingkungan.",
+      "tags": ["akses", "bahan", "lokal", "daur-ulang", "inovasi"],
+      "featured": false
+    },
+    {
+      "id": "comp-bazaar-karang-taruna",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Bagaimana jika RT kami tidak memiliki cukup anggota Karang Taruna yang aktif?",
+      "answer": "Kriteria Karang Taruna bersifat fleksibel dan dipahami kondisi setiap RT berbeda. Yang terpenting adalah partisipasi generasi muda (usia 17-35 tahun) dari RT tersebut, tidak harus anggota resmi Karang Taruna. Poin diberikan: 3 orang = 5 poin, 2 orang = 3 poin, 1 orang = 2 poin. Jika tidak ada sama sekali, tidak mengurangi poin di kriteria lain. RT dapat 'meminjam' pemuda dari keluarga besar yang masih berdomisili di RT tersebut.",
+      "tags": ["karang-taruna", "pemuda", "fleksibel", "partisipasi", "usia"],
+      "featured": false
+    },
+    {
+      "id": "comp-bazaar-produk-sama",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Bagaimana jika beberapa RT menjual produk yang sama? Apakah ada aturan tentang duplikasi?",
+      "answer": "Tidak ada larangan untuk produk yang sama karena fokus penilaian pada inovasi penyajian, kreativitas packaging, dan nilai edukasi yang diberikan. Justru kompetisi sehat ini diharapkan memicu inovasi. Yang dinilai adalah bagaimana setiap RT memberikan 'value add' unik pada produk mereka, baik dari segi informasi lingkungan, cara penyajian, maupun story telling produk. Diversifikasi produk tetap dianjurkan untuk menarik lebih banyak pengunjung.",
+      "tags": ["duplikasi", "produk-sama", "inovasi", "value-add", "diversifikasi"],
+      "featured": false
+    },
+    {
+      "id": "comp-bazaar-cuaca-hujan",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Apa contingency plan jika hujan pada saat setup atau penilaian?",
+      "answer": "Panitia telah menyiapkan rencana kontinjensi: Setup tetap berlanjut dengan perlindungan kanopi dan terpal cadangan. Jika hujan deras saat penilaian (17:00-18:00), akan ada penundaan maksimal 2 jam hingga 20:00. Stand akan dinilai dalam kondisi apa adanya pasca hujan untuk fairness. Dekorasi yang rusak hujan tidak mengurangi nilai asalkan RT sudah berusaha maksimal. Yang terpenting adalah semangat dan kreativitas yang sudah ditunjukkan.",
+      "tags": ["hujan", "contingency", "cuaca", "penundaan", "fairness"],
+      "featured": false
+    },
+    {
+      "id": "comp-bazaar-komplain-penilaian",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Apa mekanisme jika ada RT yang merasa tidak puas dengan hasil penilaian?",
+      "answer": "Panitia menyediakan mekanisme transparan: 1) Rekap nilai setiap kriteria akan disampaikan kepada ketua RT dalam 3 hari pasca penilaian. 2) RT dapat mengajukan klarifikasi tertulis dalam 7 hari jika merasa ada ketidaksesuaian. 3) Tim verifikasi (3 orang dari panitia + 1 tokoh masyarakat netral) akan meninjau ulang. 4) Keputusan final tim verifikasi bersifat mengikat. Proses ini dilakukan dengan mengedepankan kekeluargaan dan sportivitas untuk menjaga keharmonisan RW.",
+      "tags": ["komplain", "rekap-nilai", "klarifikasi", "verifikasi", "transparansi"],
+      "featured": false
+    },
+    {
+      "id": "comp-bazaar-budget-terbatas",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Apakah RT dengan budget terbatas bisa bersaing dengan RT yang lebih mampu secara finansial?",
+      "answer": "Sepenuhnya bisa! Filosofi lomba ini adalah 'kreativitas mengalahkan modal besar'. Banyak bahan ramah lingkungan tersedia gratis: daun pisang, bambu, kayu bekas, botol plastik, karton. Yang dinilai adalah ide kreatif dan usaha gotong royong, bukan kemewahan bahan. Bahkan penggunaan bahan sederhana tapi inovatif sering mendapat nilai tinggi karena sesuai semangat lingkungan. RT dianjurkan fokus pada konsep dan eksekusi, bukan pada materi mahal.",
+      "tags": ["budget", "terbatas", "kreativitas", "modal", "gotong-royong"],
+      "featured": true
+    },
+    {
+      "id": "comp-bazaar-scoring-transparan",
+      "category": "competition",
+      "lomba": "bazaar",
+      "question": "Akankah detail scoring setiap juri dan perhitungan akhir dipublikasikan?",
+      "answer": "Ya, demi transparansi, panitia akan mempublikasikan: 1) Rata-rata skor per kriteria untuk setiap RT (tanpa nama juri individual). 2) Ranking sementara sebelum finalisasi. 3) Penjelasan singkat alasan kemenangan juara 1-3. Detail scoring per juri individual akan dijaga kerahasiaan untuk melindungi privasi juri, namun data agregat dan metodologi penilaian akan terbuka. Ini untuk menjaga akuntabilitas sambil melindungi hubungan sosial antar warga.",
+      "tags": ["scoring", "transparansi", "publikasi", "ranking", "akuntabilitas"],
+      "featured": true
     }
   ]
 }

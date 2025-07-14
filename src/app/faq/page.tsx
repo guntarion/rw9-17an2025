@@ -17,12 +17,16 @@ import {
   Users,
   Phone,
   MessageCircle,
-  Filter
+  Filter,
+  Leaf,
+  Zap,
+  ShoppingBag
 } from 'lucide-react';
 import competitionFAQs from '@/data/faq.json';
+import { FAQItem } from '@/types';
 
 // Competition FAQs are now loaded from external JSON file
-const otherFaqData = [
+const otherFaqData: FAQItem[] = [
   {
     id: 'event-1',
     category: 'event',
@@ -90,7 +94,7 @@ const otherFaqData = [
 ];
 
 // Combine all FAQ data
-const faqData = [...competitionFAQs.competition, ...otherFaqData];
+const faqData: FAQItem[] = [...(competitionFAQs.competition as FAQItem[]), ...otherFaqData];
 
 const categories = [
   { id: 'all', name: 'Semua', icon: HelpCircle, color: 'default' },
@@ -100,9 +104,19 @@ const categories = [
   { id: 'general', name: 'Umum', icon: Users, color: 'success' }
 ];
 
+const lombaCategories = [
+  { id: 'all-lomba', name: 'Semua Lomba', icon: Trophy, color: 'default' },
+  { id: 'general', name: 'Umum Lomba', icon: HelpCircle, color: 'secondary' },
+  { id: 'lingkungan', name: 'Lingkungan', icon: Leaf, color: 'success' },
+  { id: 'badminton', name: 'Badminton', icon: Zap, color: 'primary' },
+  { id: 'jalan-sehat', name: 'Jalan Sehat', icon: MapPin, color: 'accent' },
+  { id: 'bazaar', name: 'Bazaar', icon: ShoppingBag, color: 'warning' }
+];
+
 export default function FAQPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedLomba, setSelectedLomba] = useState('all-lomba');
 
   const filteredFAQs = faqData.filter(faq => {
     const matchesSearch = searchQuery === '' || 
@@ -112,7 +126,12 @@ export default function FAQPage() {
     
     const matchesCategory = selectedCategory === 'all' || faq.category === selectedCategory;
     
-    return matchesSearch && matchesCategory;
+    // If competition category is selected, also filter by lomba type
+    const matchesLomba = selectedCategory !== 'competition' || 
+      selectedLomba === 'all-lomba' || 
+      (faq.lomba && faq.lomba === selectedLomba);
+    
+    return matchesSearch && matchesCategory && matchesLomba;
   });
 
   const featuredFAQs = faqData.filter(faq => faq.featured);
@@ -154,7 +173,12 @@ export default function FAQPage() {
           </div>
 
           {/* Category Filters */}
-          <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
+          <Tabs value={selectedCategory} onValueChange={(value) => {
+            setSelectedCategory(value);
+            if (value !== 'competition') {
+              setSelectedLomba('all-lomba');
+            }
+          }} className="w-full">
             <TabsList className="grid w-full grid-cols-3 md:grid-cols-5">
               {categories.map((category) => (
                 <TabsTrigger 
@@ -168,6 +192,30 @@ export default function FAQPage() {
               ))}
             </TabsList>
           </Tabs>
+
+          {/* Lomba Sub-filters (only show when competition is selected) */}
+          {selectedCategory === 'competition' && (
+            <div className="mt-4">
+              <div className="text-sm text-gray-600 mb-3 flex items-center">
+                <Trophy className="w-4 h-4 mr-2" />
+                Filter berdasarkan jenis lomba:
+              </div>
+              <Tabs value={selectedLomba} onValueChange={setSelectedLomba} className="w-full">
+                <TabsList className="grid w-full grid-cols-2 md:grid-cols-6">
+                  {lombaCategories.map((lomba) => (
+                    <TabsTrigger 
+                      key={lomba.id} 
+                      value={lomba.id}
+                      className="text-xs md:text-sm"
+                    >
+                      <lomba.icon className="w-4 h-4 mr-1" />
+                      <span className="hidden sm:inline">{lomba.name}</span>
+                    </TabsTrigger>
+                  ))}
+                </TabsList>
+              </Tabs>
+            </div>
+          )}
         </div>
 
         {/* Featured FAQs */}
@@ -184,9 +232,16 @@ export default function FAQPage() {
                       <CardTitle className="text-lg leading-relaxed pr-4">
                         {faq.question}
                       </CardTitle>
-                      <Badge variant="outline" className="text-xs flex-shrink-0">
-                        {categories.find(c => c.id === faq.category)?.name}
-                      </Badge>
+                      <div className="flex flex-col space-y-1">
+                        <Badge variant="outline" className="text-xs flex-shrink-0">
+                          {categories.find(c => c.id === faq.category)?.name}
+                        </Badge>
+                        {faq.lomba && faq.lomba !== 'general' && (
+                          <Badge variant="default" className="text-xs">
+                            {lombaCategories.find(l => l.id === faq.lomba)?.name}
+                          </Badge>
+                        )}
+                      </div>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -216,17 +271,23 @@ export default function FAQPage() {
                 {categories.find(c => c.id === selectedCategory)?.name}
               </strong></span>
             )}
+            {selectedCategory === 'competition' && selectedLomba !== 'all-lomba' && (
+              <span> - <strong>
+                {lombaCategories.find(l => l.id === selectedLomba)?.name}
+              </strong></span>
+            )}
             {searchQuery && (
               <span> dengan kata kunci &ldquo;<strong>{searchQuery}</strong>&rdquo;</span>
             )}
           </div>
           
-          {(selectedCategory !== 'all' || searchQuery) && (
+          {(selectedCategory !== 'all' || selectedLomba !== 'all-lomba' || searchQuery) && (
             <Button 
               variant="outline" 
               size="sm"
               onClick={() => {
                 setSelectedCategory('all');
+                setSelectedLomba('all-lomba');
                 setSearchQuery('');
               }}
             >
@@ -254,6 +315,11 @@ export default function FAQPage() {
                           <Badge variant="outline" className="text-xs">
                             {categories.find(c => c.id === faq.category)?.name}
                           </Badge>
+                          {faq.lomba && faq.lomba !== 'general' && (
+                            <Badge variant="default" className="text-xs">
+                              {lombaCategories.find(l => l.id === faq.lomba)?.name}
+                            </Badge>
+                          )}
                         </div>
                       </div>
                     </AccordionTrigger>
@@ -287,6 +353,7 @@ export default function FAQPage() {
               variant="outline"
               onClick={() => {
                 setSelectedCategory('all');
+                setSelectedLomba('all-lomba');
                 setSearchQuery('');
               }}
             >
