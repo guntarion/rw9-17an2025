@@ -48,13 +48,13 @@ const information: FooterSection = {
     { label: 'Panitia Pelaksana', href: '/panitia' },
     { label: 'Hiburan & Pentas', href: '/hiburan' },
     { label: 'Tanya Jawab', href: '/faq' },
-    { label: 'Hubungi Kami', href: '/kontak' },
+    // { label: 'Hubungi Kami', href: '/kontak' },
   ],
 };
 
 const contactInfo = {
   address: 'RW IX Desa Wedoro, Waru, Sidoarjo, Jawa Timur',
-  phone: '+62 xxx xxxx xxxx',
+  phone: '+62 811 334 932',
   email: 'panitia.rwix@gmail.com',
   eventDate: '30-31 Agustus 2025',
 };
@@ -246,9 +246,9 @@ export default function Footer() {
               <Link href="/panitia" className="hover:text-white transition-colors">
                 Panitia Pelaksana
               </Link>
-              <Link href="/kontak" className="hover:text-white transition-colors">
+              {/* <Link href="/kontak" className="hover:text-white transition-colors">
                 Hubungi Kami
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -8,12 +8,12 @@ import Link from 'next/link';
 import { Calendar, MapPin, Users, Trophy, Camera, Leaf, TreePine, Recycle, Heart, ChevronRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'HUT RI Ke-80 RW IX Sidoarjo - Lingkungan Hidup dan Penghijauan',
+  title: 'HUT RI Ke-80 RW IX Rewwin Wedoro Sidoarjo - Lingkungan Hidup dan Penghijauan',
   description:
     'Situs resmi peringatan HUT RI Ke-80 RW IX Desa Wedoro, Sidoarjo dengan tema Lingkungan Hidup dan Penghijauan. Informasi lomba, acara, dan dokumentasi.',
   keywords: ['HUT RI', 'RW IX', 'Sidoarjo', 'Lingkungan Hidup', 'Penghijauan', 'Lomba', '17 Agustus'],
   openGraph: {
-    title: 'HUT RI Ke-80 RW IX Sidoarjo',
+    title: 'HUT RI Ke-80 RW IX Rewwin Wedoro Sidoarjo',
     description: 'Peringatan HUT RI Ke-80 dengan tema Lingkungan Hidup dan Penghijauan',
     type: 'website',
     locale: 'id_ID',
@@ -102,13 +102,13 @@ export default function HomePage() {
               <br />
               <span className='text-3xl md:text-5xl'>HUT RI Ke-80</span>
               <br />
-              <span className='text-2xl md:text-4xl text-gray-700'>RW IX Sidoarjo</span>
+              <span className='text-2xl md:text-4xl text-gray-700'>RW IX Rewwin Wedoro Sidoarjo</span>
             </h1>
 
             {/* Subtitle */}
             <p className='text-responsive-md text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed'>
               Dengan Semangat <span className='font-semibold text-primary-600'>Lingkungan Hidup dan Penghijauan</span>, Kita Bangun Lingkungan yang
-              Asri dan Guyub Bersama Warga RW IX
+              Asri dan Guyub Bersama Warga RW IX Rewwin
             </p>
 
             {/* Event Info Badge */}
@@ -312,7 +312,7 @@ export default function HomePage() {
             <div className='max-w-2xl mx-auto'>
               <h2 className='text-3xl font-bold text-gray-900 mb-6'>Mari Bergabung dalam Perayaan Kemerdekaan!</h2>
               <p className='text-lg text-gray-600 mb-8'>
-                Dukung tema <strong>Lingkungan Hidup dan Penghijauan</strong> dengan berpartisipasi aktif dalam setiap kegiatan HUT RI Ke-80 RW IX
+                Dukung tema <strong>Lingkungan Hidup dan Penghijauan</strong> dengan berpartisipasi aktif dalam setiap kegiatan HUT RI Ke-80 RW IX Rewwin Wedoro
               </p>
 
               <div className='flex flex-col sm:flex-row gap-4 justify-center'>

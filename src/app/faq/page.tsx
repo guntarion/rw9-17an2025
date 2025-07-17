@@ -150,7 +150,7 @@ export default function FAQPage() {
           </div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Temukan jawaban untuk pertanyaan yang sering diajukan tentang 
-            HUT RI Ke-80 RW IX Sidoarjo
+            HUT RI Ke-80 RW IX Rewwin Wedoro Sidoarjo
           </p>
         </div>
 

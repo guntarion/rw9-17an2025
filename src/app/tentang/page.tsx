@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Tentang Acara - HUT RI Ke-80 RW IX Sidoarjo',
+  title: 'Tentang Acara - HUT RI Ke-80 RW IX Rewwin Wedoro Sidoarjo',
   description: 'Informasi lengkap tentang acara HUT RI Ke-80 RW IX dengan tema Lingkungan Hidup dan Penghijauan.',
   keywords: ['tentang', 'about', 'HUT RI', 'RW IX', 'lingkungan hidup'],
 };
