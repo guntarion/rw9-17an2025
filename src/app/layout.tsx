@@ -4,6 +4,7 @@ import './css/globals.css';
 import ClientLayout from './client-layout';
 import { metadata } from './metadata';
 import { Toaster } from '@/components/ui/toaster';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
       </head>
       <body className={`${inter.className}`}>
+        <GoogleAnalytics />
         <ClientLayout>{children}</ClientLayout>
         <Toaster />
       </body>
