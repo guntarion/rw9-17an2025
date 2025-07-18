@@ -593,6 +593,15 @@
       "answer": "Ya, demi transparansi, panitia akan mempublikasikan: 1) Rata-rata skor per kriteria untuk setiap RT (tanpa nama juri individual). 2) Ranking sementara sebelum finalisasi. 3) Penjelasan singkat alasan kemenangan juara 1-3. Detail scoring per juri individual akan dijaga kerahasiaan untuk melindungi privasi juri, namun data agregat dan metodologi penilaian akan terbuka. Ini untuk menjaga akuntabilitas sambil melindungi hubungan sosial antar warga.",
       "tags": ["scoring", "transparansi", "publikasi", "ranking", "akuntabilitas"],
       "featured": true
+    },
+    {
+      "id": "comp-badminton-kekompakan-penilaian",
+      "category": "competition",
+      "lomba": "badminton",
+      "question": "Apakah yang dinilai dalam \"kekompakan\" untuk lomba badminton?",
+      "answer": "Kekompakan dinilai atas tiga kriteria: 1) Kompak dalam hal kehadiran dan partisipasi suporter dari RT bersangkutan 2) Keserasian dari pasangan (perwakilan RT) yang bermain 3) Kesesuaian/kecocokan seragam yang digunakan oleh pemain maupun suporter",
+      "tags": ["badminton", "kekompakan", "keserasian", "suporter", "seragam"],
+      "featured": true
     }
   ]
 }
