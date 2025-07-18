@@ -451,6 +451,15 @@
       "featured": true
     },
     {
+      "id": "comp-lingkungan-juri-eksternal-penyambutan",
+      "category": "competition",
+      "lomba": "lingkungan",
+      "question": "Mengingat juri Lingkungan Hidup adalah dari eksternal, apakah perlu ada penyambutan tertentu?",
+      "answer": "Tidak perlu ada prosesi penyambutan tertentu (harap seluruh RT kompak terkait hal ini), melainkan cukup ada pendamping yang sifatnya wajib. Salah satu tugas utama pendamping adalah untuk menunjukkan batas wilayah RT kepada juri. Pendamping juga bertugas memberikan penjelasan singkat tentang program lingkungan yang telah dilaksanakan selama periode lomba. Hal ini untuk memastikan penilaian berjalan efektif dan juri dapat memahami konteks lingkungan setiap RT dengan baik.",
+      "tags": ["juri", "eksternal", "penyambutan", "pendamping", "batas-wilayah"],
+      "featured": true
+    },
+    {
       "id": "comp-kostum-1",
       "category": "competition",
       "lomba": "general",
