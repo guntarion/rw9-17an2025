@@ -5,7 +5,7 @@
       "category": "competition",
       "lomba": "general",
       "question": "Apa saja lomba yang tersedia dalam HUT RI Ke-80 RW IX?",
-      "answer": "Terdapat 4 lomba utama: 1) Lomba Fun Badminton (Ganda Campuran), 2) Lomba Bazaar bertema Lingkungan, 3) Lomba Jalan Sehat, dan 4) Lomba Lingkungan Hidup (kebersihan, hias kampung, penanaman pohon). Setiap RT wajib mengikuti minimal 3 dari 4 lomba yang tersedia.",
+      "answer": "Terdapat 4 lomba utama: 1) Lomba Fun Badminton (Ganda Campuran), 2) Lomba Bazaar bertema Lingkungan, 3) Parade Jalan Sehat, dan 4) Lomba Lingkungan Hidup (kebersihan, hias kampung, penanaman pohon). Setiap RT wajib mengikuti minimal 3 dari 4 lomba yang tersedia.",
       "tags": ["lomba", "jenis-lomba", "RT", "wajib"],
       "featured": true
     },
@@ -175,7 +175,7 @@
       "id": "comp-jalan-sehat-1",
       "category": "competition",
       "lomba": "jalan-sehat",
-      "question": "Bagaimana rute dan jadwal lengkap Lomba Jalan Sehat?",
+      "question": "Bagaimana rute dan jadwal lengkap Parade Jalan Sehat?",
       "answer": "Dimulai 31 Agustus 2025 dari Depan Masjid At Taqwa (sesuai nomor urut undian). Registrasi 05.30-05.55, briefing 05.55-06.00, start 06.00 WIB. Rute: Start (Masjid At Taqwa) → Pos 1 (rumah Pak Rozak, Jl. Waru Indah) → Pos 2 (pintu masuk Jatayu timur) → Pos 3 (pojok barat Jatayu) → Pos 4 (panggung) → Finish (Area Balai RW IX). Wajib meletakkan kupon di setiap pos.",
       "tags": ["jalan-sehat", "rute", "kupon", "jadwal", "masjid-at-taqwa", "undian"],
       "featured": true
@@ -184,7 +184,7 @@
       "id": "comp-jalan-sehat-2",
       "category": "competition",
       "lomba": "jalan-sehat",
-      "question": "Apa kriteria penilaian dan hadiah Lomba Jalan Sehat?",
+      "question": "Apa kriteria penilaian dan hadiah Parade Jalan Sehat?",
       "answer": "4 aspek penilaian: Kekompakan Barisan (30%) - kerapian formasi, keseragaman gerakan, kedisiplinan; Kreativitas Kostum & Penampilan (40%) - originalitas, kesesuaian tema, daya tarik visual; Semangat & Antusiasme (20%) - energi, yel-yel, partisipasi aktif; Kedisiplinan & Sportivitas (10%) - ketepatan waktu, mengikuti rute, meletakkan kupon. Total hadiah Rp 4.500.000: Juara 1 (Rp 2.000.000), Juara 2 (Rp 1.500.000), Juara 3 (Rp 1.000.000).",
       "tags": ["jalan-sehat", "penilaian", "kostum", "kekompakan", "hadiah", "4.5-juta"],
       "featured": true
@@ -193,7 +193,7 @@
       "id": "comp-jalan-sehat-juri-sistematis",
       "category": "competition",
       "lomba": "jalan-sehat",
-      "question": "Siapa juri Lomba Jalan Sehat dan bagaimana sistem penilaian yang fair?",
+      "question": "Siapa juri Parade Jalan Sehat dan bagaimana sistem penilaian yang fair?",
       "answer": "Tim juri terdiri dari 11 orang perwakilan masing-masing RT: RT 01 (Bu Heni), RT 02 (Hery Saptono), RT 03 (Pak Ulijadi), RT 04 (Hapsari Haniditya), RT 05 (Pak Eric), RT 06 (Bu Erliyana), RT 07 (Ridayati Nani), RT 08 (Pak Charles H), RT 09 (Pak Windarto), RT 10 (Bu Rita), RT 11 (Pak H. Yusri). Setiap juri menilai semua RT kecuali RT sendiri untuk menjaga objektivitas. Juri akan menyebar di titik strategis dan mendapat briefing khusus dari koordinator lomba.",
       "tags": ["juri", "11-orang", "objektif", "briefing", "sistematis"],
       "featured": true

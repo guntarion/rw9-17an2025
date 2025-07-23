@@ -1,4 +1,4 @@
-# LOMBA JALAN SEHAT
+# Parade Jalan Sehat
 
 ## HUT RI ke-80 RW IX REWWIN
 

@@ -9,6 +9,7 @@ This is a Next.js website for HUT RI Ke-80 (Indonesian Independence Day) celebra
 ## Development Commands
 
 ### Essential Commands
+
 ```bash
 # Start development server
 npm run dev
@@ -30,11 +31,13 @@ npm run check
 ```
 
 ### Before Committing
+
 Always run `npm run check` before committing to ensure code quality.
 
 ## Architecture Overview
 
 ### Tech Stack
+
 - **Framework**: Next.js 15 with App Router
 - **Language**: TypeScript with strict mode
 - **Styling**: Tailwind CSS with custom environmental theme
@@ -44,6 +47,7 @@ Always run `npm run check` before committing to ensure code quality.
 - **Data Management**: JSON files in `/src/data/` directory
 
 ### Project Structure
+
 ```
 src/
 ├── app/                        # Next.js App Router
@@ -75,12 +79,14 @@ src/
 ### Key Design Patterns
 
 #### Data Management
+
 - Static JSON files in `/src/data/` serve as the content source
 - Competition data is structured with detailed metadata including coordinators, criteria, timelines, and prizes
 - Gallery data is organized by year and event category
 - Type-safe data access through TypeScript interfaces
 
 #### Styling System
+
 - Custom environmental theme with green color palette
 - Primary colors: Forest Green (#22c55e), Earth Brown (#ca9a7c), Fresh Green (#84cc16)
 - Responsive design with mobile-first approach
@@ -88,12 +94,14 @@ src/
 - Typography optimized for Indonesian content (Inter + Poppins)
 
 #### Component Architecture
+
 - shadcn/ui components for consistent UI patterns
 - Feature-specific components in `/src/components/features/`
 - Competition components organized by lomba type
 - Shared components for common functionality (breadcrumbs, headers, loading states)
 
 #### Routing Structure
+
 - App Router with layout groups
 - Dynamic routes for competitions: `/lomba/[slug]`
 - Website layout wrapper for public pages
@@ -102,37 +110,44 @@ src/
 ### Important Configuration
 
 #### Image Optimization
+
 - Configured domains in `next.config.js` for external images
 - Server action body size limit: 2MB
 - Image components use Next.js optimization by default
 
 #### TypeScript Configuration
+
 - Strict mode enabled
 - Path aliases: `@/*` maps to `./src/*`
 - ES2017 target for broad browser compatibility
 
 #### Tailwind Configuration
+
 - Custom environmental color system
 - Extended spacing, shadows, and animations
 - Container configuration for responsive layouts
 - Custom gradient definitions
 
 ### Competition System
+
 The website features four main competitions:
+
 1. **Lomba Lingkungan Hidup** - Environmental competition with RT decoration
 2. **Lomba Fun Badminton** - Family badminton tournament
-3. **Lomba Jalan Sehat** - Healthy walk competition with 500 participants
+3. **Parade Jalan Sehat** - Healthy walk competition with 500 participants
 4. **Lomba Bazaar** - Environmental-themed bazaar with 11 RT participants
 
 Each competition has detailed metadata including coordinators, criteria, timelines, judges, and prize structures.
 
 ### Content Management
+
 - Static content managed through JSON files
 - Images organized by year and event type in `/public/images/event/`
 - Committee photos and coordinator information in structured format
 - Markdown support for dynamic content through API routes
 
 ### Development Guidelines
+
 - Always use TypeScript for type safety
 - Follow the existing environmental theme color scheme
 - Maintain responsive design patterns

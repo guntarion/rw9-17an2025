@@ -5,6 +5,7 @@
 ### Core Components
 
 #### 1. Layout Components
+
 ```typescript
 // /src/components/layout/Header.tsx
 interface HeaderProps {
@@ -26,6 +27,7 @@ interface NavigationProps {
 ```
 
 #### 2. Feature Components
+
 ```typescript
 // /src/components/features/CountdownTimer.tsx
 interface CountdownTimerProps {
@@ -65,6 +67,7 @@ interface NewsUpdateFeedProps {
 ```
 
 #### 3. UI Components
+
 ```typescript
 // /src/components/ui/Button.tsx
 interface ButtonProps {
@@ -95,6 +98,7 @@ interface ModalProps {
 ## Data Structure
 
 ### 1. Competition Data
+
 ```typescript
 // /src/types/competition.ts
 interface Competition {
@@ -132,7 +136,7 @@ interface Competition {
       },
       "criteria": [
         "Penghijauan kampung/RT",
-        "Kebersihan kampung/RT", 
+        "Kebersihan kampung/RT",
         "Menghias kampung/RT"
       ],
       "timeline": {
@@ -149,6 +153,7 @@ interface Competition {
 ```
 
 ### 2. Committee Data
+
 ```typescript
 // /src/types/committee.ts
 interface CommitteeMember {
@@ -189,7 +194,7 @@ interface CommitteeMember {
     "coordinators": [
       {
         "id": "suleman",
-        "name": "H. Suleman", 
+        "name": "H. Suleman",
         "role": "Koordinator Lomba Hias Kampung",
         "contact": {
           "whatsapp": "+62xxx"
@@ -222,6 +227,7 @@ interface CommitteeMember {
 ```
 
 ### 3. Gallery Data
+
 ```typescript
 // /src/types/gallery.ts
 interface GalleryPhoto {
@@ -237,11 +243,11 @@ interface GalleryPhoto {
   tags: string[];
 }
 
-type GalleryCategory = 
-  | 'preparation' 
-  | 'competition' 
-  | 'entertainment' 
-  | 'committee' 
+type GalleryCategory =
+  | 'preparation'
+  | 'competition'
+  | 'entertainment'
+  | 'committee'
   | 'general';
 
 // /src/data/gallery.json
@@ -263,6 +269,7 @@ type GalleryCategory =
 ```
 
 ### 4. Events & Timeline
+
 ```typescript
 // /src/types/events.ts
 interface Event {
@@ -300,7 +307,7 @@ interface Event {
         "title": "Lomba Bulu Tangkis Keluarga - Hari 1",
         "description": "Pertandingan babak penyisihan",
         "time": {
-          "start": "19:00", 
+          "start": "19:00",
           "end": "22:00"
         },
         "location": "Lapangan Bulu Tangkis RW IX",
@@ -310,7 +317,7 @@ interface Event {
     "2025-08-31": [
       {
         "id": "healthy-walk",
-        "title": "Lomba Jalan Sehat",
+        "title": "Parade Jalan Sehat",
         "description": "Jalan sehat dengan tema lingkungan hidup",
         "time": {
           "start": "06:00",
@@ -336,26 +343,27 @@ interface Event {
 ## Pages Implementation
 
 ### 1. Homepage (/)
+
 ```typescript
 // /src/app/page.tsx
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className='min-h-screen'>
       {/* Hero Section dengan Countdown */}
       <HeroSection />
-      
+
       {/* Event Overview */}
       <EventOverview />
-      
+
       {/* Quick Stats */}
       <QuickStats />
-      
+
       {/* Latest Updates */}
       <LatestUpdates limit={3} />
-      
+
       {/* Competition Highlights */}
       <CompetitionHighlights />
-      
+
       {/* Call to Action */}
       <CTASection />
     </div>
@@ -364,18 +372,16 @@ export default function HomePage() {
 ```
 
 ### 2. Competition Pages (/lomba)
+
 ```typescript
 // /src/app/lomba/page.tsx
 export default function CompetitionsPage() {
   return (
-    <div className="container mx-auto py-8">
-      <PageHeader 
-        title="Lomba & Kompetisi"
-        description="4 kategori lomba dengan tema Lingkungan Hidup"
-      />
-      
+    <div className='container mx-auto py-8'>
+      <PageHeader title='Lomba & Kompetisi' description='4 kategori lomba dengan tema Lingkungan Hidup' />
+
       <CompetitionTabs />
-      
+
       <CompetitionGrid competitions={competitions} />
     </div>
   );
@@ -384,18 +390,18 @@ export default function CompetitionsPage() {
 // /src/app/lomba/[slug]/page.tsx
 export default function CompetitionDetailPage({ params }: { params: { slug: string } }) {
   const competition = getCompetitionBySlug(params.slug);
-  
+
   return (
-    <div className="container mx-auto py-8">
+    <div className='container mx-auto py-8'>
       <CompetitionHero competition={competition} />
-      
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2">
+
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
+        <div className='lg:col-span-2'>
           <CompetitionDetails competition={competition} />
           <CompetitionGallery competition={competition} />
         </div>
-        
-        <div className="lg:col-span-1">
+
+        <div className='lg:col-span-1'>
           <CompetitionSidebar competition={competition} />
         </div>
       </div>
@@ -405,30 +411,21 @@ export default function CompetitionDetailPage({ params }: { params: { slug: stri
 ```
 
 ### 3. Gallery Page (/galeri)
+
 ```typescript
 // /src/app/galeri/page.tsx
 export default function GalleryPage() {
   const [filter, setFilter] = useState<GalleryCategory | 'all'>('all');
   const [photos, setPhotos] = useState<GalleryPhoto[]>([]);
-  
+
   return (
-    <div className="container mx-auto py-8">
-      <PageHeader 
-        title="Galeri & Updates"
-        description="Dokumentasi persiapan dan pelaksanaan acara"
-      />
-      
-      <GalleryFilters 
-        activeFilter={filter} 
-        onFilterChange={setFilter} 
-      />
-      
-      <GalleryGrid 
-        photos={filteredPhotos} 
-        columns={3}
-        showUpload={true}
-      />
-      
+    <div className='container mx-auto py-8'>
+      <PageHeader title='Galeri & Updates' description='Dokumentasi persiapan dan pelaksanaan acara' />
+
+      <GalleryFilters activeFilter={filter} onFilterChange={setFilter} />
+
+      <GalleryGrid photos={filteredPhotos} columns={3} showUpload={true} />
+
       <LoadMoreButton />
     </div>
   );
@@ -438,21 +435,18 @@ export default function GalleryPage() {
 ## Styling Implementation
 
 ### 1. Tailwind Configuration
+
 ```typescript
 // tailwind.config.ts
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
         // Green Theme Colors
         primary: {
           50: '#f0fdf4',
-          100: '#dcfce7', 
+          100: '#dcfce7',
           200: '#bbf7d0',
           300: '#86efac',
           400: '#4ade80',
@@ -485,7 +479,7 @@ const config: Config = {
           700: '#4d7c0f',
           800: '#365314',
           900: '#1a2e05',
-        }
+        },
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
@@ -508,19 +502,16 @@ const config: Config = {
         bounceGentle: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
-        }
-      }
+        },
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio'),
-  ],
-}
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio')],
+};
 ```
 
 ### 2. Global Styles
+
 ```css
 /* /src/styles/globals.css */
 @tailwind base;
@@ -531,24 +522,24 @@ const config: Config = {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-    
+
     --primary: 142.1 76.2% 36.3%;
     --primary-foreground: 355.7 100% 97.3%;
-    
+
     --secondary: 210 40% 96%;
     --secondary-foreground: 222.2 84% 4.9%;
-    
+
     --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    
+
     --accent: 84.8 85.2% 40.4%;
     --accent-foreground: 222.2 84% 4.9%;
   }
-  
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-    
+
     --primary: 142.1 76.2% 36.3%;
     --primary-foreground: 355.7 100% 97.3%;
   }
@@ -558,19 +549,19 @@ const config: Config = {
   .btn-primary {
     @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-lg transition-colors;
   }
-  
+
   .btn-secondary {
     @apply bg-secondary-500 hover:bg-secondary-600 text-white font-medium py-2 px-4 rounded-lg transition-colors;
   }
-  
+
   .card {
     @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6;
   }
-  
+
   .section-padding {
     @apply py-16 px-4 sm:px-6 lg:px-8;
   }
-  
+
   .container-custom {
     @apply max-w-7xl mx-auto;
   }
@@ -580,11 +571,11 @@ const config: Config = {
   .text-balance {
     text-wrap: balance;
   }
-  
+
   .bg-gradient-green {
     background: linear-gradient(135deg, theme(colors.primary.400) 0%, theme(colors.accent.500) 100%);
   }
-  
+
   .bg-gradient-earth {
     background: linear-gradient(135deg, theme(colors.secondary.400) 0%, theme(colors.primary.600) 100%);
   }
@@ -612,6 +603,7 @@ const config: Config = {
 ## State Management
 
 ### 1. Context Providers
+
 ```typescript
 // /src/contexts/AppContext.tsx
 interface AppContextType {
@@ -620,7 +612,7 @@ interface AppContextType {
   competitions: Competition[];
   events: Event[];
   gallery: GalleryPhoto[];
-  
+
   // Actions
   updateCompetitions: (competitions: Competition[]) => void;
   addGalleryPhoto: (photo: GalleryPhoto) => void;
@@ -631,64 +623,61 @@ export const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState<AppState>(initialState);
-  
+
   const value = {
     ...state,
     updateCompetitions: (competitions: Competition[]) => {
-      setState(prev => ({ ...prev, competitions }));
+      setState((prev) => ({ ...prev, competitions }));
     },
     addGalleryPhoto: (photo: GalleryPhoto) => {
-      setState(prev => ({ 
-        ...prev, 
-        gallery: [photo, ...prev.gallery] 
+      setState((prev) => ({
+        ...prev,
+        gallery: [photo, ...prev.gallery],
       }));
     },
     updateEvent: (event: Event) => {
-      setState(prev => ({
+      setState((prev) => ({
         ...prev,
-        events: prev.events.map(e => e.id === event.id ? event : e)
+        events: prev.events.map((e) => (e.id === event.id ? event : e)),
       }));
-    }
+    },
   };
-  
-  return (
-    <AppContext.Provider value={value}>
-      {children}
-    </AppContext.Provider>
-  );
+
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 ```
 
 ### 2. Custom Hooks
+
 ```typescript
 // /src/hooks/useCountdown.ts
 export function useCountdown(targetDate: Date) {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  
+
   function calculateTimeLeft() {
     const difference = +targetDate - +new Date();
     let timeLeft = {};
-    
+
     if (difference > 0) {
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
-    
+
     return timeLeft;
   }
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-    
+
     return () => clearTimeout(timer);
   });
-  
+
   return timeLeft;
 }
 
@@ -703,7 +692,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
       return initialValue;
     }
   });
-  
+
   const setValue = (value: T | ((val: T) => T)) => {
     try {
       const valueToStore = value instanceof Function ? value(storedValue) : value;
@@ -713,7 +702,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
       console.log(error);
     }
   };
-  
+
   return [storedValue, setValue] as const;
 }
 ```
@@ -721,6 +710,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
 ## Performance Optimization
 
 ### 1. Image Optimization
+
 ```typescript
 // /src/components/ui/OptimizedImage.tsx
 interface OptimizedImageProps {
@@ -732,14 +722,7 @@ interface OptimizedImageProps {
   className?: string;
 }
 
-export function OptimizedImage({ 
-  src, 
-  alt, 
-  width, 
-  height, 
-  priority = false,
-  className 
-}: OptimizedImageProps) {
+export function OptimizedImage({ src, alt, width, height, priority = false, className }: OptimizedImageProps) {
   return (
     <Image
       src={src}
@@ -748,44 +731,47 @@ export function OptimizedImage({
       height={height}
       priority={priority}
       className={className}
-      placeholder="blur"
-      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkbHB0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      placeholder='blur'
+      blurDataURL='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkbHB0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=='
+      sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
     />
   );
 }
 ```
 
 ### 2. Lazy Loading Components
+
 ```typescript
 // /src/components/LazyComponents.tsx
 import dynamic from 'next/dynamic';
 
 export const LazyGalleryGrid = dynamic(() => import('./features/GalleryGrid'), {
   loading: () => <GalleryGridSkeleton />,
-  ssr: false
+  ssr: false,
 });
 
 export const LazyCompetitionDetails = dynamic(() => import('./features/CompetitionDetails'), {
-  loading: () => <CompetitionDetailsSkeleton />
+  loading: () => <CompetitionDetailsSkeleton />,
 });
 
 export const LazyNewsUpdateFeed = dynamic(() => import('./features/NewsUpdateFeed'), {
-  loading: () => <NewsUpdateFeedSkeleton />
+  loading: () => <NewsUpdateFeedSkeleton />,
 });
 ```
 
 ## SEO & Meta Tags
 
 ### 1. Metadata Configuration
+
 ```typescript
 // /src/app/layout.tsx
 export const metadata: Metadata = {
   title: {
     template: '%s | HUT RI Ke-80 RW IX Sidoarjo',
-    default: 'HUT RI Ke-80 RW IX Sidoarjo - Lingkungan Hidup dan Penghijauan'
+    default: 'HUT RI Ke-80 RW IX Sidoarjo - Lingkungan Hidup dan Penghijauan',
   },
-  description: 'Situs resmi peringatan HUT RI Ke-80 RW IX Desa Wedoro, Sidoarjo dengan tema Lingkungan Hidup dan Penghijauan. Informasi lomba, acara, dan dokumentasi.',
+  description:
+    'Situs resmi peringatan HUT RI Ke-80 RW IX Desa Wedoro, Sidoarjo dengan tema Lingkungan Hidup dan Penghijauan. Informasi lomba, acara, dan dokumentasi.',
   keywords: ['HUT RI', 'RW IX', 'Sidoarjo', 'Lingkungan Hidup', 'Penghijauan', 'Lomba', '17 Agustus'],
   authors: [{ name: 'Panitia RT 11 RW IX' }],
   creator: 'RT 11 RW IX Sidoarjo',
@@ -801,15 +787,15 @@ export const metadata: Metadata = {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'HUT RI Ke-80 RW IX Sidoarjo'
-      }
-    ]
+        alt: 'HUT RI Ke-80 RW IX Sidoarjo',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'HUT RI Ke-80 RW IX Sidoarjo',
     description: 'Peringatan HUT RI Ke-80 dengan tema Lingkungan Hidup dan Penghijauan',
-    images: ['/images/og-image.jpg']
+    images: ['/images/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -824,13 +810,14 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-verification-code',
-  }
+  },
 };
 ```
 
 ## Deployment & CI/CD
 
 ### 1. Vercel Configuration
+
 ```json
 // vercel.json
 {
@@ -858,7 +845,7 @@ export const metadata: Metadata = {
           "value": "DENY"
         },
         {
-          "key": "X-Content-Type-Options", 
+          "key": "X-Content-Type-Options",
           "value": "nosniff"
         }
       ]
@@ -868,6 +855,7 @@ export const metadata: Metadata = {
 ```
 
 ### 2. Environment Variables
+
 ```bash
 # .env.local
 NEXT_PUBLIC_SITE_URL=https://rw9-17an2025.vercel.app

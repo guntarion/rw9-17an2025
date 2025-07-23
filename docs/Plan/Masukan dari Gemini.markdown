@@ -48,7 +48,7 @@ Ini adalah "wajah" dari website. Tujuannya adalah menangkap perhatian pengunjung
   - Sub-judul: "Dengan Semangat Penghijauan, Kita Bangun Lingkungan yang Asri dan Guyub."
   - **COUNTDOWN TIMER:** Tampilan live countdown menuju **30 Agustus 2025, Pukul 07:00 WIB**.
 - **Highlight Acara Puncak (Dibawah Countdown):**
-  - Sebuah *card* khusus yang menonjolkan jadwal **Malam Puncak & Panggung Hiburan (31 Agustus 2025)**.
+  - Sebuah _card_ khusus yang menonjolkan jadwal **Malam Puncak & Panggung Hiburan (31 Agustus 2025)**.
   - Menampilkan info: Penampilan Angklung PKK, Pentas Seni dari tiap RT, dan **DOORPRIZE UTAMA**.
 - **Ringkasan Lomba (Grid 4 Kolom):**
   - Setiap kolom merepresentasikan satu lomba dengan ikon unik:
@@ -66,7 +66,7 @@ Ini adalah "wajah" dari website. Tujuannya adalah menangkap perhatian pengunjung
 
 Halaman ini berfungsi sebagai buku panduan digital.
 
-- **Struktur:** Gunakan format *accordion* atau tab, di mana setiap tab mewakili satu lomba.
+- **Struktur:** Gunakan format _accordion_ atau tab, di mana setiap tab mewakili satu lomba.
 - **Konten Setiap Lomba:**
   - **Lomba Hias Kampung:**
     - **Koordinator:** H. Suleman
@@ -80,7 +80,7 @@ Halaman ini berfungsi sebagai buku panduan digital.
     - **Konsep:** Bukan mencari prestasi, tapi kemeriahan dan kekompakan.
     - **Kriteria Penilaian:** Skor Pertandingan, Kostum Unik, Sportivitas Suporter.
     - **Aturan Khusus:** "Peserta adalah pasangan campuran (pria & wanita) dari satu keluarga."
-  - **Lomba Jalan Sehat:**
+  - **Parade Jalan Sehat:**
     - **Koordinator:** dr. Edi Subagyo
     - **Hari-H:** 30 Agustus 2025
     - **Tema Kostum:** Lingkungan Hidup (diperbolehkan kombinasi dengan kaos tim RT).
@@ -96,7 +96,7 @@ Mirip feed Instagram sederhana, fokus pada visual.
 
 - **Layout:** Grid foto responsif (kotak-kotak).
 - **Fitur:**
-  - Saat foto di-klik, akan muncul *popup/modal* dengan gambar lebih besar beserta **caption** singkat.
+  - Saat foto di-klik, akan muncul _popup/modal_ dengan gambar lebih besar beserta **caption** singkat.
   - Panitia bisa mengunggah foto dan menulis caption melalui sistem pengelolaan konten (CMS).
 - **Filter/Kategori (Penting untuk Organisasi):**
   - `Semua Foto`
@@ -148,7 +148,7 @@ Mengurangi pertanyaan berulang via WhatsApp.
 
 - **Content Management System (CMS):**
   - Untuk memudahkan panitia (khususnya tim dokumentasi) mengunggah foto ke Galeri dan mengupdate pengumuman.
-  - **Rekomendasi:** Gunakan *headless CMS* seperti **Strapi** atau **Sanity.io**. Ini sangat cocok dengan Next.js. Opsi yang lebih sederhana adalah menggunakan **Google Sheets sebagai database** jika panitia lebih familiar dengannya.
+  - **Rekomendasi:** Gunakan _headless CMS_ seperti **Strapi** atau **Sanity.io**. Ini sangat cocok dengan Next.js. Opsi yang lebih sederhana adalah menggunakan **Google Sheets sebagai database** jika panitia lebih familiar dengannya.
 - **Responsif (Mobile-First):**
   - Desain wajib dioptimalkan untuk tampilan di HP, karena mayoritas warga akan mengakses dari perangkat mobile.
 - **Deployment:**
@@ -156,6 +156,6 @@ Mengurangi pertanyaan berulang via WhatsApp.
 - **Fase 2: Sistem Skoring Juri (Menyusul):**
   - Buat halaman terpisah yang dilindungi password (`/login-juri`).
   - Setelah login, juri akan melihat form untuk memasukkan skor per RT/peserta sesuai kriteria lomba.
-  - Data dikirim ke database, dan halaman rekap (juga terproteksi) akan menampilkan total skor secara *real-time*.
+  - Data dikirim ke database, dan halaman rekap (juga terproteksi) akan menampilkan total skor secara _real-time_.
 
 Semoga konsep ini memberikan gambaran yang jelas dan komprehensif. Ini adalah fondasi yang kuat untuk membangun website yang tidak hanya fungsional tapi juga menjadi kebanggaan warga RW IX Rewwin.

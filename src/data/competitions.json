@@ -35,7 +35,7 @@
       "participants": 11,
       "prizes": {
         "first": "Rp 3.000.000",
-        "second": "Rp 2.500.000", 
+        "second": "Rp 2.500.000",
         "third": "Rp 2.000.000"
       },
       "image": "/images/competitions/lomba-lingkungan.jpg",
@@ -51,11 +51,7 @@
         "contact": "0818.515.363",
         "photo": "/images/coordinators/makmur.jpg"
       },
-      "criteria": [
-        "Point kemenangan pertandingan",
-        "Kekompakan/Keserasian pasangan",
-        "Penampilan/Kostum kreatif"
-      ],
+      "criteria": ["Point kemenangan pertandingan", "Kekompakan/Keserasian pasangan", "Penampilan/Kostum kreatif"],
       "timeline": {
         "start": "2025-08-09",
         "end": "2025-08-10",
@@ -68,7 +64,7 @@
           "day": "Sabtu"
         },
         "final": {
-          "date": "2025-08-10", 
+          "date": "2025-08-10",
           "time": "09:00 WIB",
           "day": "Minggu"
         }
@@ -90,8 +86,8 @@
     },
     {
       "id": "jalan-sehat",
-      "name": "Lomba Jalan Sehat",
-      "description": "Lomba jalan sehat dengan tema 'Generasi Muda Semangat dan Kreatif'. Peserta mengikuti rute dengan 4 pos kupon dan dinilai dari segi kekompakan barisan, kreativitas kostum, semangat, dan kedisiplinan.",
+      "name": "Parade Jalan Sehat",
+      "description": "Parade Jalan Sehat dengan tema 'Generasi Muda Semangat dan Kreatif'. Peserta mengikuti rute dengan 4 pos kupon dan dinilai dari segi kekompakan barisan, kreativitas kostum, semangat, dan kedisiplinan.",
       "coordinator": {
         "name": "Koordinator RW",
         "contact": "Akan diinformasikan",
@@ -120,7 +116,7 @@
         "finish": "Area Balai RW IX",
         "checkpoints": [
           "Pos Kupon 1 (depan rumah Pak Rozak)",
-          "Pos Kupon 2 (depan pintu masuk Jatayu timur)", 
+          "Pos Kupon 2 (depan pintu masuk Jatayu timur)",
           "Pos Kupon 3 (pojok barat Jatayu)",
           "Pos Kupon 4 (panggung)"
         ]
@@ -131,7 +127,7 @@
       "participants": 500,
       "prizes": {
         "first": "Rp 600.000",
-        "second": "Rp 400.000", 
+        "second": "Rp 400.000",
         "third": "Rp 200.000"
       },
       "image": "/images/competitions/jalan-sehat.jpg",
@@ -156,7 +152,7 @@
       ],
       "timeline": {
         "start": "2025-08-30",
-        "end": "2025-08-31", 
+        "end": "2025-08-31",
         "registration": "2025-08-25"
       },
       "schedule": {
@@ -170,7 +166,7 @@
           "activity": "Penataan meja dan dekorasi stand"
         },
         "judging": {
-          "date": "2025-08-30", 
+          "date": "2025-08-30",
           "time": "17:00 WIB",
           "judges": "1 juri per RT (juri internal)"
         },

@@ -25,8 +25,8 @@
       },
       {
         "id": "jalan-sehat-start",
-        "title": "Lomba Jalan Sehat",
-        "description": "Start lomba jalan sehat dengan tema kostum Lingkungan Hidup",
+        "title": "Parade Jalan Sehat",
+        "description": "Start Parade Jalan Sehat dengan tema kostum Lingkungan Hidup",
         "time": {
           "start": "06:00",
           "end": "08:00"
@@ -115,12 +115,7 @@
         "location": "Panggung Utama RW IX",
         "type": "entertainment",
         "coordinator": "Panitia Hiburan",
-        "highlights": [
-          "Penampilan Angklung PKK RW IX",
-          "Pentas Seni dari setiap RT",
-          "Doorprize utama",
-          "Pengumuman pemenang lomba"
-        ]
+        "highlights": ["Penampilan Angklung PKK RW IX", "Pentas Seni dari setiap RT", "Doorprize utama", "Pengumuman pemenang lomba"]
       },
       {
         "id": "closing-ceremony",
@@ -143,7 +138,7 @@
       "description": "Tari tradisional dengan tema lingkungan hidup"
     },
     {
-      "rt": "RT 02", 
+      "rt": "RT 02",
       "performance": "Vokal Group",
       "description": "Paduan suara dengan lagu bertema kemerdekaan"
     },
@@ -201,29 +196,15 @@
   "doorprizes": [
     {
       "category": "Utama",
-      "items": [
-        "Kulkas 2 pintu",
-        "Mesin cuci",
-        "Sepeda motor (doorprize utama)"
-      ]
+      "items": ["Kulkas 2 pintu", "Mesin cuci", "Sepeda motor (doorprize utama)"]
     },
     {
-      "category": "Kedua", 
-      "items": [
-        "Rice cooker",
-        "Blender",
-        "Magic com",
-        "Kipas angin"
-      ]
+      "category": "Kedua",
+      "items": ["Rice cooker", "Blender", "Magic com", "Kipas angin"]
     },
     {
       "category": "Hiburan",
-      "items": [
-        "Voucher belanja",
-        "Hampers lebaran",
-        "Sembako paket",
-        "Uang tunai"
-      ]
+      "items": ["Voucher belanja", "Hampers lebaran", "Sembako paket", "Uang tunai"]
     }
   ]
 }

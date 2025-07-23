@@ -41,12 +41,12 @@ const competitions = [
     coordinator: 'Bpk. Yusri',
     icon: '🏸',
     color: 'accent',
-    period: 'Malam Sabtu & Minggu',
+    period: '9 dan 10 Agustus 2025',
     participants: 11,
   },
   {
     id: 'jalan-sehat',
-    title: 'Lomba Jalan Sehat',
+    title: 'Parade Jalan Sehat',
     description: 'Jalan sehat dengan tema kostum Lingkungan Hidup',
     coordinator: 'dr. Edi Subagyo',
     icon: '🚶‍♂️',
@@ -72,8 +72,6 @@ const quickStats = [
   { label: 'Hari Acara', value: '2', icon: Calendar },
   { label: 'Total Peserta', value: '520+', icon: Heart },
 ];
-
-
 
 export default function HomePage() {
   return (
@@ -312,7 +310,8 @@ export default function HomePage() {
             <div className='max-w-2xl mx-auto'>
               <h2 className='text-3xl font-bold text-gray-900 mb-6'>Mari Bergabung dalam Perayaan Kemerdekaan!</h2>
               <p className='text-lg text-gray-600 mb-8'>
-                Dukung tema <strong>Lingkungan Hidup dan Penghijauan</strong> dengan berpartisipasi aktif dalam setiap kegiatan HUT RI Ke-80 RW IX Rewwin Wedoro
+                Dukung tema <strong>Lingkungan Hidup dan Penghijauan</strong> dengan berpartisipasi aktif dalam setiap kegiatan HUT RI Ke-80 RW IX
+                Rewwin Wedoro
               </p>
 
               <div className='flex flex-col sm:flex-row gap-4 justify-center'>
