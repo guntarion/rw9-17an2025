@@ -42,7 +42,7 @@ export default function LombaJalanSehat() {
           <Route className='w-10 h-10 text-blue-600' />
         </div>
         <div className='bg-gradient-to-r from-blue-100 to-green-100 rounded-lg p-4 max-w-3xl mx-auto'>
-          <div className='text-2xl font-bold text-blue-800 mb-2'>&quot;Generasi Muda Semangat dan Kreatif&quot;</div>
+          <div className='text-2xl font-bold text-blue-800 mb-2'>&quot;Lintas Generasi Semangat dan Kreatif&quot;</div>
           <p className='text-gray-700'>HUT RI ke-80 RW IX REWWIN</p>
         </div>
       </div>
@@ -156,7 +156,7 @@ export default function LombaJalanSehat() {
         <CardHeader>
           <CardTitle className='flex items-center gap-2'>
             <Route className='w-6 h-6 text-purple-600' />
-            Rute Jalan Sehat & Pos Kupon
+            Rute Parade Jalan Sehat & Pos Kupon
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -316,7 +316,7 @@ export default function LombaJalanSehat() {
                 <ul className='text-sm text-orange-700 space-y-1'>
                   <li>• Ketepatan waktu</li>
                   <li>• Mengikuti aturan rute</li>
-                  <li>• Mengambil kupon di setiap pos</li>
+                  <li>• Pengumpulan kupon di setiap pos</li>
                 </ul>
               </div>
             </div>
@@ -390,7 +390,7 @@ export default function LombaJalanSehat() {
                   • <strong>Wajib:</strong> Meletakkan kupon di setiap pos yang telah ditentukan
                 </li>
                 <li>• Setiap RT dianjurkan mendokumentasikan kegiatan</li>
-                <li>• Jaga kebersihan sepanjang rute jalan sehat</li>
+                <li>• Jaga kebersihan sepanjang rute parade jalan sehat</li>
                 <li>• Koordinator bertanggung jawab atas peserta RT masing-masing</li>
               </ul>
             </div>

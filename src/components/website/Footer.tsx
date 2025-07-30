@@ -26,9 +26,9 @@ const quickLinks: FooterSection = {
 const competitions: FooterSection = {
   title: 'Lomba',
   links: [
-    { label: 'Hias Kampung/RT', href: '/lomba/hias-kampung' },
-    { label: 'Bulu Tangkis Keluarga', href: '/lomba/bulu-tangkis-keluarga' },
-    { label: 'Jalan Sehat', href: '/lomba/jalan-sehat' },
+    { label: 'Hias Lingkungan RT', href: '/lomba/hias-kampung' },
+    { label: 'Fun Badminton', href: '/lomba/bulu-tangkis-keluarga' },
+    { label: 'Parade Jalan Sehat', href: '/lomba/jalan-sehat' },
     { label: 'Bazar Kreatif', href: '/lomba/bazar' },
   ],
 };

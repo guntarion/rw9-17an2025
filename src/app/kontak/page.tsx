@@ -26,7 +26,7 @@ const contactInfo = [
     type: 'Koordinator Lomba',
     name: 'H. Suleman',
     whatsapp: '+62 xxx xxxx xxxx',
-    role: 'Lomba Hias Kampung',
+    role: 'Lomba Hias RT',
     emergency: false,
   },
   {

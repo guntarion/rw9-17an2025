@@ -276,12 +276,12 @@ export default function TentangPage() {
                   <Badge className='bg-blue-100 text-blue-800'>Hari 1</Badge>
                   <span className='font-medium'>30 Agustus 2025</span>
                 </div>
-                <ul className='space-y-2 text-sm text-gray-600'>
+                {/* <ul className='space-y-2 text-sm text-gray-600'>
                   <li>• Upacara Pembukaan (08:00)</li>
                   <li>• Parade Jalan Sehat (09:00)</li>
                   <li>• Lomba Bulu Tangkis Keluarga (Malam)</li>
                   <li>• Bazar Kreatif (Sepanjang Hari)</li>
-                </ul>
+                </ul> */}
               </div>
 
               <div>
@@ -290,7 +290,7 @@ export default function TentangPage() {
                   <span className='font-medium'>31 Agustus 2025</span>
                 </div>
                 <ul className='space-y-2 text-sm text-gray-600'>
-                  <li>• Penilaian Lomba Hias Kampung</li>
+                  <li>• Penilaian Lomba Hias Lingkungan</li>
                   <li>• Bazar Kreatif (Lanjutan)</li>
                   <li>• Malam Puncak & Hiburan (19:00)</li>
                   <li>• Pengumuman Pemenang & Doorprize</li>

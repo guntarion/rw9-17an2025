@@ -26,8 +26,8 @@ const TARGET_DATE = new Date('2025-08-30T08:00:00+07:00');
 const competitions = [
   {
     id: 'hias-kampung',
-    title: 'Lomba Hias Kampung/RT',
-    description: 'Lomba menghias kampung dengan tema Lingkungan Hidup',
+    title: 'Lomba Hias Lingkungan RT',
+    description: 'Lomba menghias area RT dengan tema Lingkungan Hidup',
     coordinator: 'H. Suleman',
     icon: '🏡',
     color: 'primary',
@@ -51,7 +51,7 @@ const competitions = [
     coordinator: 'dr. Edi Subagyo',
     icon: '🚶‍♂️',
     color: 'success',
-    period: '30 Agustus 2025',
+    period: '31 Agustus 2025',
     participants: 500,
   },
   {

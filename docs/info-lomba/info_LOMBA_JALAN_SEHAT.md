@@ -52,7 +52,7 @@
 4. **Kedisiplinan & Sportivitas (10%)**
    - Ketepatan waktu
    - Mengikuti aturan rute
-   - Mengambil kupon di setiap pos
+   - Pengumpulan kupon di setiap pos
 
 ### 🏅 HADIAH
 
