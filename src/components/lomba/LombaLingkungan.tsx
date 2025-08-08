@@ -323,7 +323,7 @@ export default function LombaLingkungan() {
                 <li>• Semua kegiatan harus mematuhi prinsip ramah lingkungan</li>
                 <li>• Tidak menggunakan bahan berbahaya atau merusak lingkungan</li>
                 <li>• Peserta: Seluruh RT 01-11, di wilayah RW 09, Rewwin, Wedoro, Waru, Sidoarjo</li>
-                <li>• Dokumentasi terkait titik/lokasi yang diunggulkan dapat (tidak wajib) dilakukan oleh masing-masing RT</li>
+                <li>• Dokumentasi terkait titik/lokasi yang diunggulkan dapat (tidak wajib) dilakukan oleh masing-masing RT. Dokumentasi ini TIDAK berdampak pada nilai.</li>
               </ul>
             </div>
             <div>
