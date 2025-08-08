@@ -317,7 +317,7 @@ export default function LombaLingkungan() {
             <div>
               <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
-                Ketentuan Wajib
+                Ketentuan
               </h4>
               <ul className="space-y-1 text-sm text-gray-600">
                 <li>• Semua kegiatan harus mematuhi prinsip ramah lingkungan</li>
