@@ -216,7 +216,7 @@ export default function LombaBadminton() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Waktu:</span>
-                  <span className="font-semibold">08:00 WIB - Selesai</span>
+                  <span className="font-semibold">19:30 WIB - Selesai</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Tempat:</span>

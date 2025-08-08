@@ -53,7 +53,7 @@ F.   **SISTEM PERTANDINGAN**
 **G.**  **WAKTU DAN TEMPAT PERTANDINGAN**
 
 1. Babak Penyisihan Sabtu tgl 9 agustus 2025, mulai jam 19.30 – selesai.
-2. Babak Final Minggu tgl 10 agustus 2025, mulai jam 8.00 – selesai.
+2. Babak Final Minggu tgl 10 agustus 2025, mulai jam 19.30 – selesai.
 3. Tempat Pertandingan : GOR Bulu Tangkis Jatayu.
 
  
