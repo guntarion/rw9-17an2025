@@ -159,7 +159,7 @@ export default function LombaBazaar() {
         <Card className='text-center'>
           <CardContent className='p-4'>
             <Users className='w-8 h-8 text-primary-600 mx-auto mb-2' />
-            <div className='text-2xl font-bold text-primary-600'>12</div>
+            <div className='text-2xl font-bold text-primary-600'>11</div>
             <div className='text-sm text-gray-600'>RT Peserta</div>
           </CardContent>
         </Card>
