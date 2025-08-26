@@ -75,7 +75,7 @@ export default function LombaLingkungan() {
         <Card className="text-center">
           <CardContent className="p-4">
             <Trophy className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
-            <div className="text-2xl font-bold text-yellow-600">Rp 7,5M</div>
+            <div className="text-2xl font-bold text-yellow-600">Rp 6M</div>
             <div className="text-sm text-gray-600">Total Hadiah</div>
           </CardContent>
         </Card>
@@ -277,22 +277,22 @@ export default function LombaLingkungan() {
             <div className="text-center p-6 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg border-2 border-yellow-300">
               <Trophy className="w-12 h-12 text-yellow-600 mx-auto mb-3" />
               <div className="text-xl font-bold text-yellow-800">JUARA 1</div>
-              <div className="text-2xl font-bold text-yellow-900 mt-2">Rp 3.000.000</div>
-              <div className="text-sm text-yellow-600 mt-1">(Rp 2.500.000 + Rp 500.000 dari RT 11)</div>
+              <div className="text-2xl font-bold text-yellow-900 mt-2">Rp 2.500.000</div>
+              <div className="text-sm text-yellow-600 mt-1">(Rp 2.000.000 + Rp 500.000 dari RT 11)</div>
               <div className="text-sm text-yellow-700 mt-1">+ Piagam Penghargaan</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg border-2 border-gray-300">
               <Award className="w-12 h-12 text-gray-600 mx-auto mb-3" />
               <div className="text-xl font-bold text-gray-800">JUARA 2</div>
-              <div className="text-2xl font-bold text-gray-900 mt-2">Rp 2.500.000</div>
-              <div className="text-sm text-gray-600 mt-1">(Rp 2.000.000 + Rp 500.000 dari RT 11)</div>
+              <div className="text-2xl font-bold text-gray-900 mt-2">Rp 2.000.000</div>
+              <div className="text-sm text-gray-600 mt-1">(Rp 1.500.000 + Rp 500.000 dari RT 11)</div>
               <div className="text-sm text-gray-700 mt-1">+ Piagam Penghargaan</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg border-2 border-orange-300">
               <Award className="w-12 h-12 text-orange-600 mx-auto mb-3" />
               <div className="text-xl font-bold text-orange-800">JUARA 3</div>
-              <div className="text-2xl font-bold text-orange-900 mt-2">Rp 2.000.000</div>
-              <div className="text-sm text-orange-600 mt-1">(Rp 1.500.000 + Rp 500.000 dari RT 11)</div>
+              <div className="text-2xl font-bold text-orange-900 mt-2">Rp 1.500.000</div>
+              <div className="text-sm text-orange-600 mt-1">(Rp 1.000.000 + Rp 500.000 dari RT 11)</div>
               <div className="text-sm text-orange-700 mt-1">+ Piagam Penghargaan</div>
             </div>
           </div>
